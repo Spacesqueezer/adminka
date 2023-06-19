@@ -14,7 +14,6 @@ const Image = styled.img`
   filter: ${(props) =>
     props.isSelected ? "none" : "brightness(0) invert(100%)"};
   margin-left: 20px;
-
 `;
 
 const TopCorner = styled.div`
@@ -43,24 +42,23 @@ const BottomCorner = styled.div`
 
 const MenuBody = styled.div`
   position: relative;
-  background: ${(props) => (props.isSelected ? "white" : "#053480")};
-  color: ${(props) => (props.isSelected ? "#484359" : "white")};
+  background: ${(props) => (props.isSelected ? "#f5f5f5" : "#053480")};
+  color: ${(props) => (props.isSelected ? "#484359" : "#f5f5f5")};
   height: 45px;
   border-radius: 12px 0 0 12px;
   display: flex;
   flex-direction: row;
-
   align-items: center;
 
   &:hover {
-    background: ${(props) => (props.isSelected ? "white" : "#042961")};
+    background: ${(props) => (props.isSelected ? "#f5f5f5" : "#042961")};
     cursor: pointer;
   }
 `;
 
 const WhiteBack = styled.div`
   position: absolute;
-  background: white;
+  background: #f5f5f5;
   width: 20px;
   height: calc(100% + 40px);
   right: 0;
@@ -68,18 +66,16 @@ const WhiteBack = styled.div`
   display: ${(props) => (props.isSelected ? "block" : "none")};
 `;
 
-const MenuItem = ({ image, title, isSelected, onClick }) => {
-  return (
-    <MenuItemWrapper isSelected={isSelected} onClick={onClick}>
-      <WhiteBack isSelected={isSelected} />
-      <TopCorner isSelected={isSelected} />
-      <MenuBody isSelected={isSelected}>
-        <Image src={image} isSelected={isSelected}></Image>
-        <Title>{title}</Title>
-      </MenuBody>
-      <BottomCorner isSelected={isSelected} />
-    </MenuItemWrapper>
-  );
-};
+const MenuItem = ({ image, title, isSelected, onClick }) => (
+  <MenuItemWrapper isSelected={isSelected} onClick={onClick}>
+    <WhiteBack isSelected={isSelected} />
+    <TopCorner isSelected={isSelected} />
+    <MenuBody isSelected={isSelected}>
+      <Image src={image} isSelected={isSelected} />
+      <Title>{title}</Title>
+    </MenuBody>
+    <BottomCorner isSelected={isSelected} />
+  </MenuItemWrapper>
+);
 
 export default MenuItem;
