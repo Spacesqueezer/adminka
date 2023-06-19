@@ -6,10 +6,16 @@ const MenuItemWrapper = styled.div`
 `;
 
 const Title = styled.p`
-  margin: 0;
+  position: absolute;
+  margin-left: 55px;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  filter: ${(props) =>
+    props.isSelected ? "none" : "brightness(0) invert(100%)"};
+  margin-left: 20px;
+
+`;
 
 const TopCorner = styled.div`
   position: absolute;
@@ -41,6 +47,10 @@ const MenuBody = styled.div`
   color: ${(props) => (props.isSelected ? "#484359" : "white")};
   height: 45px;
   border-radius: 12px 0 0 12px;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
 
   &:hover {
     background: ${(props) => (props.isSelected ? "white" : "#042961")};
@@ -58,13 +68,13 @@ const WhiteBack = styled.div`
   display: ${(props) => (props.isSelected ? "block" : "none")};
 `;
 
-const MenuItem = ({ image, title, isSelected }) => {
+const MenuItem = ({ image, title, isSelected, onClick }) => {
   return (
-    <MenuItemWrapper isSelected={isSelected}>
+    <MenuItemWrapper isSelected={isSelected} onClick={onClick}>
       <WhiteBack isSelected={isSelected} />
       <TopCorner isSelected={isSelected} />
       <MenuBody isSelected={isSelected}>
-        <Image src={image}></Image>
+        <Image src={image} isSelected={isSelected}></Image>
         <Title>{title}</Title>
       </MenuBody>
       <BottomCorner isSelected={isSelected} />

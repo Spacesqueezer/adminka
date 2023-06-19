@@ -1,7 +1,17 @@
 import styled from "styled-components";
 import MenuItem from "./MenuItem";
+import { useState } from "react";
+import EmployeeImg from "./images/employee.png";
+import VisitorsImg from "./images/visitor.png";
+import TransportImg from "./images/transport.png";
+import OrganizationImg from "./images/organization.png";
+import JournalImg from "./images/journal.png";
+import SettingsImg from "./images/settings.png";
+import ReportsImg from "./images/reports.png";
 
 const SideMenu = () => {
+  const [selectedMenuItem, setSelectedMenuItem] = useState("Сотрудники");
+
   const MenuWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -58,13 +68,48 @@ const SideMenu = () => {
     <MenuWrapper>
       <MenuTitle>СКУД</MenuTitle>
       <MenuItems>
-        <MenuItem title="Сотрудники" />
-        <MenuItem title="Посетители" isSelected={true} />
-        <MenuItem title="Организации" />
-        <MenuItem title="Транспорт" />
-        <MenuItem title="Журнал событий" />
-        <MenuItem title="Отчеты" />
-        <MenuItem title="Настройки" />
+        <MenuItem
+          title={"Сотрудники"}
+          image={EmployeeImg}
+          isSelected={selectedMenuItem === "Сотрудники"}
+          onClick={() => setSelectedMenuItem("Сотрудники")}
+        />
+        <MenuItem
+          title={"Посетители"}
+          image={VisitorsImg}
+          isSelected={selectedMenuItem === "Посетители"}
+          onClick={() => setSelectedMenuItem("Посетители")}
+        />
+        <MenuItem
+          title={"Организации"}
+          image={OrganizationImg}
+          isSelected={selectedMenuItem === "Организации"}
+          onClick={() => setSelectedMenuItem("Организации")}
+        />
+        <MenuItem
+          title={"Транспорт"}
+          image={TransportImg}
+          isSelected={selectedMenuItem === "Транспорт"}
+          onClick={() => setSelectedMenuItem("Транспорт")}
+        />
+        <MenuItem
+          title={"Журнал событий"}
+          image={JournalImg}
+          isSelected={selectedMenuItem === "Журнал событий"}
+          onClick={() => setSelectedMenuItem("Журнал событий")}
+        />
+        <MenuItem
+          title={"Отчеты"}
+          image={ReportsImg}
+          isSelected={selectedMenuItem === "Отчеты"}
+          onClick={() => setSelectedMenuItem("Отчеты")}
+        />
+        <MenuItem
+          title={"Настройки"}
+          image={SettingsImg}
+          isSelected={selectedMenuItem === "Настройки"}
+          onClick={() => setSelectedMenuItem("Настройки")}
+        />
       </MenuItems>
       <MenuBottom>Система контроля и управления доступом (СКУД)</MenuBottom>
     </MenuWrapper>
