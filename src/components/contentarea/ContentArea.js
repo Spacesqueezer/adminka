@@ -50,11 +50,17 @@ const Body = styled.div`
   right: 40px;
   bottom: 30px;
 
-  /* Frame_S */
-
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
+
+  padding: 30px 40px;
 `;
+
+const screens = {
+  Сотрудники: <EmployeesScreen />,
+  Посетители: <VisitorsScreen />,
+  Транспорт: <TransportScreen />,
+};
 
 const Logout = () => {
   alert("Выйтинах");
@@ -73,18 +79,7 @@ const ContentArea = ({ selectedMenu, title }) => {
         <MenuButton image={LogoutImg} callback={Logout} />
       </Menu>
       <Header>{title}</Header>
-      <Body>
-        {(() => {
-          switch (selectedMenu) {
-            case "Сотрудники":
-              return <EmployeesScreen />;
-            case "Посетители":
-              return <VisitorsScreen />;
-            case "Транспорт":
-              return <TransportScreen />;
-          }
-        })()}
-      </Body>
+      <Body>{screens[selectedMenu]}</Body>
     </Wrapper>
   );
 };

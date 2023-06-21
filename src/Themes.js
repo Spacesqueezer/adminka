@@ -7,6 +7,8 @@ export const LightTheme = {
   SideMenuItemTextSelected: "#484359",
   ContentAreaBackground: "#fff",
   Header: "#1352B7",
+  InputBorder: "#c8cbde",
+  GrayText: "#ACAAB4",
 };
 export const DarkTheme = {
   SideMenuBackground: "#d007ff",
@@ -16,5 +18,7 @@ export const DarkTheme = {
   SideMenuItemText: "#39de14",
   SideMenuItemTextSelected: "#002bb7",
   ContentAreaBackground: "#000000",
-  Header: '#b71331'
+  Header: "#b71331",
+  InputBorder: "#0022e5",
+  GrayText: "#c2a517",
 };
