@@ -14,7 +14,8 @@ const MenuWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  background: #053480;
+  min-width: 200px;
+  background: ${(props) => props.theme.SideMenuBackground};
   height: 100%;
   flex: 10;
 `;
@@ -30,7 +31,7 @@ const MenuTitle = styled.p`
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color:${(props) => props.theme.SideMenuTitle};
 `;
 const MenuItems = styled.div`
   position: relative;
@@ -54,7 +55,7 @@ const MenuBottom = styled.p`
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #ffffff;
+  color: ${(props) => props.theme.SideMenuTitle};
   opacity: 0.5;
 `;
 
@@ -77,21 +78,21 @@ const SideMenu = ({ onMenuSelect }) => {
   };
 
   return (
-      <MenuWrapper>
-        <MenuTitle>СКУД</MenuTitle>
-        <MenuItems>
-          {menuItems.map((item) => (
-              <MenuItem
-                  key={item.title}
-                  title={item.title}
-                  image={item.image}
-                  isSelected={selectedMenuItem === item.title}
-                  onClick={() => handleMenuClick(item.title)}
-              />
-          ))}
-        </MenuItems>
-        <MenuBottom>Система контроля и управления доступом (СКУД)</MenuBottom>
-      </MenuWrapper>
+    <MenuWrapper>
+      <MenuTitle>СКУД</MenuTitle>
+      <MenuItems>
+        {menuItems.map((item) => (
+          <MenuItem
+            key={item.title}
+            title={item.title}
+            image={item.image}
+            isSelected={selectedMenuItem === item.title}
+            onClick={() => handleMenuClick(item.title)}
+          />
+        ))}
+      </MenuItems>
+      <MenuBottom>Система контроля и управления доступом (СКУД)</MenuBottom>
+    </MenuWrapper>
   );
 };
 

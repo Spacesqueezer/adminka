@@ -1,4 +1,4 @@
-
+import { ThemeProvider } from "./ThemeContext";
 import SideMenu from "./components/sidemenu/SideMenu";
 import ContentArea from "./components/contentarea/ContentArea";
 import styled from "styled-components";
@@ -24,13 +24,15 @@ function App() {
   };
 
   return (
-    <StyledApp>
-      <SideMenu selectedMenu={selectedMenu} onMenuSelect={setSelectedMenu} />
-      <ContentArea
-        selectedMenu={selectedMenu}
-        title={headers[ selectedMenu ]}
-      />
-    </StyledApp>
+    <ThemeProvider>
+      <StyledApp>
+        <SideMenu selectedMenu={selectedMenu} onMenuSelect={setSelectedMenu} />
+        <ContentArea
+          selectedMenu={selectedMenu}
+          title={headers[selectedMenu]}
+        />
+      </StyledApp>
+    </ThemeProvider>
   );
 }
 

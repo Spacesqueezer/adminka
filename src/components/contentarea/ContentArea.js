@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import EmployeesScreen from "../employees/Employees";
 import VisitorsScreen from "../visitors/Visitors";
 import TransportScreen from "../transport/Transport";
+import MenuButton from "./MenuButton";
+import ChangeThemeImg from "./images/theme_change.png";
+import LogoutImg from "./images/logout.png";
 import styled from "styled-components";
+import { ThemeContext } from "../../ThemeContext";
 
 const Wrapper = styled.div`
   flex: 54;
-  background: #f5f5f5;
+  background: ${(props) => props.theme.AppBackground};
 `;
+
+const Menu = styled.div`
+  position: absolute;
+  width: 110px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  right: 40px;
+  top: 28px;
+`;
+
 const Header = styled.p`
   position: absolute;
   width: 253px;
@@ -22,10 +38,11 @@ const Header = styled.p`
   font-size: 26px;
   line-height: 30px;
 
-  color: #1352b7;
+  color: ${(props) => props.theme.Header};
 `;
+
 const Body = styled.div`
-  background: white;
+  background: ${(props) => props.theme.ContentAreaBackground};
   position: absolute;
 
   left: 360px;
@@ -39,9 +56,22 @@ const Body = styled.div`
   border-radius: 16px;
 `;
 
+const Logout = () => {
+  alert("Выйтинах");
+};
+
 const ContentArea = ({ selectedMenu, title }) => {
+  const { toggleTheme } = useContext(ThemeContext);
+
+  const ChangeTheme = () => {
+    toggleTheme();
+  };
   return (
     <Wrapper>
+      <Menu>
+        <MenuButton image={ChangeThemeImg} callback={ChangeTheme} />
+        <MenuButton image={LogoutImg} callback={Logout} />
+      </Menu>
       <Header>{title}</Header>
       <Body>
         {(() => {
