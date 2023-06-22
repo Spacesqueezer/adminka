@@ -31,7 +31,7 @@ const Header = styled.p`
   left: 361px;
   top: 102px;
 
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: left;
   font-style: normal;
   font-weight: 500;

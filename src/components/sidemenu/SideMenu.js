@@ -31,7 +31,7 @@ const MenuTitle = styled.p`
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.1em;
-  color:${(props) => props.theme.SideMenuTitle};
+  color: ${(props) => props.theme.SideMenuTitle};
 `;
 const MenuItems = styled.div`
   position: relative;
@@ -50,7 +50,7 @@ const MenuBottom = styled.p`
   height: 34px;
   left: 41px;
   bottom: 50px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

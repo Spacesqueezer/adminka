@@ -1,4 +1,4 @@
-import { ThemeProvider } from "./ThemeContext";
+import { ThemeProvider, Fonts } from "./ThemeContext";
 import SideMenu from "./components/sidemenu/SideMenu";
 import ContentArea from "./components/contentarea/ContentArea";
 import styled from "styled-components";
@@ -25,6 +25,7 @@ function App() {
 
   return (
     <ThemeProvider>
+      <Fonts />
       <StyledApp>
         <SideMenu selectedMenu={selectedMenu} onMenuSelect={setSelectedMenu} />
         <ContentArea

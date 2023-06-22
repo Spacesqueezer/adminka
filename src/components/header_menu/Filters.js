@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import FilterImg from "./images/filter.png";
 
 const Wrapper = styled.div`
   margin-left: 10px;
@@ -7,6 +8,11 @@ const Wrapper = styled.div`
   border: 1px solid ${(props) => props.theme.InputBorder};
   border-radius: 6px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 `;
 
 const Label = styled.p`
@@ -15,14 +21,18 @@ const Label = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
-
   color: ${(props) => props.theme.GrayText};
+`;
+
+const Image = styled.img`
+  width: 17px;
+  height: 17px;
 `;
 
 const FiltersButton = () => {
   return (
     <Wrapper>
+      <Image src={FilterImg} />
       <Label>Разделы</Label>
     </Wrapper>
   );
