@@ -9,6 +9,8 @@ export const LightTheme = {
   Header: "#1352B7",
   InputBorder: "#c8cbde",
   GrayText: "#ACAAB4",
+  WhiteBackground: "#fff",
+  BlueBackground: "#0C7AFF",
 };
 export const DarkTheme = {
   SideMenuBackground: "#d007ff",
@@ -21,4 +23,6 @@ export const DarkTheme = {
   Header: "#b71331",
   InputBorder: "#0022e5",
   GrayText: "#c2a517",
+  WhiteBackground: "#1dbda0",
+  BlueBackground: "#ff0000",
 };

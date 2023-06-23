@@ -49,6 +49,8 @@ const Body = styled.div`
   top: 158px;
   right: 40px;
   bottom: 30px;
+  
+  min-width: 570px;
 
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.05);
   border-radius: 16px;

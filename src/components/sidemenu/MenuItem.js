@@ -79,6 +79,7 @@ const CornersBack = styled.div`
 `;
 
 const MenuItem = ({ image, title, isSelected, onClick }) => (
+
   <MenuItemWrapper isSelected={isSelected} onClick={onClick}>
     <CornersBack isSelected={isSelected} />
     <TopCorner isSelected={isSelected} />
