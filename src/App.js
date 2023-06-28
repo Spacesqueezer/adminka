@@ -5,10 +5,14 @@ import styled from "styled-components";
 import { useState } from "react";
 
 const StyledApp = styled.div`
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 function App() {

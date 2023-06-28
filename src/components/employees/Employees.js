@@ -3,6 +3,7 @@ import SearchInput from "../header_menu/SearchInput";
 import ButtonWithIcon from "../header_menu/ButtonWithIcon";
 import FilterImg from "../../project_images/filter.png";
 import AddImg from "./images/Add_ico.png";
+import EmployeesTable from "./EmployeesTable";
 
 const Wrapper = styled.div`
   display: flex;
@@ -12,7 +13,9 @@ const Wrapper = styled.div`
 `;
 
 const TableContainer = styled.div`
+  position: relative;
   flex: 84;
+  overflow: hidden;
 `;
 
 const HeaderMenuContainer = styled.div`
@@ -71,7 +74,9 @@ const EmployeesScreen = () => {
         </Elements>
         <Separator />
       </HeaderMenuContainer>
-      <TableContainer />
+      <TableContainer>
+        <EmployeesTable />
+      </TableContainer>
     </Wrapper>
   );
 };

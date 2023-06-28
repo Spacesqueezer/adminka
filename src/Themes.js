@@ -11,6 +11,8 @@ export const LightTheme = {
   GrayText: "#ACAAB4",
   WhiteBackground: "#fff",
   BlueBackground: "#0C7AFF",
+  TableHeaderBackground: "#fff",
+  TableHeaderFont: '#ACAAB4'
 };
 export const DarkTheme = {
   SideMenuBackground: "#d007ff",
@@ -25,4 +27,6 @@ export const DarkTheme = {
   GrayText: "#c2a517",
   WhiteBackground: "#1dbda0",
   BlueBackground: "#ff0000",
+  TableHeaderBackground: "#4b853e",
+  TableHeaderFont: '#ab03d5'
 };
