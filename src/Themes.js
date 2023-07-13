@@ -12,7 +12,9 @@ export const LightTheme = {
   WhiteBackground: "#fff",
   BlueBackground: "#0C7AFF",
   TableHeaderBackground: "#fff",
-  TableHeaderFont: '#ACAAB4'
+  TableHeaderFont: '#ACAAB4',
+  ExpirationDateGreen: '#1FCF9B',
+  ExpirationDateRed: '#EB5650'
 };
 export const DarkTheme = {
   SideMenuBackground: "#d007ff",
@@ -28,5 +30,7 @@ export const DarkTheme = {
   WhiteBackground: "#1dbda0",
   BlueBackground: "#ff0000",
   TableHeaderBackground: "#4b853e",
-  TableHeaderFont: '#ab03d5'
+  TableHeaderFont: '#ab03d5',
+  ExpirationDateGreen: '#0831b9',
+  ExpirationDateRed: '#c4a11f'
 };

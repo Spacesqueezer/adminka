@@ -1,6 +1,10 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, { useEffect, useState } from "react";
+import styled, { useTheme } from "styled-components";
 import FakeData from "../../fake_data.json";
+import FakePersons from "../../fake_persons.json";
+import SortArrow from "./images/Sort_Arrow.png";
+import GreenArrow from "./images/green_arrow.png";
+import RedArrow from "./images/red_arrow.png";
 
 const TableContainer = styled.div`
   width: 100%;
@@ -13,7 +17,16 @@ const Table = styled.table`
   border-collapse: collapse;
 `;
 
-const TableHeader = styled.th`
+const TableHeader = styled.thead``;
+
+const TableBody = styled.tbody`
+  tr:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+  overflow: hidden;
+`;
+
+const TableHeaderLabel = styled.th`
   padding: 8px;
   background: ${(props) => props.theme.TableHeaderBackground};
   color: ${(props) => props.theme.TableHeaderColor};
@@ -28,14 +41,6 @@ const TableHeader = styled.th`
   line-height: 19px;
   letter-spacing: 0;
   text-align: left;
-
-`;
-
-const TableBody = styled.tbody`
-  tr:not(:last-child) {
-    border-bottom: 1px solid #ccc;
-  }
-  overflow: hidden;
 `;
 
 const TableRow = styled.tr`
@@ -49,11 +54,13 @@ const TableRow = styled.tr`
 
 const TableData = styled.td`
   padding: 8px;
+  text-overflow: ellipsis;
 `;
 
 const Image = styled.img`
   width: 50px;
   height: 50px;
+  border-radius: 12px;
 `;
 
 const Pagination = styled.div`
@@ -82,28 +89,170 @@ const PaginationButton = styled.button`
   cursor: pointer;
 `;
 
-const data = FakeData;
+// const SortIndicator = ({ sortOrder, themeColor }) => {
+//   return (
+//     <div>
+//       <img src={SortArrow}></img>
+//     </div>
+//   );
+// };
+
+const ExpirationContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+const ExpirationDate = styled.p`
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+`;
+
+const ExpirationArrow = styled.img`
+  width: 15px;
+  height: 10px;
+`;
+
+const ExpirationDeltaContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 20px;
+  border-radius: 6px;
+  margin-left: 7px;
+`;
+
+const ExpirationDeltaText = styled.p`
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+`;
+
+const Expiration = ({ from, until, delta }) => {
+  const theme = useTheme();
+  const [isExpired, setIsExpired] = useState(false);
+
+  useEffect(() => {
+    delta < 0 ? setIsExpired(true) : setIsExpired(false);
+  }, [delta]);
+  return (
+    <ExpirationContainer>
+      <ExpirationDate>{from}</ExpirationDate>
+      <ExpirationArrow src={isExpired ? RedArrow : GreenArrow} />
+      <ExpirationDate
+        style={{
+          color: isExpired ? theme.ExpirationDateRed : "black",
+        }}
+      >
+        {until}
+      </ExpirationDate>
+      <ExpirationDeltaContainer
+        style={{
+          background: isExpired
+            ? theme.ExpirationDateRed
+            : theme.ExpirationDateGreen,
+        }}
+      >
+        <ExpirationDeltaText>{Math.abs(delta)}</ExpirationDeltaText>
+      </ExpirationDeltaContainer>
+    </ExpirationContainer>
+  );
+};
+
+const ColumnHeader = ({ title, sortOrder, sortBy: sortByOrder, sortFunc }) => {
+  const isAscending = sortOrder === "asc";
+  const rotateDegree = isAscending ? 0 : 180;
+
+  return (
+    <TableHeaderLabel onClick={() => sortFunc(sortByOrder)}>
+      {title}{" "}
+      <img
+        src={SortArrow}
+        style={{ transform: `rotate(${rotateDegree}deg)` }}
+      />
+    </TableHeaderLabel>
+  );
+};
 
 const EmployeesTable = () => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
   const [sortOrder, setSortOrder] = useState(""); // Sort order: "asc" or "desc"
   const [currentPage, setCurrentPage] = useState(1); // Current page number
   const itemsPerPage = 9; // Number of items to show per page
+  const [tableData, setTableData] = useState("");
+
+  useEffect(() => {
+    //Фетчим данные с сервера
+    fetchData();
+  }, []);
+
+  const fetchData = () => {
+    let receivedData = FakePersons;
+    let preparedData = receivedData.map((item) => {
+      const dateFrom = new Date(item.valid_from_date);
+      const dateUntil = new Date(item.valid_until_date);
+      const dateDelta = Math.floor(
+        (dateUntil.getTime() - dateFrom.getTime()) / (1000 * 60 * 60 * 24)
+      );
+
+      return {
+        id: item.id,
+        name: item.person_name,
+        surname: item.person_surname,
+        patronymic: item.person_patronymic,
+        date_from: item.valid_from_date,
+        date_until: item.valid_until_date,
+        date_delta: dateDelta,
+        org: item.organization.organization_name,
+        photo: item.vectors[0].photo,
+        transport: item.transport.mark + " / " + item.transport.grz,
+      };
+    });
+    setTableData(preparedData);
+  };
 
   // Sort the data based on the selected column
-  const sortedData = [...data].sort((a, b) => {
-    if (sortBy && sortOrder) {
-      const aValue = a[sortBy];
-      const bValue = b[sortBy];
+  const sortedData = [...tableData].sort((a, b) => {
+    const aValue = getNestedValue(a, sortBy);
+    const bValue = getNestedValue(b, sortBy);
 
-      if (sortOrder === "asc") {
+    if (sortOrder === "asc") {
+      if (typeof aValue === "string" && typeof bValue === "string") {
         return aValue.localeCompare(bValue);
       } else {
+        return aValue - bValue;
+      }
+    } else {
+      if (typeof aValue === "string" && typeof bValue === "string") {
         return bValue.localeCompare(aValue);
+      } else {
+        return bValue - aValue;
       }
     }
-    return 0;
   });
+
+  function getNestedValue(obj, path) {
+    const keys = path.split(".");
+    let value = obj;
+    for (const key of keys) {
+      value = value[key];
+      if (value === undefined) {
+        break;
+      }
+    }
+    return value;
+  }
 
   // Paginate the data
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -112,6 +261,7 @@ const EmployeesTable = () => {
 
   // Toggle the sort order when a column header is clicked
   const handleSort = (columnName) => {
+    console.log("yeah");
     if (columnName === sortBy) {
       setSortOrder(sortOrder === "asc" ? "desc" : "asc");
     } else {
@@ -126,33 +276,56 @@ const EmployeesTable = () => {
   };
 
   // Calculate total number of pages
-  const totalPages = Math.ceil(data.length / itemsPerPage);
+  const totalPages = Math.ceil(tableData.length / itemsPerPage);
 
   return (
     <TableContainer>
       <Table>
-        <thead>
+        <TableHeader>
           <tr>
-            <TableHeader onClick={() => handleSort("name")}>ФИО</TableHeader>
-            <TableHeader onClick={() => handleSort("organization")}>
-              Организация
-            </TableHeader>
-            <TableHeader onClick={() => handleSort("expiration")}>
-              Срок действия
-            </TableHeader>
-            <TableHeader onClick={() => handleSort("transport")}>
-              Транспорт
-            </TableHeader>
-            <TableHeader>Фото</TableHeader>
+            <ColumnHeader
+              title={"ФИО"}
+              sortFunc={handleSort}
+              sortBy={"name"}
+              sortOrder={sortOrder}
+            />
+            <ColumnHeader
+              title={"Организация"}
+              sortFunc={handleSort}
+              sortBy={"org"}
+              sortOrder={sortOrder}
+            />
+            <ColumnHeader
+              title={"Срок действия"}
+              sortFunc={handleSort}
+              sortBy={"date_delta"}
+              sortOrder={sortOrder}
+            />
+            <ColumnHeader
+              title={"Транспорт"}
+              sortFunc={handleSort}
+              sortBy={"transport"}
+              sortOrder={sortOrder}
+            />
+            <TableHeaderLabel>Фото</TableHeaderLabel>
           </tr>
-        </thead>
+        </TableHeader>
         <TableBody>
           {paginatedData.map((item) => (
             <TableRow key={item.id}>
-              <TableData>{item.name}</TableData>
-              <TableData>{item.organization}</TableData>
-              <TableData>{item.expiration}</TableData>
-              <TableData>{item.transport}</TableData>
+              <TableData style={{ width: "23%" }}>
+                {item.surname} {item.name[0]}. {item.patronymic[0]}.
+              </TableData>
+              <TableData style={{ width: "25%" }}>{item.org}</TableData>
+              <TableData style={{ width: "29%" }}>
+                {/*{item.date_from} -> {item.date_until} : {item.date_delta}*/}
+                <Expiration
+                  from={item.date_from}
+                  until={item.date_until}
+                  delta={item.date_delta}
+                />
+              </TableData>
+              <TableData style={{ width: "23%" }}>{item.transport}</TableData>
               <TableData>
                 <Image src={item.photo} alt={item.name} />
               </TableData>
