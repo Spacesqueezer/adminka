@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styled, { useTheme } from "styled-components";
-import FakeData from "../../fake_data.json";
 import FakePersons from "../../fake_persons.json";
 import SortArrow from "./images/Sort_Arrow.png";
 import GreenArrow from "./images/green_arrow.png";
 import RedArrow from "./images/red_arrow.png";
+import DeleteIcon from "./images/Delite.png";
+import EditIcon from "./images/Edit.png";
 
 const TableContainer = styled.div`
   width: 100%;
@@ -44,11 +45,13 @@ const TableHeaderLabel = styled.th`
 `;
 
 const TableRow = styled.tr`
-  &:nth-child(even) {
-    background: ${(props) => props.theme.TableRowEvenBackground};
-  }
+  align-items: center;
+  // &:nth-child(even) {
+  //   background: ${(props) => props.theme.TableRowEvenBackground};
+  // }
   td {
     height: 52px;
+    vertical-align: middle;
   }
 `;
 
@@ -89,14 +92,6 @@ const PaginationButton = styled.button`
   cursor: pointer;
 `;
 
-// const SortIndicator = ({ sortOrder, themeColor }) => {
-//   return (
-//     <div>
-//       <img src={SortArrow}></img>
-//     </div>
-//   );
-// };
-
 const ExpirationContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -104,6 +99,7 @@ const ExpirationContainer = styled.div`
   width: 100%;
   height: 100%;
 `;
+
 const ExpirationDate = styled.p`
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -137,6 +133,16 @@ const ExpirationDeltaText = styled.p`
   letter-spacing: 0em;
   text-align: left;
   color: white;
+`;
+
+const EditDeleteButtons = styled.img``;
+
+const EditDeleteContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 18px;
+  width: 62px;
+  justify-content: space-between;
 `;
 
 const Expiration = ({ from, until, delta }) => {
@@ -261,7 +267,6 @@ const EmployeesTable = () => {
 
   // Toggle the sort order when a column header is clicked
   const handleSort = (columnName) => {
-    console.log("yeah");
     if (columnName === sortBy) {
       setSortOrder(sortOrder === "asc" ? "desc" : "asc");
     } else {
@@ -328,6 +333,12 @@ const EmployeesTable = () => {
               <TableData style={{ width: "23%" }}>{item.transport}</TableData>
               <TableData>
                 <Image src={item.photo} alt={item.name} />
+              </TableData>
+              <TableData>
+                <EditDeleteContainer>
+                  <EditDeleteButtons src={EditIcon} />
+                  <EditDeleteButtons src={DeleteIcon} />
+                </EditDeleteContainer>
               </TableData>
             </TableRow>
           ))}

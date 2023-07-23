@@ -14,7 +14,8 @@ export const LightTheme = {
   TableHeaderBackground: "#fff",
   TableHeaderFont: '#ACAAB4',
   ExpirationDateGreen: '#1FCF9B',
-  ExpirationDateRed: '#EB5650'
+  ExpirationDateRed: '#EB5650',
+  // TableRowEvenBackground: 'rgba(19,52,218,0.52)'
 };
 export const DarkTheme = {
   SideMenuBackground: "#d007ff",
