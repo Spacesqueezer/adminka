@@ -5,6 +5,7 @@ import FilterImg from "../../project_images/filter.png";
 import AddImg from "./images/Add_ico.png";
 import EmployeesTable from "./EmployeesTable";
 
+
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
@@ -43,15 +44,15 @@ const Separator = styled.hr`
   margin: 0;
 `;
 
-const FilterFunction = () => {
-  alert("filter");
-};
+const EmployeesScreen = ({ showModal, closeModal }) => {
+  const FilterFunction = () => {
+    alert("filter");
+  };
 
-const AddFunction = () => {
-  alert("Add");
-};
+  const AddFunction = () => {
+    showModal("newEmployee");
+  };
 
-const EmployeesScreen = () => {
   return (
     <Wrapper>
       <HeaderMenuContainer>

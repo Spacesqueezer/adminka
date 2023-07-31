@@ -1,4 +1,7 @@
 export const LightTheme = {
+  White: "#fff",
+  Black: "#000",
+  LightGray: "#ACAAB4",
   SideMenuBackground: "#053480",
   SideMenuBackgroundHover: "#031f50",
   SideMenuTitle: "#fff",
@@ -18,6 +21,9 @@ export const LightTheme = {
   // TableRowEvenBackground: 'rgba(19,52,218,0.52)'
 };
 export const DarkTheme = {
+  White: "#000",
+  Black: "#fff",
+  LightGray: "#c2a517",
   SideMenuBackground: "#d007ff",
   SideMenuBackgroundHover: "#17c29b",
   SideMenuTitle: "#0000ff",

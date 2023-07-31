@@ -49,7 +49,7 @@ const Body = styled.div`
   top: 158px;
   right: 40px;
   bottom: 30px;
-  
+
   min-width: 570px;
 
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.05);
@@ -58,22 +58,23 @@ const Body = styled.div`
   padding: 30px 40px;
 `;
 
-const screens = {
-  Сотрудники: <EmployeesScreen />,
-  Посетители: <VisitorsScreen />,
-  Транспорт: <TransportScreen />,
-};
-
 const Logout = () => {
   alert("Выйтинах");
 };
 
-const ContentArea = ({ selectedMenu, title }) => {
+const ContentArea = ({ selectedMenu, title, showModal, closeModal }) => {
   const { toggleTheme } = useContext(ThemeContext);
 
   const ChangeTheme = () => {
     toggleTheme();
   };
+
+  const screens = {
+    Сотрудники: <EmployeesScreen showModal={showModal} />,
+    Посетители: <VisitorsScreen showModal={showModal} />,
+    Транспорт: <TransportScreen showModal={showModal} />,
+  };
+
   return (
     <Wrapper>
       <Menu>

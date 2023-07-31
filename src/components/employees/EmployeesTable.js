@@ -5,7 +5,7 @@ import SortArrow from "./images/Sort_Arrow.png";
 import GreenArrow from "./images/green_arrow.png";
 import RedArrow from "./images/red_arrow.png";
 import DeleteIcon from "./images/Delite.png";
-import EditIcon from "./images/Edit.png";
+import EditIcon from "./images/Edit_blue.png";
 
 const TableContainer = styled.div`
   width: 100%;
@@ -46,9 +46,6 @@ const TableHeaderLabel = styled.th`
 
 const TableRow = styled.tr`
   align-items: center;
-  // &:nth-child(even) {
-  //   background: ${(props) => props.theme.TableRowEvenBackground};
-  // }
   td {
     height: 52px;
     vertical-align: middle;
@@ -186,6 +183,7 @@ const ColumnHeader = ({ title, sortOrder, sortBy: sortByOrder, sortFunc }) => {
       <img
         src={SortArrow}
         style={{ transform: `rotate(${rotateDegree}deg)` }}
+        alt={title}
       />
     </TableHeaderLabel>
   );
