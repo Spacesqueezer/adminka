@@ -24,17 +24,16 @@ const Input = styled.input`
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  //width:100%;
   height: 40px;
 `;
 
-const InputWithLabel = ({ label, type, value, onChange }) => {
+const TextInput = ({ label, value, onChange }) => {
   return (
     <Container>
       <Label>{label}</Label>
-      <Input type={type} value={value} onChange={onChange} />
+      <Input value={value} onChange={onChange} />
     </Container>
   );
 };
 
-export default InputWithLabel;
+export default TextInput;

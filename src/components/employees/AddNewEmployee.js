@@ -1,8 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import ImagePlaceholder from "./images/empty-image.png";
-import EditPencil from "./images/Edit_white.png";
-import InputWithLabel from "../common components/InputWithLabel";
+import TextInput from "../common/common components/TextInput";
+import ImagePicker from "../common/common components/ImagePicker";
+import ModalLogo from "../common/common components/ModalLogo";
+import CustomButton from "../common/common components/CustomButton";
+import Logo from "./../common/images/employee-modal-logo.png";
+import DateInput from "../common/common components/DateInput";
 
 const Container = styled.div`
   width: 1220px;
@@ -46,7 +49,7 @@ const Footer = styled.div`
 
 const Separator = styled.hr`
   border: 1px solid #dbd7d5;
-  width: 100%;
+  width: 95%;
   margin: 0;
 `;
 
@@ -109,79 +112,15 @@ const InputsRow = styled.div`
   flex-direction: row;
 `;
 
-//----------------------------------------IMAGE PICKER----------------------------------------
-const ImgPickContainer = styled.div`
-  position: relative;
-  width: 250px;
-  height: 320px;
-  margin-left: 37px;
-  margin-top: 40px;
-  border-radius: 12px;
-  overflow: hidden;
-`;
-
-const UserImage = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
-
-const LoadImageButton = styled.div`
-  width: 45px;
-  height: 45px;
-  background: ${(props) => props.theme.BlueBackground};
+const ButtonsContainer = styled.div`
+  width: 242px;
+  right: 43px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   position: absolute;
-  border-radius: 8px;
-  left: 16px;
-  bottom: 15px;
-  cursor: pointer;
-  padding: 13px;
-  box-sizing: border-box;
 `;
-
-const HiddenInput = styled.input`
-  display: none;
-`;
-
-const SelectPhotoEditButtonImage = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
-const ImagePicker = () => {
-  const [image, setImage] = useState(ImagePlaceholder);
-  const fileInputRef = useRef(null);
-
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setImage(reader.result);
-      };
-      reader.readAsDataURL(file);
-    }
-  };
-
-  const handleLoadButtonClick = () => {
-    fileInputRef.current.click();
-  };
-
-  return (
-    <ImgPickContainer>
-      <UserImage src={image} alt="error" />
-      <LoadImageButton onClick={handleLoadButtonClick}>
-        <SelectPhotoEditButtonImage src={EditPencil} alt="edit" />
-        <HiddenInput
-          type="file"
-          accept="image/*"
-          onChange={handleImageChange}
-          ref={fileInputRef}
-        />
-      </LoadImageButton>
-    </ImgPickContainer>
-  );
-};
 
 //--------------------------------------------------------------------------------------------
 
@@ -198,6 +137,7 @@ const AddNewEmployee = ({ onClose }) => {
     <Container>
       <LeftSide>
         <ImagePicker />
+        <ModalLogo source={Logo} />
       </LeftSide>
       <RightSide>
         <Header>
@@ -209,55 +149,45 @@ const AddNewEmployee = ({ onClose }) => {
           <InputsBlock style={{ flex: 222 }}>
             <BlockHeader>Данные сотрудника</BlockHeader>
             <InputsRow>
-              <InputWithLabel label={"Имя"} type={"text"} />
-              <InputWithLabel label={"Фамилия"} type={"text"} />
-              <InputWithLabel label={"Отчество"} type={"text"} />
+              <TextInput label={"Имя"} />
+              <TextInput label={"Фамилия"} />
+              <TextInput label={"Отчество"} />
             </InputsRow>
             <InputsRow>
-              <InputWithLabel
-                label={"Наименование организации"}
-                type={"text"}
-              />
-              <InputWithLabel
-                  label={"Должность"}
-                  type={"text"}
-              />
+              <TextInput label={"Наименование организации"} />
+              <TextInput label={"Должность"} />
             </InputsRow>
           </InputsBlock>
           <InputsBlock style={{ flex: 139 }}>
             <BlockHeader>Пропуск сотрудника</BlockHeader>
             <InputsRow>
-            <InputWithLabel
-                label={"Дата начала действия"}
-                type={"date"}
-            />
-            <InputWithLabel
-                label={"Окончание срока действия"}
-                type={"date"}
-            />
+              <DateInput label={"Дата начала действия"} />
+              <DateInput label={"Окончание срока действия"} />
             </InputsRow>
           </InputsBlock>
           <InputsBlock style={{ flex: 145 }}>
             <BlockHeader>Транспортное средство</BlockHeader>
             <InputsRow>
-              <InputWithLabel
-                  label={"Модель"}
-                  type={"text"}
-              />
-              <InputWithLabel
-                  label={"Гос. номер"}
-                  type={"text"}
-              />
-              <InputWithLabel
-                  label={"Окончание срока действия"}
-                  type={"date"}
-              />
+              <TextInput label={"Модель"} />
+              <TextInput label={"Гос. номер"} />
+              <TextInput label={"Пропуск"} />
             </InputsRow>
           </InputsBlock>
         </Body>
         <Separator />
         <Footer>
-          <button onClick={submitFunction}>САБМИТ</button>
+          <ButtonsContainer>
+            <CustomButton
+              type={"cancel"}
+              label={"Отмена"}
+              callback={submitFunction}
+            />
+            <CustomButton
+              type={"confirm"}
+              label={"Добавить"}
+              callback={submitFunction}
+            />
+          </ButtonsContainer>
         </Footer>
       </RightSide>
     </Container>

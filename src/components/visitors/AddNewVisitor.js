@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
-
+import ImagePicker from "../common/common components/ImagePicker";
+import ModalLogo from "../common/common components/ModalLogo";
+import Logo from "./../common/images/employee-modal-logo.png";
 
 const Container = styled.div`
   width: 1220px;
-  height: 770px;
+  height: 860px;
   background: white;
   display: flex;
   flex-direction: row;
@@ -73,14 +75,12 @@ const CloseButton = styled.button`
   }
 `;
 
-
-
-
-
 const AddNewVisitor = ({ onClose }) => {
   return (
     <Container>
       <LeftSide>
+        <ImagePicker />
+        <ModalLogo source={Logo} />
       </LeftSide>
       <RightSide>
         <Header>
