@@ -5,7 +5,6 @@ import FilterImg from "../../project_images/filter.png";
 import AddImg from "./images/Add_ico.png";
 import EmployeesTable from "./EmployeesTable";
 
-
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
@@ -49,6 +48,7 @@ const EmployeesScreen = ({ showModal, closeModal }) => {
     alert("filter");
   };
 
+  //Здесь указывается, какое модальное окно будет показано. Список модалок в App.js
   const AddFunction = () => {
     showModal("newEmployee");
   };

@@ -21,6 +21,8 @@ const LeftSide = styled.div`
 `;
 
 const RightSide = styled.div`
+  display: flex;
+  flex-direction: column;
   flex: 89;
 `;
 
@@ -29,6 +31,16 @@ const Header = styled.div`
   flex-direction: row;
   justify-content: space-between;
   height: 71px;
+`;
+
+const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 676;
+`;
+
+const Footer = styled.div`
+  flex: 114;
 `;
 
 const HeaderLabel = styled.p`
@@ -75,6 +87,23 @@ const CloseButton = styled.button`
   }
 `;
 
+const Separator = styled.hr`
+  border: 1px solid #dbd7d5;
+  width: 95%;
+  margin: 0;
+`;
+
+const InputsBlock = styled.div``;
+
+const BlockHeader = styled.p`
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+`;
+
 const AddNewVisitor = ({ onClose }) => {
   return (
     <Container>
@@ -87,6 +116,23 @@ const AddNewVisitor = ({ onClose }) => {
           <HeaderLabel>Добавить нового посетителя</HeaderLabel>
           <CloseButton onClick={onClose} />
         </Header>
+        <Separator />
+        <Body>
+          <InputsBlock style={{ flex: 222 }}>
+            <BlockHeader>Данные посетителя</BlockHeader>
+          </InputsBlock>
+          <InputsBlock style={{ flex: 139 }}>
+            <BlockHeader>Транспортное средство</BlockHeader>
+          </InputsBlock>
+          <InputsBlock style={{ flex: 139 }}>
+            <BlockHeader>Место посещения</BlockHeader>
+          </InputsBlock>
+          <InputsBlock style={{ flex: 145 }}>
+            <BlockHeader>Пропуск посетителя</BlockHeader>
+          </InputsBlock>
+        </Body>
+        <Separator />
+        <Footer></Footer>
       </RightSide>
     </Container>
   );

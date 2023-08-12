@@ -26,7 +26,7 @@ const InputContainer = styled.div`
 `;
 
 const Input = styled.input`
-  padding: 5px 30px 5px 5px;
+  //padding: 5px 30px 5px 5px;
   border: 1px solid #ccc;
   border-radius: 6px;
   height: 40px;
@@ -34,7 +34,7 @@ const Input = styled.input`
 
   ::-webkit-calendar-picker-indicator {
     display: none;
-    color: transparent;
+    opacity: 0;
   }
 `;
 
@@ -47,13 +47,18 @@ const Icon = styled.img`
   cursor: pointer;
 `;
 
-const DateInput = ({ label, value, onChange }) => {
+const DateInput = ({ label, value, name, onInput }) => {
+  const handleInput = (e) => {
+    const { name, value } = e.target;
+    onInput(name, value);
+  };
+
   return (
     <Container>
       <Label>{label}</Label>
       <InputContainer>
-        <Input type="date" value={value} onChange={onChange} />
-        <Icon src={CalendarIcon} alt="Calendar Icon" />
+        <Input type="date" value={value} name={name} onChange={handleInput} />
+        {/*<Icon src={CalendarIcon} alt="Calendar Icon" />*/}
       </InputContainer>
     </Container>
   );

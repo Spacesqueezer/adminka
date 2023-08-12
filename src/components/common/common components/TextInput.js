@@ -27,11 +27,16 @@ const Input = styled.input`
   height: 40px;
 `;
 
-const TextInput = ({ label, value, onChange }) => {
+const TextInput = ({ label, name, value, onInput }) => {
+  const handleInput = (e) => {
+    const { name, value } = e.target;
+    onInput(name, value);
+  };
+
   return (
     <Container>
       <Label>{label}</Label>
-      <Input value={value} onChange={onChange} />
+      <Input value={value} onChange={handleInput} name={name} />
     </Container>
   );
 };

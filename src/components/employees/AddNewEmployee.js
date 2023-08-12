@@ -126,12 +126,37 @@ const ButtonsContainer = styled.div`
 
 const AddNewEmployee = ({ onClose }) => {
   const [formData, setFormData] = useState({
-    name: "",
-    surname: "",
-    patronymic: "",
+    requestid: "",
+    person_name: "",
+    person_surname: "",
+    person_patronymic: "",
+    valid_from_date: "",
+    valid_until_date: "",
+    organization_id: 0,
+    transport_id: 0,
+    transport: {
+      mark: "",
+      grz: "",
+      organization_id: 0,
+      driver_name: "",
+      driver_surname: "",
+      driver_patronymic: "",
+      valid_from_date: "",
+      valid_until_date: "2023-08-02",
+      base64_photo: "",
+    },
   });
 
-  const submitFunction = () => {};
+  const submitFunction = () => {
+    console.log(formData);
+  };
+
+  const handleInputChange = (name, value) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
 
   return (
     <Container>
@@ -149,9 +174,21 @@ const AddNewEmployee = ({ onClose }) => {
           <InputsBlock style={{ flex: 222 }}>
             <BlockHeader>Данные сотрудника</BlockHeader>
             <InputsRow>
-              <TextInput label={"Имя"} />
-              <TextInput label={"Фамилия"} />
-              <TextInput label={"Отчество"} />
+              <TextInput
+                label={"Имя"}
+                name={"person_name"}
+                onInput={handleInputChange}
+              />
+              <TextInput
+                label={"Фамилия"}
+                name={"person_surname"}
+                onInput={handleInputChange}
+              />
+              <TextInput
+                label={"Отчество"}
+                name={"person_patronymic"}
+                onInput={handleInputChange}
+              />
             </InputsRow>
             <InputsRow>
               <TextInput label={"Наименование организации"} />
@@ -161,8 +198,8 @@ const AddNewEmployee = ({ onClose }) => {
           <InputsBlock style={{ flex: 139 }}>
             <BlockHeader>Пропуск сотрудника</BlockHeader>
             <InputsRow>
-              <DateInput label={"Дата начала действия"} />
-              <DateInput label={"Окончание срока действия"} />
+              <DateInput label={"Дата начала действия"} name={"valid_from_date"} onInput={handleInputChange} />
+              <DateInput label={"Окончание срока действия"} name={"valid_until_date"} onInput={handleInputChange} />
             </InputsRow>
           </InputsBlock>
           <InputsBlock style={{ flex: 145 }}>
