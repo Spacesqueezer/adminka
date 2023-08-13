@@ -1,11 +1,24 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import TextInput from "../common/common components/TextInput";
+import TextInputWithLabel from "../common/common components/TextInputWithLabel";
 import ImagePicker from "../common/common components/ImagePicker";
 import ModalLogo from "../common/common components/ModalLogo";
 import CustomButton from "../common/common components/CustomButton";
 import Logo from "./../common/images/employee-modal-logo.png";
-import DateInput from "../common/common components/DateInput";
+import DateInputWithLabel from "../common/common components/DateInputWithLabel";
+import {
+  Separator,
+  CloseButton,
+  LeftSide,
+  RightSide,
+  Header,
+  Footer,
+  HeaderLabel,
+  InputsBlock,
+  BlockHeader,
+  InputsRow,
+  ButtonsContainer,
+} from "../common/common components/modalWindowComponents";
 
 const Container = styled.div`
   width: 1220px;
@@ -17,114 +30,16 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const LeftSide = styled.div`
-  flex: 33;
-  background: #f4f8fb;
-  border-radius: 12px;
-`;
-
-const RightSide = styled.div`
-  flex: 89;
-  display: flex;
-  flex-direction: column;
-  padding-left: 36px;
-`;
-
-const Header = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex: 71;
-`;
-
 const Body = styled.div`
   display: flex;
   flex-direction: column;
   flex: 535;
 `;
 
-const Footer = styled.div`
-  flex: 114;
-`;
-
-const Separator = styled.hr`
-  border: 1px solid #dbd7d5;
-  width: 95%;
-  margin: 0;
-`;
-
-const HeaderLabel = styled.p`
-  margin-top: 40px;
-  margin-bottom: 10px;
-  font-family: Roboto, sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 26px;
-  letter-spacing: 0;
-  text-align: left;
-  color: ${(props) => props.theme.Header};
-`;
-
-const CloseButton = styled.button`
-  width: 12px;
-  height: 12px;
-  margin-top: 28px;
-  margin-right: 28px;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 2px;
-    background-color: ${(props) => props.theme.LightGray};
-  }
-
-  &:before {
-    transform: rotate(45deg);
-  }
-
-  &:after {
-    transform: rotate(-45deg);
-  }
-`;
-
-const InputsBlock = styled.div``;
-
-const BlockHeader = styled.p`
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
-`;
-
-const InputsRow = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-const ButtonsContainer = styled.div`
-  width: 242px;
-  right: 43px;
-  bottom: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: absolute;
-`;
-
 //--------------------------------------------------------------------------------------------
 
 const AddNewEmployee = ({ onClose }) => {
+  // Стейт для хранения данных формы
   const [formData, setFormData] = useState({
     requestid: "",
     person_name: "",
@@ -147,15 +62,35 @@ const AddNewEmployee = ({ onClose }) => {
     },
   });
 
+  // Функция отправки формы
   const submitFunction = () => {
     console.log(formData);
   };
 
+  // Обработка ввода в инпут
   const handleInputChange = (name, value) => {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
+    let updatedFormData = { ...formData };
+
+    if (name.startsWith("transport")) {
+      const dotIndex = name.indexOf(".");
+      if (dotIndex !== -1) {
+        const transportKey = name.substring(dotIndex + 1);
+        updatedFormData = {
+          ...updatedFormData,
+          transport: {
+            ...updatedFormData.transport,
+            [transportKey]: value,
+          },
+        };
+      }
+    } else {
+      updatedFormData = {
+        ...updatedFormData,
+        [name]: value,
+      };
+    }
+
+    setFormData(updatedFormData);
   };
 
   return (
@@ -174,40 +109,56 @@ const AddNewEmployee = ({ onClose }) => {
           <InputsBlock style={{ flex: 222 }}>
             <BlockHeader>Данные сотрудника</BlockHeader>
             <InputsRow>
-              <TextInput
-                label={"Имя"}
-                name={"person_name"}
-                onInput={handleInputChange}
-              />
-              <TextInput
+              <TextInputWithLabel
                 label={"Фамилия"}
                 name={"person_surname"}
                 onInput={handleInputChange}
               />
-              <TextInput
+              <TextInputWithLabel
+                label={"Имя"}
+                name={"person_name"}
+                onInput={handleInputChange}
+              />
+              <TextInputWithLabel
                 label={"Отчество"}
                 name={"person_patronymic"}
                 onInput={handleInputChange}
               />
             </InputsRow>
             <InputsRow>
-              <TextInput label={"Наименование организации"} />
-              <TextInput label={"Должность"} />
+              <TextInputWithLabel label={"Наименование организации"} />
+              <TextInputWithLabel label={"Должность"} />
             </InputsRow>
           </InputsBlock>
           <InputsBlock style={{ flex: 139 }}>
             <BlockHeader>Пропуск сотрудника</BlockHeader>
             <InputsRow>
-              <DateInput label={"Дата начала действия"} name={"valid_from_date"} onInput={handleInputChange} />
-              <DateInput label={"Окончание срока действия"} name={"valid_until_date"} onInput={handleInputChange} />
+              <DateInputWithLabel
+                label={"Дата начала действия"}
+                name={"valid_from_date"}
+                onInput={handleInputChange}
+              />
+              <DateInputWithLabel
+                label={"Окончание срока действия"}
+                name={"valid_until_date"}
+                onInput={handleInputChange}
+              />
             </InputsRow>
           </InputsBlock>
           <InputsBlock style={{ flex: 145 }}>
             <BlockHeader>Транспортное средство</BlockHeader>
             <InputsRow>
-              <TextInput label={"Модель"} />
-              <TextInput label={"Гос. номер"} />
-              <TextInput label={"Пропуск"} />
+              <TextInputWithLabel
+                label={"Модель"}
+                name={"transport.mark"}
+                onInput={handleInputChange}
+              />
+              <TextInputWithLabel
+                label={"Гос. номер"}
+                name={"transport.grz"}
+                onInput={handleInputChange}
+              />
+              <DateInputWithLabel label={"Пропуск"} />
             </InputsRow>
           </InputsBlock>
         </Body>
@@ -217,7 +168,7 @@ const AddNewEmployee = ({ onClose }) => {
             <CustomButton
               type={"cancel"}
               label={"Отмена"}
-              callback={submitFunction}
+              callback={onClose}
             />
             <CustomButton
               type={"confirm"}

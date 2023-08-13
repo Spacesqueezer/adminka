@@ -26,7 +26,6 @@ const Menu = styled.div`
 
 const Header = styled.p`
   position: absolute;
-  width: 253px;
   height: 30px;
   left: 361px;
   top: 102px;
