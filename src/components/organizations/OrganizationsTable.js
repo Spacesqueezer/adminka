@@ -13,65 +13,15 @@ import {
   Image,
   Pagination,
   PaginationButton,
-  ExpirationContainer,
-  ExpirationDate,
-  ExpirationArrow,
-  ExpirationDeltaContainer,
-  ExpirationDeltaText,
   EditDeleteContainer,
   EditDeleteButtons,
+  Expiration,
+  ColumnHeader,
 } from "../common/common components/tableComponents";
-import {useTheme} from "styled-components";
+import { useTheme } from "styled-components";
 import RedArrow from "../employees/images/red_arrow.png";
 import GreenArrow from "../employees/images/green_arrow.png";
 import SortArrow from "../employees/images/Sort_Arrow.png";
-
-const Expiration = ({ from, until, delta }) => {
-  const theme = useTheme();
-  const [isExpired, setIsExpired] = useState(false);
-
-  useEffect(() => {
-    delta < 0 ? setIsExpired(true) : setIsExpired(false);
-  }, [delta]);
-  return (
-      <ExpirationContainer>
-        <ExpirationDate>{from}</ExpirationDate>
-        <ExpirationArrow src={isExpired ? RedArrow : GreenArrow} />
-        <ExpirationDate
-            style={{
-              color: isExpired ? theme.ExpirationDateRed : "black",
-            }}
-        >
-          {until}
-        </ExpirationDate>
-        <ExpirationDeltaContainer
-            style={{
-              background: isExpired
-                  ? theme.ExpirationDateRed
-                  : theme.ExpirationDateGreen,
-            }}
-        >
-          <ExpirationDeltaText>{Math.abs(delta)}</ExpirationDeltaText>
-        </ExpirationDeltaContainer>
-      </ExpirationContainer>
-  );
-};
-
-const ColumnHeader = ({ title, sortOrder, sortBy: sortByOrder, sortFunc }) => {
-  const isAscending = sortOrder === "asc";
-  const rotateDegree = isAscending ? 0 : 180;
-
-  return (
-      <TableHeaderLabel onClick={() => sortFunc(sortByOrder)}>
-        {title}{" "}
-        <img
-            src={SortArrow}
-            style={{ transform: `rotate(${rotateDegree}deg)` }}
-            alt={title}
-        />
-      </TableHeaderLabel>
-  );
-};
 
 const OrganizationsTable = () => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by

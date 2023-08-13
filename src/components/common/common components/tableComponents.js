@@ -1,4 +1,8 @@
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
+import React, { useEffect, useState } from "react";
+import RedArrow from "../../employees/images/red_arrow.png";
+import GreenArrow from "../../employees/images/green_arrow.png";
+import SortArrow from "../../employees/images/Sort_Arrow.png";
 
 export const TableContainer = styled.div`
   width: 100%;
@@ -135,6 +139,58 @@ export const EditDeleteContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const Expiration = ({ from, until, delta }) => {
+  const theme = useTheme();
+  const [isExpired, setIsExpired] = useState(false);
+
+  useEffect(() => {
+    delta < 0 ? setIsExpired(true) : setIsExpired(false);
+  }, [delta]);
+  return (
+    <ExpirationContainer>
+      <ExpirationDate>{from}</ExpirationDate>
+      <ExpirationArrow src={isExpired ? RedArrow : GreenArrow} />
+      <ExpirationDate
+        style={{
+          color: isExpired ? theme.ExpirationDateRed : "black",
+        }}
+      >
+        {until}
+      </ExpirationDate>
+      <ExpirationDeltaContainer
+        style={{
+          background: isExpired
+            ? theme.ExpirationDateRed
+            : theme.ExpirationDateGreen,
+        }}
+      >
+        <ExpirationDeltaText>{Math.abs(delta)}</ExpirationDeltaText>
+      </ExpirationDeltaContainer>
+    </ExpirationContainer>
+  );
+};
+
+export const ColumnHeader = ({
+  title,
+  sortOrder,
+  sortBy: sortByOrder,
+  sortFunc,
+}) => {
+  const isAscending = sortOrder === "asc";
+  const rotateDegree = isAscending ? 0 : 180;
+
+  return (
+    <TableHeaderLabel onClick={() => sortFunc(sortByOrder)}>
+      {title}{" "}
+      <img
+        src={SortArrow}
+        style={{ transform: `rotate(${rotateDegree}deg)` }}
+        alt={title}
+      />
+    </TableHeaderLabel>
+  );
+};
+
 export default {
   TableContainer,
   Table,
@@ -153,4 +209,6 @@ export default {
   ExpirationDeltaText,
   EditDeleteContainer,
   EditDeleteButtons,
+  Expiration,
+  ColumnHeader,
 };
