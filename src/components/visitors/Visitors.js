@@ -4,82 +4,54 @@ import ButtonWithIcon from "../header_menu/ButtonWithIcon";
 import FilterImg from "../../project_images/filter.png";
 import AddImg from "./images/Add_ico.png";
 import VisitorsTable from "./VisitorsTable";
-
-const Wrapper = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-`;
-
-const TableContainer = styled.div`
-  position: relative;
-  flex: 84;
-  overflow: hidden;
-`;
-
-const HeaderMenuContainer = styled.div`
-  flex: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`;
-
-const Elements = styled.div`
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-const SearchAndFilters = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-const Separator = styled.hr`
-  border: 1px solid #a3a9c8;
-  width: 100%;
-  margin: 0;
-`;
+import {
+  Wrapper,
+  HeaderMenuContainer,
+  TableContainer,
+  Elements,
+  SearchAndFilters,
+  Separator,
+} from "../common/common components/screenComponents";
 
 const VisitorsScreen = ({ showModal, closeModal }) => {
-    const FilterFunction = () => {
-        alert("filter");
-    };
+  const FilterFunction = () => {
+    alert("filter");
+  };
 
-    //Здесь указывается, какое модальное окно будет показано. Список модалок в App.js
-    const AddFunction = () => {
-        showModal("newVisitor");
-    };
+  //Здесь указывается, какое модальное окно будет показано. Список модалок в App.js
+  const AddFunction = () => {
+    showModal("newVisitor");
+  };
 
-    return (
-        <Wrapper>
-            <HeaderMenuContainer>
-                <Elements>
-                    <SearchAndFilters>
-                        <SearchInput />
-                        <ButtonWithIcon
-                            label={"Разделы"}
-                            backColor={(props) => props.theme.WhiteBackground}
-                            icon={FilterImg}
-                            callback={FilterFunction}
-                        />
-                    </SearchAndFilters>
-                    <ButtonWithIcon
-                        label={"Добавить"}
-                        backColor={(props) => props.theme.BlueBackground}
-                        icon={AddImg}
-                        callback={AddFunction}
-                    />
-                </Elements>
-                <Separator />
-            </HeaderMenuContainer>
-            <TableContainer>
-                <VisitorsTable />
-            </TableContainer>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <HeaderMenuContainer>
+        <Elements>
+          <SearchAndFilters>
+            <SearchInput />
+            <ButtonWithIcon
+              label={"Разделы"}
+              backColor={(props) => props.theme.White}
+              textColor={(props) => props.theme.Black}
+              icon={FilterImg}
+              callback={FilterFunction}
+            />
+          </SearchAndFilters>
+          <ButtonWithIcon
+            label={"Добавить"}
+            backColor={(props) => props.theme.LightBlue}
+            textColor={(props) => props.theme.White}
+            icon={AddImg}
+            callback={AddFunction}
+          />
+        </Elements>
+        <Separator />
+      </HeaderMenuContainer>
+      <TableContainer>
+        <VisitorsTable />
+      </TableContainer>
+    </Wrapper>
+  );
 };
 
 export default VisitorsScreen;

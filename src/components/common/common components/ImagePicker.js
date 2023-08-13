@@ -22,7 +22,7 @@ const UserImage = styled.img`
 const LoadImageButton = styled.div`
   width: 45px;
   height: 45px;
-  background: ${(props) => props.theme.BlueBackground};
+  background: ${(props) => props.theme.LightBlue};
   position: absolute;
   border-radius: 8px;
   left: 16px;

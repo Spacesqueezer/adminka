@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import AddNewEmployee from "./components/employees/AddNewEmployee";
 import AddNewVisitor from "./components/visitors/AddNewVisitor";
+import AddNewOrganization from "./components/organizations/AddNewOrganization";
 
 const StyledApp = styled.div`
   position: fixed;
@@ -68,6 +69,7 @@ function App() {
   const modals = {
     newEmployee: <AddNewEmployee onClose={CloseModal} />,
     newVisitor: <AddNewVisitor onClose={CloseModal} />,
+    newOrganization: <AddNewOrganization onClose={CloseModal} />,
   };
 
   return (

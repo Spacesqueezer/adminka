@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const Button = styled.button`
   background: ${(props) =>
-    props.type === "confirm" ? props.theme.BlueBackground : props.theme.White};
+    props.type === "confirm" ? props.theme.LightBlue : props.theme.White};
   color: ${(props) =>
     props.type === "confirm" ? props.theme.White : props.theme.Black};
   width: 115px;
   height: 40px;
   padding: 10px 25px 10px 25px;
   border-radius: 6px;
-  border: 1px solid ${(props) => props.theme.BlueBackground};
+  border: 1px solid ${(props) => props.theme.LightBlue};
   gap: 10px;
   cursor: pointer;
 `;

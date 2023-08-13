@@ -7,6 +7,7 @@ import ChangeThemeImg from "./images/theme_change.png";
 import LogoutImg from "./images/logout.png";
 import styled from "styled-components";
 import { ThemeContext } from "../../ThemeContext";
+import OrganizationsScreen from "../organizations/Organizations";
 
 const Wrapper = styled.div`
   flex: 54;
@@ -71,6 +72,7 @@ const ContentArea = ({ selectedMenu, title, showModal, closeModal }) => {
   const screens = {
     Сотрудники: <EmployeesScreen showModal={showModal} />,
     Посетители: <VisitorsScreen showModal={showModal} />,
+    Организации: <OrganizationsScreen showModal={showModal} />,
     Транспорт: <TransportScreen showModal={showModal} />,
   };
 
