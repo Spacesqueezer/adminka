@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const Separator = styled.hr`
   border: 1px solid #dbd7d5;
-  width: 95%;
   margin: 0;
 `;
 
 export const CloseButton = styled.button`
+  position: absolute;
   width: 12px;
   height: 12px;
-  margin-top: 28px;
-  margin-right: 28px;
+  top: 28px;
+  right: 28px;
   background: none;
   border: none;
   padding: 0;
@@ -48,9 +48,14 @@ export const RightSide = styled.div`
   flex-direction: column;
   flex: 89;
   padding-left: 37px;
+  padding-right: 44px;
 `;
 
 export const UpSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-left: 44px;
+  padding-right: 40px;
   flex: 355;
   background-color: ${(props) => props.theme.White};
 `;
@@ -89,6 +94,8 @@ export const InputsBlock = styled.div``;
 export const InputsRow = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
 `;
 
 export const ButtonsContainer = styled.div`

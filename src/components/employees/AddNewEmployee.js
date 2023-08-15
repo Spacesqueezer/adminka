@@ -139,14 +139,14 @@ const AddNewEmployee = ({ onClose }) => {
                 onInput={handleInputChange}
               />
             </InputsRow>
-            <InputsRow>
+            <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
               <DropListWithLabel label={"Наименование организации"} data={organizations} />
               <TextInputWithLabel label={"Должность"} />
             </InputsRow>
           </InputsBlock>
           <InputsBlock style={{ flex: 139 }}>
             <BlockHeader>Пропуск сотрудника</BlockHeader>
-            <InputsRow>
+            <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
               <DateInputWithLabel
                 label={"Дата начала действия"}
                 name={"valid_from_date"}

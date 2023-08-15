@@ -8,7 +8,7 @@ const Container = styled.div`
   margin-bottom: 10px;
   width: 250px;
   height: 63px;
-  margin-right: 30px;
+  //margin-right: 30px;
 `;
 
 const Label = styled.label`
@@ -30,7 +30,7 @@ const Input = styled.input`
   border: 1px solid #ccc;
   border-radius: 6px;
   height: 40px;
-  width: 100%;
+  width: 250px;
 
   ::-webkit-calendar-picker-indicator {
     display: none;

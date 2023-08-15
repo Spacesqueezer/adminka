@@ -6,8 +6,9 @@ const Container = styled.div`
   flex-direction: column;
   margin-bottom: 10px;
   width: 250px;
+  min-width: 250px;
   height: 63px;
-  margin-right: 30px;
+  //margin-right: 30px;
 `;
 
 const Label = styled.label`
@@ -27,14 +28,14 @@ const Input = styled.input`
   height: 100%;
 `;
 
-const TextInputWithLabel = ({ label, name, value, onInput }) => {
+const TextInputWithLabel = ({ label, name, value, onInput, style }) => {
   const handleInput = (e) => {
     const { name, value } = e.target;
     onInput(name, value);
   };
 
   return (
-    <Container>
+    <Container style={{ ...style }}>
       <Label>{label}</Label>
       <Input value={value} onChange={handleInput} name={name} />
     </Container>

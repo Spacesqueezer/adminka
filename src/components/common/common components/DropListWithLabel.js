@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   margin-bottom: 10px;
   width: 250px;
   height: 63px;
-  margin-right: 30px;
+  //margin-right: 30px;
 `;
 
 const Label = styled.p`
@@ -26,6 +26,7 @@ const Select = styled.select`
   border: 1px solid #ccc;
   border-radius: 6px;
   height: 100%;
+  width: 250px;
 `;
 
 const DropListWithLabel = ({ label, data }) => {

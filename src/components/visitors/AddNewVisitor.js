@@ -99,9 +99,9 @@ const AddNewVisitor = ({ onClose }) => {
         <ModalLogo source={Logo} />
       </LeftSide>
       <RightSide>
+        <CloseButton onClick={onClose} />
         <Header>
           <HeaderLabel>Добавить нового посетителя</HeaderLabel>
-          <CloseButton onClick={onClose} />
         </Header>
         <Separator />
         <Body>
@@ -125,7 +125,6 @@ const AddNewVisitor = ({ onClose }) => {
               />
             </InputsRow>
             <InputsRow>
-              {" "}
               <DateInputWithLabel
                 label={"Дата рождения"}
                 name={"birth_date"}
@@ -135,7 +134,7 @@ const AddNewVisitor = ({ onClose }) => {
           </InputsBlock>
           <InputsBlock style={{ flex: 139 }}>
             <BlockHeader>Транспортное средство</BlockHeader>
-            <InputsRow>
+            <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
               <TextInputWithLabel
                 label={"Модель"}
                 name={"transport.mark"}
@@ -170,7 +169,7 @@ const AddNewVisitor = ({ onClose }) => {
           </InputsBlock>
           <InputsBlock style={{ flex: 145 }}>
             <BlockHeader>Пропуск посетителя</BlockHeader>
-            <InputsRow>
+            <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
               <DateInputWithLabel label={"Дата начала действия"} />
               <DateInputWithLabel label={"Срок окончания действия"} />
             </InputsRow>
