@@ -24,7 +24,7 @@ const Input = styled.input`
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  height: 40px;
+  height: 100%;
 `;
 
 const TextInputWithLabel = ({ label, name, value, onInput }) => {

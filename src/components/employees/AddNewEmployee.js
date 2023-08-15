@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import TextInputWithLabel from "../common/common components/TextInputWithLabel";
 import ImagePicker from "../common/common components/ImagePicker";
@@ -19,6 +19,8 @@ import {
   InputsRow,
   ButtonsContainer,
 } from "../common/common components/modalWindowComponents";
+import DropListWithLabel from "../common/common components/DropListWithLabel";
+import FakeOrganizations from "../../FakeOrganizations.json";
 
 const Container = styled.div`
   width: 1220px;
@@ -35,8 +37,6 @@ const Body = styled.div`
   flex-direction: column;
   flex: 535;
 `;
-
-//--------------------------------------------------------------------------------------------
 
 const AddNewEmployee = ({ onClose }) => {
   // Стейт для хранения данных формы
@@ -61,10 +61,15 @@ const AddNewEmployee = ({ onClose }) => {
       base64_photo: "",
     },
   });
+  const [organizations, setOrganizations] = useState({});
 
   // Функция отправки формы
   const submitFunction = () => {
     console.log(formData);
+  };
+
+  const fetchData = () => {
+    return FakeOrganizations;
   };
 
   // Обработка ввода в инпут
@@ -92,6 +97,15 @@ const AddNewEmployee = ({ onClose }) => {
 
     setFormData(updatedFormData);
   };
+
+  useEffect(() => {
+    const organizations = fetchData();
+    const organizationsList = organizations.map((item) => ({
+      id: item.id,
+      name: item.organization_name,
+    }));
+    setOrganizations(organizationsList);
+  }, []);
 
   return (
     <Container>
@@ -126,7 +140,7 @@ const AddNewEmployee = ({ onClose }) => {
               />
             </InputsRow>
             <InputsRow>
-              <TextInputWithLabel label={"Наименование организации"} />
+              <DropListWithLabel label={"Наименование организации"} data={organizations} />
               <TextInputWithLabel label={"Должность"} />
             </InputsRow>
           </InputsBlock>
@@ -165,11 +179,7 @@ const AddNewEmployee = ({ onClose }) => {
         <Separator />
         <Footer>
           <ButtonsContainer>
-            <CustomButton
-              type={"cancel"}
-              label={"Отмена"}
-              callback={onClose}
-            />
+            <CustomButton type={"cancel"} label={"Отмена"} callback={onClose} />
             <CustomButton
               type={"confirm"}
               label={"Добавить"}

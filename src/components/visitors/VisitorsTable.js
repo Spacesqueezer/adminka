@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styled, { useTheme } from "styled-components";
 import FakePersons from "../../fake_persons.json";
-import SortArrow from "./images/Sort_Arrow.png";
-import GreenArrow from "./images/green_arrow.png";
-import RedArrow from "./images/red_arrow.png";
 import DeleteIcon from "./images/Delite.png";
 import EditIcon from "./images/Edit_blue.png";
 import {

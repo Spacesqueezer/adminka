@@ -39,7 +39,7 @@ export const CloseButton = styled.button`
 
 export const LeftSide = styled.div`
   flex: 33;
-  background: #f4f8fb;
+  background-color: ${(props) => props.theme.ModalBackground};
   border-radius: 12px;
 `;
 
@@ -48,6 +48,16 @@ export const RightSide = styled.div`
   flex-direction: column;
   flex: 89;
   padding-left: 37px;
+`;
+
+export const UpSide = styled.div`
+  flex: 355;
+  background-color: ${(props) => props.theme.White};
+`;
+
+export const DownSide = styled.div`
+  flex: 583;
+  background-color: ${(props) => props.theme.ModalBackground};
 `;
 
 export const Header = styled.div`
@@ -112,4 +122,6 @@ export default {
   BlockHeader,
   InputsRow,
   ButtonsContainer,
+  UpSide,
+  DownSide,
 };

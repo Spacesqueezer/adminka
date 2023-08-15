@@ -11,7 +11,8 @@ import OrganizationsScreen from "../organizations/Organizations";
 
 const Wrapper = styled.div`
   flex: 54;
-  background: ${(props) => props.theme.AppBackground};
+  height: 100%;
+  background: ${(props) => props.theme.ModalBackground};
 `;
 
 const Menu = styled.div`

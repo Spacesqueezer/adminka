@@ -13,7 +13,7 @@ const MenuWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  //width: 300px;
   min-width: 200px;
   background: ${(props) => props.theme.SideMenuBackground};
   height: 100%;
@@ -43,7 +43,9 @@ const MenuItems = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 `;
+
 const MenuBottom = styled.p`
   position: relative;
   width: 73%;

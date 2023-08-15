@@ -3,6 +3,10 @@ import styled from "styled-components";
 const MenuItemWrapper = styled.div`
   position: relative;
   z-index: ${(props) => (props.isSelected ? "4" : "5")};
+
+  &:hover: {
+    z-index: 7;
+  }
 `;
 
 const Title = styled.p`
@@ -44,7 +48,7 @@ const MenuBody = styled.div`
   position: relative;
   background: ${(props) =>
     props.isSelected
-      ? props.theme.AppBackground
+      ? props.theme.ModalBackground
       : props.theme.SideMenuBackground};
   color: ${(props) =>
     props.isSelected
@@ -59,7 +63,7 @@ const MenuBody = styled.div`
   &:hover {
     background: ${(props) =>
       props.isSelected
-        ? props.theme.AppBackground
+        ? props.theme.ModalBackground
         : props.theme.SideMenuBackgroundHover};
     cursor: pointer;
   }
@@ -69,7 +73,7 @@ const CornersBack = styled.div`
   position: absolute;
   background: ${(props) =>
     props.isSelected
-      ? props.theme.AppBackground
+      ? props.theme.ModalBackground
       : props.theme.SideMenuBackground};
   width: 20px;
   height: calc(100% + 40px);
@@ -79,7 +83,6 @@ const CornersBack = styled.div`
 `;
 
 const MenuItem = ({ image, title, isSelected, onClick }) => (
-
   <MenuItemWrapper isSelected={isSelected} onClick={onClick}>
     <CornersBack isSelected={isSelected} />
     <TopCorner isSelected={isSelected} />
