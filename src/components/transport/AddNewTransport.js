@@ -4,7 +4,7 @@ import TextInputWithLabel from "../common/common components/TextInputWithLabel";
 import ImagePicker from "../common/common components/ImagePicker";
 import ModalLogo from "../common/common components/ModalLogo";
 import CustomButton from "../common/common components/CustomButton";
-import Logo from "./../common/images/employee-modal-logo.png";
+import Logo from "./../common/images/transport-modal-logo.png";
 import DateInputWithLabel from "../common/common components/DateInputWithLabel";
 import {
   Separator,
@@ -24,7 +24,7 @@ import FakeOrganizations from "../../fake_data/FakeOrganizations.json";
 
 const Container = styled.div`
   width: 1220px;
-  height: 770px;
+  height: 892px;
   background: white;
   display: flex;
   flex-direction: row;
@@ -38,28 +38,27 @@ const Body = styled.div`
   flex: 535;
 `;
 
-const AddNewEmployee = ({ onClose }) => {
+const DriverHeader = styled.p`
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+`;
+
+const AddNewTransport = ({ onClose }) => {
   // Стейт для хранения данных формы
   const [formData, setFormData] = useState({
-    requestid: "",
-    person_name: "",
-    person_surname: "",
-    person_patronymic: "",
+    mark: "",
+    grz: "",
+    organization_id: 0,
+    driver_name: "",
+    driver_surname: "",
+    driver_patronymic: "",
     valid_from_date: "",
     valid_until_date: "",
-    organization_id: 0,
-    transport_id: 0,
-    transport: {
-      mark: "",
-      grz: "",
-      organization_id: 0,
-      driver_name: "",
-      driver_surname: "",
-      driver_patronymic: "",
-      valid_from_date: "",
-      valid_until_date: "2023-08-02",
-      base64_photo: "",
-    },
+    base64_photo: "",
   });
   const [organizations, setOrganizations] = useState({});
 
@@ -110,42 +109,60 @@ const AddNewEmployee = ({ onClose }) => {
   return (
     <Container>
       <LeftSide>
+        {" "}
         <ImagePicker />
         <ModalLogo source={Logo} />
       </LeftSide>
       <RightSide>
         <Header>
-          <HeaderLabel>Добавить нового сотрудника</HeaderLabel>
+          <HeaderLabel>Добавить транспортное средство</HeaderLabel>
           <CloseButton onClick={onClose} />
         </Header>
         <Separator />
         <Body>
-          <InputsBlock style={{ flex: 222 }}>
-            <BlockHeader>Данные сотрудника</BlockHeader>
+          <InputsBlock style={{ flex: 175 }}>
+            <BlockHeader>Данные автомобиля</BlockHeader>
+            <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
+              <TextInputWithLabel
+                label={"Марка"}
+                name={"mark"}
+                onInput={handleInputChange}
+              />
+              <TextInputWithLabel
+                label={"ГРЗ"}
+                name={"grz"}
+                onInput={handleInputChange}
+              />
+            </InputsRow>
+            <InputsRow style={{ maxWidth: "530px", gap: "40px" }}></InputsRow>
+          </InputsBlock>
+          <InputsBlock style={{ flex: 321 }}>
+            <BlockHeader>На ком зарегистрировано</BlockHeader>
+            <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
+              <DropListWithLabel label={"Организация"} data={organizations} />
+            </InputsRow>
+            <DriverHeader>Водитель</DriverHeader>
             <InputsRow>
               <TextInputWithLabel
                 label={"Фамилия"}
-                name={"person_surname"}
+                name={"driver_surname"}
                 onInput={handleInputChange}
               />
               <TextInputWithLabel
                 label={"Имя"}
-                name={"person_name"}
+                name={"driver_name"}
                 onInput={handleInputChange}
               />
               <TextInputWithLabel
                 label={"Отчество"}
-                name={"person_patronymic"}
+                name={"driver_patronymic"}
                 onInput={handleInputChange}
               />
             </InputsRow>
-            <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
-              <DropListWithLabel label={"Наименование организации"} data={organizations} />
-              <TextInputWithLabel label={"Должность"} />
-            </InputsRow>
+            {/*TODO сделать выбор сотрудник или гость*/}
           </InputsBlock>
-          <InputsBlock style={{ flex: 139 }}>
-            <BlockHeader>Пропуск сотрудника</BlockHeader>
+          <InputsBlock style={{ flex: 144 }}>
+            <BlockHeader>Пропуск посетителя</BlockHeader>
             <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
               <DateInputWithLabel
                 label={"Дата начала действия"}
@@ -157,22 +174,6 @@ const AddNewEmployee = ({ onClose }) => {
                 name={"valid_until_date"}
                 onInput={handleInputChange}
               />
-            </InputsRow>
-          </InputsBlock>
-          <InputsBlock style={{ flex: 145 }}>
-            <BlockHeader>Транспортное средство</BlockHeader>
-            <InputsRow>
-              <TextInputWithLabel
-                label={"Модель"}
-                name={"transport.mark"}
-                onInput={handleInputChange}
-              />
-              <TextInputWithLabel
-                label={"Гос. номер"}
-                name={"transport.grz"}
-                onInput={handleInputChange}
-              />
-              <DateInputWithLabel label={"Пропуск"} />
             </InputsRow>
           </InputsBlock>
         </Body>
@@ -192,4 +193,4 @@ const AddNewEmployee = ({ onClose }) => {
   );
 };
 
-export default AddNewEmployee;
+export default AddNewTransport;

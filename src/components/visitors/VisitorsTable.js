@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import FakePersons from "../../fake_persons.json";
+import FakePersons from "../../fake_data/fake_persons.json";
 import DeleteIcon from "./images/Delite.png";
 import EditIcon from "./images/Edit_blue.png";
 import {

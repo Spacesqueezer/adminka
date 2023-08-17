@@ -14,6 +14,9 @@ import {
 } from "../common/common components/modalWindowComponents";
 import CustomButton from "../common/common components/CustomButton";
 import TextInputWithLabel from "../common/common components/TextInputWithLabel";
+import TabsSet from "../common/common components/TabsSet";
+import EmployeesTab from "./EmployeesTab";
+import TransportTab from "./TransportTab";
 
 const Container = styled.div`
   width: 1220px;
@@ -24,6 +27,11 @@ const Container = styled.div`
   border-radius: 12px;
   overflow: hidden;
 `;
+
+const tabs = {
+  сотрудники: <EmployeesTab />,
+  транспорт: <TransportTab />,
+};
 
 const AddNewOrganization = ({ onClose }) => {
   const [formData, setFormData] = useState({
@@ -114,6 +122,7 @@ const AddNewOrganization = ({ onClose }) => {
         </Header>
       </UpSide>
       <DownSide>
+        <TabsSet tabs={tabs} />
         <ButtonsContainer style={{ bottom: "33px" }}>
           <CustomButton label={"Отмена"} type={"cancel"} callback={onClose} />
           <CustomButton

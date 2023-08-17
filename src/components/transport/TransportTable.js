@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import FakeOrganizations from "../../fake_data/FakeOrganizations.json";
-import EditIcon from "../visitors/images/Edit_blue.png";
-import DeleteIcon from "../visitors/images/Delite.png";
+import FakeTransport from "../../fake_data/Fake_transports.json";
+import DeleteIcon from "../employees/images/Delite.png";
+import EditIcon from "../employees/images/Edit_blue.png";
 import {
   TableContainer,
   Table,
@@ -19,7 +19,7 @@ import {
   ColumnHeader,
 } from "../common/common components/tableComponents";
 
-const OrganizationsTable = () => {
+const TransportTable = () => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
   const [sortOrder, setSortOrder] = useState(""); // Sort order: "asc" or "desc"
   const [currentPage, setCurrentPage] = useState(1); // Current page number
@@ -32,16 +32,23 @@ const OrganizationsTable = () => {
   }, []);
 
   const fetchData = () => {
-    let receivedData = FakeOrganizations;
+    let receivedData = FakeTransport;
     let preparedData = receivedData.map((item) => {
+      const dateFrom = new Date(item.valid_from_date);
+      const dateUntil = new Date(item.valid_until_date);
+      const dateDelta = Math.floor(
+        (dateUntil.getTime() - dateFrom.getTime()) / (1000 * 60 * 60 * 24)
+      );
+
       return {
         id: item.id,
-        name: item.organization_name,
-        address: item.organization_address,
-        phone: item.organization_phone,
-        email: item.organization_email,
-        org_floor: item.organization_floor,
-        office: item.office,
+        mark: item.mark,
+        grz: item.grz,
+        org: item.organization.organization_name,
+        date_delta: dateDelta,
+        date_from: item.valid_from_date,
+        date_until: item.valid_until_date,
+        photo: item.photo,
       };
     });
     setTableData(preparedData);
@@ -108,59 +115,48 @@ const OrganizationsTable = () => {
         <TableHeader>
           <tr>
             <ColumnHeader
-              title={"Название"}
+              title={"Марка"}
               sortFunc={handleSort}
-              sortBy={"name"}
+              sortBy={"mark"}
               sortOrder={sortOrder}
             />
             <ColumnHeader
-              title={"Юр. адрес"}
+              title={"ГРЗ"}
               sortFunc={handleSort}
-              sortBy={"address"}
+              sortBy={"grz"}
               sortOrder={sortOrder}
             />
             <ColumnHeader
-              title={"Контакты"}
+              title={"Организация"}
               sortFunc={handleSort}
-              sortBy={"phone"}
+              sortBy={"org"}
               sortOrder={sortOrder}
             />
             <ColumnHeader
-              title={"Этаж"}
+              title={"Срок действия"}
               sortFunc={handleSort}
-              sortBy={"org_floor"}
+              sortBy={"date_delta"}
               sortOrder={sortOrder}
             />
-            <ColumnHeader
-              title={"Офис"}
-              sortFunc={handleSort}
-              sortBy={"office"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Сотрудники"}
-              sortFunc={handleSort}
-              sortBy={"transport"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Транспорт"}
-              sortFunc={handleSort}
-              sortBy={"transport"}
-              sortOrder={sortOrder}
-            />
+            <TableHeaderLabel>Фото</TableHeaderLabel>
           </tr>
         </TableHeader>
         <TableBody>
           {paginatedData.map((item) => (
             <TableRow key={item.id}>
-              <TableData style={{ width: "19%" }}>{item.name}</TableData>
-              <TableData style={{ width: "28%" }}>{item.address}</TableData>
-              <TableData style={{ width: "14%" }}>{item.phone}</TableData>
-              <TableData style={{ width: "9%" }}>{item.org_floor}</TableData>
-              <TableData style={{ width: "9%" }}>Офис {item.office}</TableData>
-              <TableData style={{ width: "9%" }}>{"Sotr"}</TableData>{" "}
-              <TableData style={{ width: "7%" }}>{"Mashinki"}</TableData>
+              <TableData style={{ width: "19%" }}>{item.mark}</TableData>
+              <TableData style={{ width: "18%" }}>{item.grz}</TableData>
+              <TableData style={{ width: "25%" }}>{item.org}</TableData>
+              <TableData style={{ width: "25%" }}>
+                <Expiration
+                  from={item.date_from}
+                  until={item.date_until}
+                  delta={item.date_delta}
+                />
+              </TableData>
+              <TableData>
+                <Image src={item.photo} alt={item.name} />
+              </TableData>
               <TableData>
                 <EditDeleteContainer>
                   <EditDeleteButtons src={EditIcon} />
@@ -186,4 +182,4 @@ const OrganizationsTable = () => {
   );
 };
 
-export default OrganizationsTable;
+export default TransportTable;
