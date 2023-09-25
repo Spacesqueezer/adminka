@@ -31,7 +31,7 @@ const MenuTitle = styled.p`
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.1em;
-  color: ${(props) => props.theme.SideMenuTitle};
+  color: ${(props) => props.theme.White};
 `;
 const MenuItems = styled.div`
   position: relative;
@@ -57,7 +57,7 @@ const MenuBottom = styled.p`
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: ${(props) => props.theme.SideMenuTitle};
+  color: ${(props) => props.theme.White};
   opacity: 0.5;
 `;
 
@@ -67,7 +67,7 @@ const menuItems = [
   { title: "Организации", image: OrganizationImg },
   { title: "Транспорт", image: TransportImg },
   { title: "Журнал событий", image: JournalImg },
-  { title: "Отчеты", image: ReportsImg },
+  { title: "Отчёты", image: ReportsImg },
   { title: "Настройки", image: SettingsImg },
 ];
 

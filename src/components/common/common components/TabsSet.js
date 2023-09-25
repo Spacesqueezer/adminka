@@ -4,11 +4,12 @@ import styled from "styled-components";
 const TabContainer = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 1;
   //background-color: red;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 30px;
-  height: 438px;
+  //margin-left: 40px;
+  //margin-right: 40px;
+  //margin-top: 30px;
+  //height: 438px;
 `;
 
 const TabHeader = styled.div`

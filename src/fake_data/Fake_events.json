@@ -1,0 +1,802 @@
+[
+  {
+    "id": 0,
+    "event_guid": "bacd226c-2bb3-4fb8-942a-71694bfab545",
+    "cam_id": 8,
+    "visitor_id": 8,
+    "fr_vector": [
+      0.11930384418681605
+    ],
+    "dateTime": "2023-02-09",
+    "faceCoords": [
+      86
+    ],
+    "event_type": 3,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 1,
+    "event_guid": "18b01e8c-e4f6-4b70-a241-de87de844e41",
+    "cam_id": 3,
+    "visitor_id": 59,
+    "fr_vector": [
+      0.5895121420742991
+    ],
+    "dateTime": "2023-08-20",
+    "faceCoords": [
+      29
+    ],
+    "event_type": 2,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 2,
+    "event_guid": "354a1640-0816-49ef-89d8-3552abd9d1ab",
+    "cam_id": 2,
+    "visitor_id": 80,
+    "fr_vector": [
+      0.010955866321274987
+    ],
+    "dateTime": "2023-01-31",
+    "faceCoords": [
+      29
+    ],
+    "event_type": 1,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 3,
+    "event_guid": "d10bd821-b90a-49d8-89ac-7abd156897e5",
+    "cam_id": 4,
+    "visitor_id": 34,
+    "fr_vector": [
+      0.5757171486134205
+    ],
+    "dateTime": "2023-10-14",
+    "faceCoords": [
+      53
+    ],
+    "event_type": 3,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 4,
+    "event_guid": "d1b69695-8f97-419b-86cf-5ef0f0cfd677",
+    "cam_id": 2,
+    "visitor_id": 69,
+    "fr_vector": [
+      0.8612634023002161
+    ],
+    "dateTime": "2023-10-07",
+    "faceCoords": [
+      82
+    ],
+    "event_type": 3,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 5,
+    "event_guid": "173b68a1-28e6-433c-98b2-3e4ab9c99506",
+    "cam_id": 3,
+    "visitor_id": 14,
+    "fr_vector": [
+      0.07069119522008127
+    ],
+    "dateTime": "2023-11-17",
+    "faceCoords": [
+      22
+    ],
+    "event_type": 2,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 6,
+    "event_guid": "01ba5878-91b8-4f9f-9a5f-0b5cc78fb474",
+    "cam_id": 5,
+    "visitor_id": 48,
+    "fr_vector": [
+      0.034992712077118515
+    ],
+    "dateTime": "2023-06-12",
+    "faceCoords": [
+      67
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 7,
+    "event_guid": "1824d694-ae41-4750-9201-91e25ff1cd2a",
+    "cam_id": 5,
+    "visitor_id": 31,
+    "fr_vector": [
+      0.05805989622946617
+    ],
+    "dateTime": "2023-09-08",
+    "faceCoords": [
+      14
+    ],
+    "event_type": 3,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 8,
+    "event_guid": "2e47f302-c64e-4035-97fd-953c9355db5d",
+    "cam_id": 7,
+    "visitor_id": 29,
+    "fr_vector": [
+      0.14907770574734258
+    ],
+    "dateTime": "2023-12-21",
+    "faceCoords": [
+      53
+    ],
+    "event_type": 2,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 9,
+    "event_guid": "409b65ce-1a2d-4c0a-a616-c56167dfb1e0",
+    "cam_id": 10,
+    "visitor_id": 38,
+    "fr_vector": [
+      0.47956698271703624
+    ],
+    "dateTime": "2023-06-19",
+    "faceCoords": [
+      67
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 10,
+    "event_guid": "c5f58952-5d08-41e6-8c14-624a6d2819d8",
+    "cam_id": 10,
+    "visitor_id": 25,
+    "fr_vector": [
+      0.8991099182404227
+    ],
+    "dateTime": "2023-09-21",
+    "faceCoords": [
+      85
+    ],
+    "event_type": 1,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 11,
+    "event_guid": "f3cd22fb-0744-4db7-9fe9-2c61e8da8937",
+    "cam_id": 7,
+    "visitor_id": 6,
+    "fr_vector": [
+      0.3346397736249266
+    ],
+    "dateTime": "2023-02-24",
+    "faceCoords": [
+      5
+    ],
+    "event_type": 2,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 12,
+    "event_guid": "71db4e71-efc4-4ce5-89a3-efdf0b4f9f45",
+    "cam_id": 6,
+    "visitor_id": 41,
+    "fr_vector": [
+      0.8875871128153431
+    ],
+    "dateTime": "2023-03-21",
+    "faceCoords": [
+      7
+    ],
+    "event_type": 2,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 13,
+    "event_guid": "780224b3-3878-4f13-a7ae-95b8a400991d",
+    "cam_id": 5,
+    "visitor_id": 83,
+    "fr_vector": [
+      0.8881342075754955
+    ],
+    "dateTime": "2023-09-18",
+    "faceCoords": [
+      5
+    ],
+    "event_type": 2,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 14,
+    "event_guid": "e25b5490-e88e-42c4-b0d6-8131ecaa3d56",
+    "cam_id": 8,
+    "visitor_id": 17,
+    "fr_vector": [
+      0.3735744162797773
+    ],
+    "dateTime": "2023-12-03",
+    "faceCoords": [
+      9
+    ],
+    "event_type": 3,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 15,
+    "event_guid": "9e48149b-38a0-4e3d-a53b-109260260d24",
+    "cam_id": 8,
+    "visitor_id": 31,
+    "fr_vector": [
+      0.10327576483255418
+    ],
+    "dateTime": "2023-09-01",
+    "faceCoords": [
+      48
+    ],
+    "event_type": 2,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 16,
+    "event_guid": "1bed1300-6527-4820-9e48-d025c9dc6a1c",
+    "cam_id": 2,
+    "visitor_id": 17,
+    "fr_vector": [
+      0.96634124087314
+    ],
+    "dateTime": "2023-01-27",
+    "faceCoords": [
+      98
+    ],
+    "event_type": 2,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 17,
+    "event_guid": "7d5fb5ad-d575-4569-aaba-50630a3bea48",
+    "cam_id": 8,
+    "visitor_id": 55,
+    "fr_vector": [
+      0.07404658259266272
+    ],
+    "dateTime": "2023-01-24",
+    "faceCoords": [
+      19
+    ],
+    "event_type": 1,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 18,
+    "event_guid": "656ce913-f7d4-4eee-909c-d24b8a62d25d",
+    "cam_id": 6,
+    "visitor_id": 7,
+    "fr_vector": [
+      0.2434737375667264
+    ],
+    "dateTime": "2023-12-21",
+    "faceCoords": [
+      34
+    ],
+    "event_type": 2,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 19,
+    "event_guid": "1dbead7f-de31-4a80-a30e-97eec6367c6a",
+    "cam_id": 4,
+    "visitor_id": 91,
+    "fr_vector": [
+      0.49383967381104166
+    ],
+    "dateTime": "2023-05-13",
+    "faceCoords": [
+      98
+    ],
+    "event_type": 1,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 20,
+    "event_guid": "ca919184-340a-4c60-bb19-bb46e1142c74",
+    "cam_id": 9,
+    "visitor_id": 35,
+    "fr_vector": [
+      0.13110462767492492
+    ],
+    "dateTime": "2023-09-11",
+    "faceCoords": [
+      18
+    ],
+    "event_type": 1,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 21,
+    "event_guid": "4a249475-4b66-45ac-9cd1-d9f215b7d735",
+    "cam_id": 1,
+    "visitor_id": 21,
+    "fr_vector": [
+      0.6435208680310703
+    ],
+    "dateTime": "2023-04-03",
+    "faceCoords": [
+      6
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 22,
+    "event_guid": "ba724a59-7877-4ede-82c8-b55e2dd76949",
+    "cam_id": 5,
+    "visitor_id": 8,
+    "fr_vector": [
+      0.2904161419196356
+    ],
+    "dateTime": "2023-10-10",
+    "faceCoords": [
+      11
+    ],
+    "event_type": 2,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 23,
+    "event_guid": "b3ec7c27-aa1d-4226-8a5c-3791eac90476",
+    "cam_id": 2,
+    "visitor_id": 13,
+    "fr_vector": [
+      0.8626880554640097
+    ],
+    "dateTime": "2023-04-13",
+    "faceCoords": [
+      4
+    ],
+    "event_type": 1,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 24,
+    "event_guid": "e9865dee-e815-49bb-845f-1e989eff13dc",
+    "cam_id": 8,
+    "visitor_id": 58,
+    "fr_vector": [
+      0.1675317255545209
+    ],
+    "dateTime": "2023-07-24",
+    "faceCoords": [
+      6
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 25,
+    "event_guid": "cbcca6ed-d073-405f-acec-01c0930f66d8",
+    "cam_id": 1,
+    "visitor_id": 99,
+    "fr_vector": [
+      0.3485926734248973
+    ],
+    "dateTime": "2023-07-26",
+    "faceCoords": [
+      1
+    ],
+    "event_type": 3,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 26,
+    "event_guid": "d0b8e33e-2886-4c60-bed4-840fec226d2d",
+    "cam_id": 2,
+    "visitor_id": 74,
+    "fr_vector": [
+      0.01688337587428934
+    ],
+    "dateTime": "2023-05-05",
+    "faceCoords": [
+      68
+    ],
+    "event_type": 2,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 27,
+    "event_guid": "f48d2b6c-2276-4e43-b8d4-aff9a6b9fd6b",
+    "cam_id": 8,
+    "visitor_id": 68,
+    "fr_vector": [
+      0.5905654060727537
+    ],
+    "dateTime": "2023-02-13",
+    "faceCoords": [
+      18
+    ],
+    "event_type": 3,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 28,
+    "event_guid": "21813a75-4436-4d80-8016-6a379788eb10",
+    "cam_id": 8,
+    "visitor_id": 79,
+    "fr_vector": [
+      0.47719563994115477
+    ],
+    "dateTime": "2023-01-15",
+    "faceCoords": [
+      5
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 29,
+    "event_guid": "158eb968-3761-45cc-a733-ee4659809f1f",
+    "cam_id": 8,
+    "visitor_id": 46,
+    "fr_vector": [
+      0.6842422632170038
+    ],
+    "dateTime": "2023-07-24",
+    "faceCoords": [
+      28
+    ],
+    "event_type": 1,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 30,
+    "event_guid": "c01e96d8-e755-4c5a-8621-5fc549a0ce3d",
+    "cam_id": 4,
+    "visitor_id": 64,
+    "fr_vector": [
+      0.41616266919065614
+    ],
+    "dateTime": "2023-06-11",
+    "faceCoords": [
+      34
+    ],
+    "event_type": 2,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 31,
+    "event_guid": "b19b8f32-508b-4877-a81a-50e92b445d99",
+    "cam_id": 6,
+    "visitor_id": 17,
+    "fr_vector": [
+      0.592612695198122
+    ],
+    "dateTime": "2023-12-22",
+    "faceCoords": [
+      92
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 32,
+    "event_guid": "7ab84581-6692-4b22-90c0-b852f14f089b",
+    "cam_id": 8,
+    "visitor_id": 14,
+    "fr_vector": [
+      0.45436423792584446
+    ],
+    "dateTime": "2023-08-15",
+    "faceCoords": [
+      95
+    ],
+    "event_type": 1,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 33,
+    "event_guid": "ea58fb6d-2510-4119-940f-c734e8184be7",
+    "cam_id": 3,
+    "visitor_id": 1,
+    "fr_vector": [
+      0.9052851894185189
+    ],
+    "dateTime": "2023-07-22",
+    "faceCoords": [
+      42
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 34,
+    "event_guid": "6898e6c3-72e7-4f12-97db-bd1d95c68fb4",
+    "cam_id": 0,
+    "visitor_id": 10,
+    "fr_vector": [
+      0.9597182978602211
+    ],
+    "dateTime": "2023-05-17",
+    "faceCoords": [
+      14
+    ],
+    "event_type": 2,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 35,
+    "event_guid": "018407f6-3fda-4ab6-96b6-d620b0eded88",
+    "cam_id": 2,
+    "visitor_id": 87,
+    "fr_vector": [
+      0.373936972288913
+    ],
+    "dateTime": "2023-08-04",
+    "faceCoords": [
+      84
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 36,
+    "event_guid": "e9f43e1b-9dee-4049-a5f1-2e58d7b63231",
+    "cam_id": 5,
+    "visitor_id": 6,
+    "fr_vector": [
+      0.41070565086896227
+    ],
+    "dateTime": "2023-08-28",
+    "faceCoords": [
+      45
+    ],
+    "event_type": 1,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 37,
+    "event_guid": "c7105ee8-8e89-440e-84e5-38a75bc00283",
+    "cam_id": 4,
+    "visitor_id": 25,
+    "fr_vector": [
+      0.4127638121857321
+    ],
+    "dateTime": "2023-05-09",
+    "faceCoords": [
+      74
+    ],
+    "event_type": 1,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 38,
+    "event_guid": "3c39dd55-9ff8-43a5-9bc2-6daf7fb10039",
+    "cam_id": 4,
+    "visitor_id": 95,
+    "fr_vector": [
+      0.0983823867865804
+    ],
+    "dateTime": "2023-01-30",
+    "faceCoords": [
+      97
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 39,
+    "event_guid": "dc54e904-09ef-461e-a33d-939f229225e5",
+    "cam_id": 0,
+    "visitor_id": 19,
+    "fr_vector": [
+      0.976350686475589
+    ],
+    "dateTime": "2023-02-04",
+    "faceCoords": [
+      7
+    ],
+    "event_type": 1,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 40,
+    "event_guid": "f1acd22b-8590-4cc6-9cb3-f60b663a9c68",
+    "cam_id": 3,
+    "visitor_id": 63,
+    "fr_vector": [
+      0.06427317855641923
+    ],
+    "dateTime": "2023-03-15",
+    "faceCoords": [
+      27
+    ],
+    "event_type": 2,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 41,
+    "event_guid": "1fbe1a4a-ea5e-42ae-be57-9e877d5ca3cb",
+    "cam_id": 1,
+    "visitor_id": 53,
+    "fr_vector": [
+      0.575989660096561
+    ],
+    "dateTime": "2023-11-11",
+    "faceCoords": [
+      47
+    ],
+    "event_type": 1,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 42,
+    "event_guid": "b4dc0a25-a254-42ce-9c43-6605eb474bad",
+    "cam_id": 5,
+    "visitor_id": 46,
+    "fr_vector": [
+      0.00449117109509356
+    ],
+    "dateTime": "2023-02-03",
+    "faceCoords": [
+      10
+    ],
+    "event_type": 3,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 43,
+    "event_guid": "4fa6139c-6bea-49ff-ae84-9b75903472a6",
+    "cam_id": 5,
+    "visitor_id": 38,
+    "fr_vector": [
+      0.893011847925643
+    ],
+    "dateTime": "2023-11-13",
+    "faceCoords": [
+      84
+    ],
+    "event_type": 1,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 44,
+    "event_guid": "fdf51788-a7e4-460d-a426-0c6414f41683",
+    "cam_id": 1,
+    "visitor_id": 55,
+    "fr_vector": [
+      0.8320015464122669
+    ],
+    "dateTime": "2023-05-16",
+    "faceCoords": [
+      76
+    ],
+    "event_type": 1,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 45,
+    "event_guid": "826e30c2-5e5d-462b-9a28-9052521926e1",
+    "cam_id": 4,
+    "visitor_id": 84,
+    "fr_vector": [
+      0.234508857546326
+    ],
+    "dateTime": "2023-02-09",
+    "faceCoords": [
+      21
+    ],
+    "event_type": 1,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 46,
+    "event_guid": "6aff929d-dbd6-49ae-b5f8-19d6b6f9522a",
+    "cam_id": 6,
+    "visitor_id": 20,
+    "fr_vector": [
+      0.7874259388950978
+    ],
+    "dateTime": "2023-05-18",
+    "faceCoords": [
+      61
+    ],
+    "event_type": 1,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 47,
+    "event_guid": "21731bac-8acc-43f1-9bec-2d9c1c822226",
+    "cam_id": 5,
+    "visitor_id": 87,
+    "fr_vector": [
+      0.45600007040466506
+    ],
+    "dateTime": "2023-08-26",
+    "faceCoords": [
+      54
+    ],
+    "event_type": 1,
+    "event_state": 1,
+    "photo": "string"
+  },
+  {
+    "id": 48,
+    "event_guid": "bce5d86b-7f61-4f28-9420-fb5564e8892c",
+    "cam_id": 4,
+    "visitor_id": 2,
+    "fr_vector": [
+      0.13640122719556558
+    ],
+    "dateTime": "2023-07-03",
+    "faceCoords": [
+      38
+    ],
+    "event_type": 1,
+    "event_state": 0,
+    "photo": "string"
+  },
+  {
+    "id": 49,
+    "event_guid": "60bfce9b-c764-4734-b395-ced0c31afd32",
+    "cam_id": 6,
+    "visitor_id": 91,
+    "fr_vector": [
+      0.5843980430824133
+    ],
+    "dateTime": "2023-08-22",
+    "faceCoords": [
+      72
+    ],
+    "event_type": 2,
+    "event_state": 0,
+    "photo": "string"
+  }
+]

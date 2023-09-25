@@ -8,6 +8,9 @@ import LogoutImg from "./images/logout.png";
 import styled from "styled-components";
 import { ThemeContext } from "../../ThemeContext";
 import OrganizationsScreen from "../organizations/Organizations";
+import EventsScreen from "../events/Events";
+import Reports from "../reports/Reports";
+import ReportsScreen from "../reports/Reports";
 
 const Wrapper = styled.div`
   flex: 54;
@@ -43,7 +46,8 @@ const Header = styled.p`
 `;
 
 const Body = styled.div`
-  background: ${(props) => props.theme.ContentAreaBackground};
+  display: flex;
+  // background: ${(props) => props.theme.White};
   position: absolute;
 
   left: 360px;
@@ -53,10 +57,9 @@ const Body = styled.div`
 
   min-width: 570px;
 
-  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.05);
-  border-radius: 16px;
+  //box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.05);
 
-  padding: 30px 40px;
+  //padding: 30px 40px;
 `;
 
 const Logout = () => {
@@ -75,6 +78,8 @@ const ContentArea = ({ selectedMenu, title, showModal, closeModal }) => {
     Посетители: <VisitorsScreen showModal={showModal} />,
     Организации: <OrganizationsScreen showModal={showModal} />,
     Транспорт: <TransportScreen showModal={showModal} />,
+    "Журнал событий": <EventsScreen />,
+    Отчёты: <ReportsScreen />,
   };
 
   return (

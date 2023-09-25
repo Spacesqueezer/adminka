@@ -29,8 +29,8 @@ const Container = styled.div`
 `;
 
 const tabs = {
-  сотрудники: <EmployeesTab />,
-  транспорт: <TransportTab />,
+  Сотрудники: <EmployeesTab />,
+  Транспорт: <TransportTab />,
 };
 
 const AddNewOrganization = ({ onClose }) => {

@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  width: 100%;
-  height: 100%;
+  //width: 100%;
+  //height: 100%;
+  flex: 1;
+  border-radius: 16px;
   flex-direction: column;
+  background: ${(props) => props.theme.White};
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.05);
+  padding: 30px 40px 30px 40px;
 `;
 
 export const HeaderMenuContainer = styled.div`

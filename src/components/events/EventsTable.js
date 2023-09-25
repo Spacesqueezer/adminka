@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import FakeEvents from "../../fake_data/2/Fake_events.json";
 import FakePersons from "../../fake_data/2/Fake_persons.json";
-import DeleteIcon from "./images/Delite.png";
-import EditIcon from "./images/Edit_blue.png";
+import DeleteIcon from "../employees/images/Delite.png";
+import EditIcon from "../employees/images/Edit_blue.png";
 import {
   TableContainer,
   Table,
@@ -15,11 +16,10 @@ import {
   PaginationButton,
   EditDeleteContainer,
   EditDeleteButtons,
-  Expiration,
   ColumnHeader,
 } from "../common/common components/tableComponents";
 
-const EmployeesTable = () => {
+const EventsTable = () => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
   const [sortOrder, setSortOrder] = useState(""); // Sort order: "asc" or "desc"
   const [currentPage, setCurrentPage] = useState(1); // Current page number
@@ -31,26 +31,29 @@ const EmployeesTable = () => {
     fetchData();
   }, []);
 
-  const fetchData = () => {
-    let receivedData = FakePersons;
-    let preparedData = receivedData.map((item) => {
-      const dateFrom = new Date(item.valid_from_date);
-      const dateUntil = new Date(item.valid_until_date);
-      const dateDelta = Math.floor(
-        (dateUntil.getTime() - dateFrom.getTime()) / (1000 * 60 * 60 * 24)
-      );
+  // Получение ФИО субъекта события по ID
+  const getSubject = (objID) => {
+    const obj = FakePersons.find((item) => item.id === objID);
+    const name =
+      obj.person_surname +
+      " " +
+      obj.person_name[0] +
+      ". " +
+      obj.person_patronymic[0] +
+      ".";
+    return name;
+  };
 
+  const fetchData = () => {
+    let receivedData = FakeEvents;
+    let preparedData = receivedData.map((item) => {
       return {
         id: item.id,
-        name: item.person_name,
-        surname: item.person_surname,
-        patronymic: item.person_patronymic,
-        date_from: item.valid_from_date,
-        date_until: item.valid_until_date,
-        date_delta: dateDelta,
-        org: item.organization.organization_name,
-        photo: item.vectors[0].photo,
-        transport: item.transport.mark + " / " + item.transport.grz,
+        date: item.dateTime,
+        time: item.timeTime,
+        subject: getSubject(item.visitor_id),
+        photo: item.photo,
+        device_id: item.cam_id,
       };
     });
     setTableData(preparedData);
@@ -117,27 +120,27 @@ const EmployeesTable = () => {
         <TableHeader>
           <tr>
             <ColumnHeader
-              title={"ФИО"}
+              title={"Номер события"}
               sortFunc={handleSort}
-              sortBy={"name"}
+              sortBy={"id"}
               sortOrder={sortOrder}
             />
             <ColumnHeader
-              title={"Организация"}
+              title={"Дата"}
               sortFunc={handleSort}
-              sortBy={"org"}
+              sortBy={"date"}
               sortOrder={sortOrder}
             />
             <ColumnHeader
-              title={"Срок действия"}
+              title={"Время"}
               sortFunc={handleSort}
-              sortBy={"date_delta"}
+              sortBy={"time"}
               sortOrder={sortOrder}
             />
             <ColumnHeader
-              title={"Транспорт"}
+              title={"Субъект события"}
               sortFunc={handleSort}
-              sortBy={"transport"}
+              sortBy={"subject"}
               sortOrder={sortOrder}
             />
             <TableHeaderLabel>Фото</TableHeaderLabel>
@@ -146,20 +149,13 @@ const EmployeesTable = () => {
         <TableBody>
           {paginatedData.map((item) => (
             <TableRow key={item.id}>
-              <TableData style={{ width: "23%" }}>
-                {item.surname} {item.name[0]}. {item.patronymic[0]}.
-              </TableData>
-              <TableData style={{ width: "25%" }}>{item.org}</TableData>
-              <TableData style={{ width: "29%" }}>
-                <Expiration
-                  from={item.date_from}
-                  until={item.date_until}
-                  delta={item.date_delta}
-                />
-              </TableData>
-              <TableData style={{ width: "23%" }}>{item.transport}</TableData>
+              {/*TODO: выровнять проценты как на макете*/}
+              <TableData style={{ width: "19%" }}>{item.id}</TableData>
+              <TableData style={{ width: "18%" }}>{item.date}</TableData>
+              <TableData style={{ width: "25%" }}>{item.time}</TableData>
+              <TableData style={{ width: "25%" }}>{item.subject} </TableData>
               <TableData>
-                <Image src={item.photo} alt={item.name} />
+                <Image src={item.photo} alt={item.subject} />
               </TableData>
               <TableData>
                 <EditDeleteContainer>
@@ -186,4 +182,4 @@ const EmployeesTable = () => {
   );
 };
 
-export default EmployeesTable;
+export default EventsTable;

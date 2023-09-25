@@ -25,7 +25,7 @@ import FakeOrganizations from "../../fake_data/FakeOrganizations.json";
 const Container = styled.div`
   width: 1220px;
   height: 892px;
-  background: white;
+  background: ${(props) => props.theme.White};
   display: flex;
   flex-direction: row;
   border-radius: 12px;

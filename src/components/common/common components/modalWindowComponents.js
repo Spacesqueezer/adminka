@@ -63,6 +63,8 @@ export const UpSide = styled.div`
 export const DownSide = styled.div`
   flex: 583;
   background-color: ${(props) => props.theme.ModalBackground};
+  display: flex;
+  padding: 30px 40px 115px 40px;
 `;
 
 export const Header = styled.div`
