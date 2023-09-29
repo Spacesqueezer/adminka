@@ -33,7 +33,7 @@ const tabs = {
   Транспорт: <TransportTab />,
 };
 
-const AddNewOrganization = ({ onClose }) => {
+const EditOrganization = ({ onClose, orgdata }) => {
   const [formData, setFormData] = useState({
     id: 0,
     organization_name: "",
@@ -45,7 +45,16 @@ const AddNewOrganization = ({ onClose }) => {
   });
 
   useEffect(() => {
-    console.log("Загрузили окно добавления организации");
+    setFormData({
+      id: orgdata.id,
+      organization_name: orgdata.name,
+      organization_address: orgdata.address,
+      organization_phone: orgdata.phone,
+      organization_email: orgdata.email,
+      organization_floor: orgdata.org_floor,
+      office: orgdata.office,
+    });
+    console.log(formData);
   }, []);
 
   // Обработка ввода в инпут
@@ -83,7 +92,7 @@ const AddNewOrganization = ({ onClose }) => {
       <UpSide>
         <CloseButton onClick={onClose} />
         <Header style={{ display: "flex", flexDirection: "column" }}>
-          <HeaderLabel>Добавить организацию</HeaderLabel>
+          <HeaderLabel>Редактировать организацию</HeaderLabel>
           <Separator />
           <InputsBlock style={{ flex: "1" }}>
             <BlockHeader>Данные организации</BlockHeader>
@@ -92,12 +101,14 @@ const AddNewOrganization = ({ onClose }) => {
                 label={"Название"}
                 name={"organization_name"}
                 onInput={handleInputChange}
+                value={formData.organization_name}
               />
               <TextInputWithLabel
                 style={{ width: "100%" }}
                 label={"Юр. адрес"}
                 name={"organization_address"}
                 onInput={handleInputChange}
+                value={formData.organization_address}
               />
             </InputsRow>
             <InputsRow style={{ gap: "45px" }}>
@@ -105,21 +116,25 @@ const AddNewOrganization = ({ onClose }) => {
                 label={"Телефон"}
                 name={"organization_phone"}
                 onInput={handleInputChange}
+                value={formData.organization_phone}
               />
               <TextInputWithLabel
                 label={"E-mail"}
                 name={"organization_email"}
                 onInput={handleInputChange}
+                value={formData.organization_email}
               />
               <TextInputWithLabel
                 label={"Этаж"}
                 name={"organization_floor"}
                 onInput={handleInputChange}
+                value={formData.organization_floor}
               />
               <TextInputWithLabel
                 label={"Офис"}
                 name={"office"}
                 onInput={handleInputChange}
+                value={formData.office}
               />
             </InputsRow>
           </InputsBlock>
@@ -140,4 +155,4 @@ const AddNewOrganization = ({ onClose }) => {
   );
 };
 
-export default AddNewOrganization;
+export default EditOrganization;

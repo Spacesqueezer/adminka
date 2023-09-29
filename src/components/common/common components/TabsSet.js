@@ -5,11 +5,7 @@ const TabContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  //background-color: red;
-  //margin-left: 40px;
-  //margin-right: 40px;
-  //margin-top: 30px;
-  //height: 438px;
+  //overflow: scroll;
 `;
 
 const TabHeader = styled.div`
@@ -37,6 +33,7 @@ const TabContent = styled.div`
   position: relative;
   display: flex;
   flex: 392;
+  overflow: auto;
   top: -1px;
   padding: 30px 35px 23px 35px;
   border-radius: 0 7px 7px 7px;

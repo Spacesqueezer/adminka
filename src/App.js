@@ -7,6 +7,7 @@ import AddNewEmployee from "./components/employees/AddNewEmployee";
 import AddNewVisitor from "./components/visitors/AddNewVisitor";
 import AddNewOrganization from "./components/organizations/AddNewOrganization";
 import AddNewTransport from "./components/transport/AddNewTransport";
+import EditOrganization from "./components/organizations/EditOrganization";
 
 const StyledApp = styled.div`
   position: fixed;
@@ -56,8 +57,12 @@ function App() {
   };
 
   // Открытие модального окна. При вызове передаётся ключ на компонент
-  const ShowModal = (modal) => {
-    setContent(modals[modal]);
+  const ShowModal = (modal, id) => {
+    if (id) {
+      setContent(modals[modal](id));
+    } else {
+      setContent(modals[modal]);
+    }
     setIsModal(true);
   };
 
@@ -71,6 +76,9 @@ function App() {
     newEmployee: <AddNewEmployee onClose={CloseModal} />,
     newVisitor: <AddNewVisitor onClose={CloseModal} />,
     newOrganization: <AddNewOrganization onClose={CloseModal} />,
+    editOrganization: (data) => (
+      <EditOrganization onClose={CloseModal} orgdata={data} />
+    ),
     newTransport: <AddNewTransport onClose={CloseModal} />,
   };
 

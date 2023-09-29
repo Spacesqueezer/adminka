@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import SearchInput from "../header_menu/SearchInput";
 import ButtonWithIcon from "../header_menu/ButtonWithIcon";
@@ -15,12 +15,20 @@ import {
 import OrganizationsTable from "./OrganizationsTable";
 
 const OrganizationsScreen = ({ showModal, closeModal }) => {
+  const [orgToRedact, setOrgToRedact] = useState(undefined); // хранит id организации, которую надо редактировать
+
   const FilterFunction = () => {
     alert("filter");
   };
 
   //Здесь указывается, какое модальное окно будет показано. Список модалок в App.js
   const AddFunction = () => {
+    setOrgToRedact(undefined);
+    showModal("newOrganization");
+  };
+
+  const showModalToRedact = (org_id) => {
+    setOrgToRedact(org_id);
     showModal("newOrganization");
   };
 
@@ -49,7 +57,7 @@ const OrganizationsScreen = ({ showModal, closeModal }) => {
         <Separator />
       </HeaderMenuContainer>
       <TableContainer>
-        <OrganizationsTable />
+        <OrganizationsTable showModal={showModal} />
       </TableContainer>
     </Wrapper>
   );

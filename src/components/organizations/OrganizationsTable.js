@@ -7,24 +7,27 @@ import {
   Table,
   TableHeader,
   TableBody,
-  TableHeaderLabel,
   TableRow,
   TableData,
-  Image,
   Pagination,
   PaginationButton,
   EditDeleteContainer,
   EditDeleteButtons,
-  Expiration,
   ColumnHeader,
 } from "../common/common components/tableComponents";
 
-const OrganizationsTable = () => {
+const OrganizationsTable = ({ showModal }) => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
   const [sortOrder, setSortOrder] = useState(""); // Sort order: "asc" or "desc"
   const [currentPage, setCurrentPage] = useState(1); // Current page number
   const itemsPerPage = 9; // Number of items to show per page
   const [tableData, setTableData] = useState("");
+
+  // Функция открытия организации для редактирования
+  const openOrgToRedact = (item_id) => {
+    console.log("item_id", item_id);
+    showModal();
+  };
 
   useEffect(() => {
     //Фетчим данные с сервера
@@ -163,7 +166,12 @@ const OrganizationsTable = () => {
               <TableData style={{ width: "7%" }}>{"Mashinki"}</TableData>
               <TableData>
                 <EditDeleteContainer>
-                  <EditDeleteButtons src={EditIcon} />
+                  <EditDeleteButtons
+                    src={EditIcon}
+                    org_id={item.id}
+                    orgData={item}
+                    onClick={() => showModal('editOrganization', item)}
+                  />
                   <EditDeleteButtons src={DeleteIcon} />
                 </EditDeleteContainer>
               </TableData>

@@ -129,7 +129,9 @@ export const ExpirationDeltaText = styled.p`
   color: white;
 `;
 
-export const EditDeleteButtons = styled.img``;
+export const EditDeleteButtons = styled.img`
+  cursor: pointer;
+`;
 
 export const EditDeleteContainer = styled.div`
   display: flex;
