@@ -193,6 +193,35 @@ export const ColumnHeader = ({
   );
 };
 
+const StatusContainer = styled.div`
+  width: 110px;
+  height: 25px;
+  display: flex; /* Включаем flexbox */
+  flex-direction: column; /* Устанавливаем направление столбца для вертикального выравнивания */
+  justify-content: center; /* Выравниваем по центру по вертикали */
+  align-items: center; /* Выравниваем по центру по горизонтали */
+  padding: 7px 10px 7px 10px;
+  border-radius: 8px;
+  background-color: ${(props) => props.status ? props.theme.StatusEmployee : props.theme.StatusGuest};
+`;
+
+const StatusText = styled.p`
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  color: ${(props) => props.status ? props.theme.StatusEmployeeText : props.theme.StatusGuestText};
+`;
+
+export const StatusEmployee = ({ status }) => {
+    return (
+        <StatusContainer status={status}>
+            <StatusText status={status}>{status ? 'Сотрудник' : 'Гость'}</StatusText>
+        </StatusContainer>
+    )
+}
+
 export default {
   TableContainer,
   Table,

@@ -77,7 +77,7 @@ function App() {
     newVisitor: <AddNewVisitor onClose={CloseModal} />,
     newOrganization: <AddNewOrganization onClose={CloseModal} />,
     editOrganization: (data) => (
-      <EditOrganization onClose={CloseModal} orgdata={data} />
+      <EditOrganization onClose={CloseModal} orgData={data} />
     ),
     newTransport: <AddNewTransport onClose={CloseModal} />,
   };

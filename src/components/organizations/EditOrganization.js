@@ -17,6 +17,7 @@ import TextInputWithLabel from "../common/common components/TextInputWithLabel";
 import TabsSet from "../common/common components/TabsSet";
 import EmployeesTab from "./EmployeesTab";
 import TransportTab from "./TransportTab";
+import getAmountOfEmployeesByOrgId from "../common/someFunctions";
 
 const Container = styled.div`
   width: 1220px;
@@ -28,12 +29,7 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const tabs = {
-  Сотрудники: <EmployeesTab />,
-  Транспорт: <TransportTab />,
-};
-
-const EditOrganization = ({ onClose, orgdata }) => {
+const EditOrganization = ({ onClose, orgData }) => {
   const [formData, setFormData] = useState({
     id: 0,
     organization_name: "",
@@ -43,19 +39,30 @@ const EditOrganization = ({ onClose, orgdata }) => {
     organization_floor: 0,
     office: 0,
   });
+  const [employees, setEmployees] = useState();
+
+  const tabs = {
+    Сотрудники: <EmployeesTab org_id={orgData.id} />,
+    Транспорт: <TransportTab />,
+  };
 
   useEffect(() => {
+    // Устанавливаем значения на данные организации
     setFormData({
-      id: orgdata.id,
-      organization_name: orgdata.name,
-      organization_address: orgdata.address,
-      organization_phone: orgdata.phone,
-      organization_email: orgdata.email,
-      organization_floor: orgdata.org_floor,
-      office: orgdata.office,
+      id: orgData.id,
+      organization_name: orgData.name,
+      organization_address: orgData.address,
+      organization_phone: orgData.phone,
+      organization_email: orgData.email,
+      organization_floor: orgData.org_floor,
+      office: orgData.office,
     });
-    console.log(formData);
-  }, []);
+
+    // загружаем сотрудников, которые работают в этой организации
+    setEmployees(getAmountOfEmployeesByOrgId(orgData.id));
+
+    // console.log(getAmountOfEmployeesByOrgId(orgData.id));
+  }, [orgData]);
 
   // Обработка ввода в инпут
   const handleInputChange = (name, value) => {

@@ -21,7 +21,13 @@ export const LightTheme = {
   TableHeaderFont: '#ACAAB4',
   ExpirationDateGreen: '#1FCF9B',
   ExpirationDateRed: '#EB5650',
-  // TableRowEvenBackground: 'rgba(19,52,218,0.52)'
+
+  StatusEmployee: '#BAF5EE',
+  StatusGuest: '#FBDDDC',
+  StatusEmployeeText: '#028677',
+  StatusGuestText: '#EB5650'
+
+// TableRowEvenBackground: 'rgba(19,52,218,0.52)'
 };
 export const DarkTheme = {
   White: "#000",
@@ -45,5 +51,8 @@ export const DarkTheme = {
   TableHeaderBackground: "#4b853e",
   TableHeaderFont: '#ab03d5',
   ExpirationDateGreen: '#0831b9',
-  ExpirationDateRed: '#c4a11f'
+  ExpirationDateRed: '#c4a11f',
+
+  StatusEmployee: '#d0bf16',
+  StatusGuest: '#b404ce'
 };
