@@ -28,9 +28,11 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
+
+
 const tabs = {
-  Сотрудники: <EmployeesTab />,
-  Транспорт: <TransportTab />,
+  Сотрудники: <div />,
+  Транспорт: <div />,
 };
 
 const AddNewOrganization = ({ onClose }) => {

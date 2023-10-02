@@ -17,7 +17,7 @@ import TextInputWithLabel from "../common/common components/TextInputWithLabel";
 import TabsSet from "../common/common components/TabsSet";
 import EmployeesTab from "./EmployeesTab";
 import TransportTab from "./TransportTab";
-import getAmountOfEmployeesByOrgId from "../common/someFunctions";
+// import getAmountOfEmployeesByOrgId from "../common/someFunctions";
 
 const Container = styled.div`
   width: 1220px;
@@ -43,7 +43,7 @@ const EditOrganization = ({ onClose, orgData }) => {
 
   const tabs = {
     Сотрудники: <EmployeesTab org_id={orgData.id} />,
-    Транспорт: <TransportTab />,
+    Транспорт: <TransportTab org_id={orgData.id} />,
   };
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const EditOrganization = ({ onClose, orgData }) => {
     });
 
     // загружаем сотрудников, которые работают в этой организации
-    setEmployees(getAmountOfEmployeesByOrgId(orgData.id));
+    // setEmployees(getAmountOfEmployeesByOrgId(orgData.id));
 
     // console.log(getAmountOfEmployeesByOrgId(orgData.id));
   }, [orgData]);

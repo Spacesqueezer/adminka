@@ -222,6 +222,14 @@ export const StatusEmployee = ({ status }) => {
     )
 }
 
+export const StatusTransport = ({status}) => {
+    return (
+        <StatusContainer status={status}>
+            <StatusText status={status}>{status ? 'Фирмы' : 'Гостевая'}</StatusText>
+        </StatusContainer>
+    )
+}
+
 export default {
   TableContainer,
   Table,

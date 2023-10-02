@@ -15,20 +15,13 @@ import {
 import OrganizationsTable from "./OrganizationsTable";
 
 const OrganizationsScreen = ({ showModal, closeModal }) => {
-  const [orgToRedact, setOrgToRedact] = useState(undefined); // хранит id организации, которую надо редактировать
-
   const FilterFunction = () => {
     alert("filter");
   };
 
   //Здесь указывается, какое модальное окно будет показано. Список модалок в App.js
   const AddFunction = () => {
-    setOrgToRedact(undefined);
-    showModal("newOrganization");
-  };
-
-  const showModalToRedact = (org_id) => {
-    setOrgToRedact(org_id);
+    // setOrgToRedact(undefined);
     showModal("newOrganization");
   };
 

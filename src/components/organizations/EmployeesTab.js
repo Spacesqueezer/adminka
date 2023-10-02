@@ -16,7 +16,7 @@ import {
 } from "../common/common components/tableComponents";
 import EditIcon from "../visitors/images/Edit_blue.png";
 import DeleteIcon from "../visitors/images/Delite.png";
-import getAmountOfEmployeesByOrgId from "../common/someFunctions";
+import { getAmountOfEmployeesByOrgId } from "../common/someFunctions";
 
 const Container = styled.div`
   flex: 1;
@@ -29,6 +29,8 @@ const EmployeesTab = (org_id) => {
   const itemsPerPage = 9; // Number of items to show per page
   const [tableData, setTableData] = useState("");
 
+  let filteredData;
+
   useEffect(() => {
     //Фетчим данные с сервера
     fetchData();
@@ -39,34 +41,38 @@ const EmployeesTab = (org_id) => {
     let receivedData = FakeEmployees;
 
     // фильтруем по организации
-    let filteredData = getAmountOfEmployeesByOrgId(org_id.org_id);
+    if (org_id) {
+      filteredData = getAmountOfEmployeesByOrgId(org_id.org_id);
+
+      // подготавливаем данные
+      let preparedData = filteredData.map((item) => {
+        // формирование срока действия пропуска
+        let validDate =
+            replaceDashWithSlash(item.valid_from_date) +
+            " - " +
+            replaceDashWithSlash(item.valid_until_date);
+
+        // Формирование транспорта
+        let trans = item.transport.mark + " / " + item.transport.grz;
+
+        return {
+          id: item.id,
+          name: item.person_name,
+          validDate: validDate,
+          transport: trans,
+          photo: item.vectors[0].photo,
+          status: item.employee,
+        };
+      });
+      setTableData(preparedData);
+    }
 
     // Замена тира на слеши в дате
     function replaceDashWithSlash(dateString) {
       return dateString.replace(/-/g, "/");
     }
 
-    // подготавливаем данные
-    let preparedData = filteredData.map((item) => {
-      // формирование срока действия пропуска
-      let validDate =
-        replaceDashWithSlash(item.valid_from_date) +
-        " - " +
-        replaceDashWithSlash(item.valid_until_date);
 
-      // Формирование транспорта
-      let trans = item.transport.mark + " / " + item.transport.grz;
-
-      return {
-        id: item.id,
-        name: item.person_name,
-        validDate: validDate,
-        transport: trans,
-        photo: item.vectors[0].photo,
-        status: item.employee,
-      };
-    });
-    setTableData(preparedData);
   };
 
   // Sort the data based on the selected column
