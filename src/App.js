@@ -8,6 +8,7 @@ import AddNewVisitor from "./components/visitors/AddNewVisitor";
 import AddNewOrganization from "./components/organizations/AddNewOrganization";
 import AddNewTransport from "./components/transport/AddNewTransport";
 import EditOrganization from "./components/organizations/EditOrganization";
+import EditEmployee from "./components/employees/EditEmployee";
 
 const StyledApp = styled.div`
   position: fixed;
@@ -74,6 +75,9 @@ function App() {
   // Модальные окна
   const modals = {
     newEmployee: <AddNewEmployee onClose={CloseModal} />,
+    editEmployee: (data) => (
+      <EditEmployee onClose={CloseModal} editData={data} />
+    ),
     newVisitor: <AddNewVisitor onClose={CloseModal} />,
     newOrganization: <AddNewOrganization onClose={CloseModal} />,
     editOrganization: (data) => (

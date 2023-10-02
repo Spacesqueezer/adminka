@@ -39,7 +39,6 @@ const EditOrganization = ({ onClose, orgData }) => {
     organization_floor: 0,
     office: 0,
   });
-  const [employees, setEmployees] = useState();
 
   const tabs = {
     Сотрудники: <EmployeesTab org_id={orgData.id} />,

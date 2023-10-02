@@ -20,7 +20,11 @@ import {
   ButtonsContainer,
 } from "../common/common components/modalWindowComponents";
 import DropListWithLabel from "../common/common components/DropListWithLabel";
-import { createNewPerson, getListOfOrganizations } from "../../API_functions";
+import {
+  getListOfOrganizations,
+  updatePersonInformation,
+  genUuid,
+} from "../../API_functions";
 
 const Container = styled.div`
   width: 1220px;
@@ -38,44 +42,48 @@ const Body = styled.div`
   flex: 535;
 `;
 
-const AddNewEmployee = ({ onClose }) => {
+const EditEmployee = ({ onClose, editData }) => {
   // Стейт для хранения данных формы
   const [formData, setFormData] = useState({
-    requestid: "",
-    person_name: "",
-    person_surname: "",
-    person_patronymic: "",
-    valid_from_date: "",
-    valid_until_date: "",
-    organization_id: 0,
-    transport_id: 0,
+    requestid: genUuid(),
+    person_name: editData.person_name,
+    person_surname: editData.person_surname,
+    person_patronymic: editData.person_patronymic,
+    valid_from_date: editData.valid_from_date,
+    valid_until_date: editData.valid_until_date,
+    organization_id: editData.organization_id,
+    transport_id: editData.transport_id,
     transport: {
-      mark: "",
-      grz: "",
-      organization_id: 0,
-      driver_name: "",
-      driver_surname: "",
-      driver_patronymic: "",
-      valid_from_date: "",
-      valid_until_date: "2023-08-02",
-      base64_photo: "",
+      mark: editData.transport.mark,
+      grz: editData.transport.grz,
+      organization_id: editData.transport.organization_id,
+      driver_name: editData.transport.driver_name,
+      driver_surname: editData.transport.driver_surname,
+      driver_patronymic: editData.transport.driver_patronymic,
+      valid_from_date: editData.transport.valid_from_date,
+      valid_until_date: editData.transport.valid_until_date,
+      base64_photo: editData.transport.base64_photo,
     },
   });
   const [organizations, setOrganizations] = useState({});
 
   // Функция отправки формы
   const submitFunction = () => {
-    createNewPerson(formData);
+    updatePersonInformation(formData);
   };
 
-  const changeOrganizationInfo = (data) => {
-    // console.log(JSON.stringify(data, null, 2));
-    setFormData({
-      ...formData,
-      organization_id: data,
-      transport: { ...formData.transport, organization_id: data },
-    });
-  };
+  useEffect(() => {
+    // устанавливаем данные формы
+    // setFormData();
+
+    // устанавливаем список организаций
+    const organizations = getListOfOrganizations();
+    const organizationsList = organizations.map((item) => ({
+      id: item.id,
+      name: item.organization_name,
+    }));
+    setOrganizations(organizationsList);
+  }, []);
 
   // Обработка ввода в инпут
   const handleInputChange = (name, value) => {
@@ -103,14 +111,14 @@ const AddNewEmployee = ({ onClose }) => {
     setFormData(updatedFormData);
   };
 
-  useEffect(() => {
-    const organizations = getListOfOrganizations();
-    const organizationsList = organizations.map((item) => ({
-      id: item.id,
-      name: item.organization_name,
-    }));
-    setOrganizations(organizationsList);
-  }, []);
+  const changeOrganizationInfo = (data) => {
+    // console.log(JSON.stringify(data, null, 2));
+    setFormData({
+      ...formData,
+      organization_id: data,
+      transport: { ...formData.transport, organization_id: data },
+    });
+  };
 
   return (
     <Container>
@@ -120,7 +128,7 @@ const AddNewEmployee = ({ onClose }) => {
       </LeftSide>
       <RightSide>
         <Header>
-          <HeaderLabel>Добавить нового сотрудника</HeaderLabel>
+          <HeaderLabel>Редактировать сотрудника</HeaderLabel>
           <CloseButton onClick={onClose} />
         </Header>
         <Separator />
@@ -132,25 +140,31 @@ const AddNewEmployee = ({ onClose }) => {
                 label={"Фамилия"}
                 name={"person_surname"}
                 onInput={handleInputChange}
+                value={formData.person_surname}
               />
               <TextInputWithLabel
                 label={"Имя"}
                 name={"person_name"}
                 onInput={handleInputChange}
+                value={formData.person_name}
               />
               <TextInputWithLabel
                 label={"Отчество"}
                 name={"person_patronymic"}
                 onInput={handleInputChange}
+                value={formData.person_patronymic}
               />
             </InputsRow>
             <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
               <DropListWithLabel
                 label={"Наименование организации"}
                 data={organizations}
+                selected={formData.organization_id}
                 onSelect={changeOrganizationInfo}
               />
-              <TextInputWithLabel label={"Должность"} />
+
+              {/*Временно убрано*/}
+              {/*<TextInputWithLabel label={"Должность"} />*/}
             </InputsRow>
           </InputsBlock>
           <InputsBlock style={{ flex: 139 }}>
@@ -160,11 +174,13 @@ const AddNewEmployee = ({ onClose }) => {
                 label={"Дата начала действия"}
                 name={"valid_from_date"}
                 onInput={handleInputChange}
+                value={formData.valid_from_date}
               />
               <DateInputWithLabel
                 label={"Окончание срока действия"}
                 name={"valid_until_date"}
                 onInput={handleInputChange}
+                value={formData.valid_until_date}
               />
             </InputsRow>
           </InputsBlock>
@@ -175,11 +191,13 @@ const AddNewEmployee = ({ onClose }) => {
                 label={"Модель"}
                 name={"transport.mark"}
                 onInput={handleInputChange}
+                value={formData.transport.mark}
               />
               <TextInputWithLabel
                 label={"Гос. номер"}
                 name={"transport.grz"}
                 onInput={handleInputChange}
+                value={formData.transport.grz}
               />
               <DateInputWithLabel label={"Пропуск"} />
             </InputsRow>
@@ -201,4 +219,4 @@ const AddNewEmployee = ({ onClose }) => {
   );
 };
 
-export default AddNewEmployee;
+export default EditEmployee;

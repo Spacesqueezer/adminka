@@ -19,7 +19,7 @@ import {
   ColumnHeader,
 } from "../common/common components/tableComponents";
 
-const EmployeesTable = () => {
+const EmployeesTable = ({ showModal }) => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
   const [sortOrder, setSortOrder] = useState(""); // Sort order: "asc" or "desc"
   const [currentPage, setCurrentPage] = useState(1); // Current page number
@@ -51,9 +51,14 @@ const EmployeesTable = () => {
         org: item.organization.organization_name,
         photo: item.vectors[0].photo,
         transport: item.transport.mark + " / " + item.transport.grz,
+        allInfo: item
       };
     });
     setTableData(preparedData);
+  };
+
+  const editEmployee = (data) => {
+    showModal("editEmployee", data);
   };
 
   // Sort the data based on the selected column
@@ -163,7 +168,10 @@ const EmployeesTable = () => {
               </TableData>
               <TableData>
                 <EditDeleteContainer>
-                  <EditDeleteButtons src={EditIcon} />
+                  <EditDeleteButtons
+                    src={EditIcon}
+                    onClick={() => editEmployee(item.allInfo)}
+                  />
                   <EditDeleteButtons src={DeleteIcon} />
                 </EditDeleteContainer>
               </TableData>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -7,7 +7,6 @@ const Wrapper = styled.div`
   margin-bottom: 10px;
   width: 250px;
   height: 63px;
-  //margin-right: 30px;
 `;
 
 const Label = styled.p`
@@ -29,29 +28,30 @@ const Select = styled.select`
   width: 250px;
 `;
 
-const DropListWithLabel = ({ label, data }) => {
+const DropListWithLabel = ({ label, data, selected, onSelect }) => {
   const [selectedId, setSelectedId] = useState(null);
 
-  const dataArray = Object.values(data); // Преобразуем JSON-объект в массив
-
   const handleChange = (event) => {
-    const selectedName = event.target.value;
-    const selectedEntry = dataArray.find(
-      (entry) => entry.name === selectedName
-    );
-
-    if (selectedEntry) {
-      setSelectedId(selectedEntry.id);
-    }
+    const selectedOption = event.target.options[event.target.selectedIndex];
+    setSelectedId(parseInt(selectedOption.value));
+    onSelect(parseInt(selectedOption.value));
   };
+
+  useEffect(() => {
+    if (selected !== null) {
+      setSelectedId(selected);
+    } else {
+      setSelectedId(""); // Если selected === null, сбросить выбор
+    }
+  }, [selected]);
 
   return (
     <Wrapper>
       <Label>{label}</Label>
-      <Select onChange={handleChange}>
+      <Select onChange={handleChange} value={selectedId}>
         <option value="">Выберите организацию</option>
-        {dataArray.map((entry) => (
-          <option key={entry.id} value={entry.name}>
+        {Object.entries(data).map(([id, entry]) => (
+          <option key={id} value={id}>
             {entry.name}
           </option>
         ))}

@@ -47,7 +47,7 @@ const EmployeesScreen = ({ showModal, closeModal }) => {
         <Separator />
       </HeaderMenuContainer>
       <TableContainer>
-        <EmployeesTable />
+        <EmployeesTable showModal={showModal} />
       </TableContainer>
     </Wrapper>
   );
