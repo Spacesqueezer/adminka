@@ -20,7 +20,12 @@ import {
   ButtonsContainer,
 } from "../common/common components/modalWindowComponents";
 import DropListWithLabel from "../common/common components/DropListWithLabel";
-import { createNewPerson, getListOfOrganizations } from "../../API_functions";
+import {
+  createNewPerson,
+  genUuid,
+  getListOfOrganizations,
+} from "../../API_functions";
+import transport from "../transport/Transport";
 
 const Container = styled.div`
   width: 1220px;
@@ -41,7 +46,7 @@ const Body = styled.div`
 const AddNewEmployee = ({ onClose }) => {
   // Стейт для хранения данных формы
   const [formData, setFormData] = useState({
-    requestid: "",
+    requestid: genUuid(),
     person_name: "",
     person_surname: "",
     person_patronymic: "",
@@ -49,9 +54,11 @@ const AddNewEmployee = ({ onClose }) => {
     valid_until_date: "",
     organization_id: 0,
     transport_id: 0,
+    person_position: "",
+    employee: true,
     transport: {
-      mark: "",
-      grz: "",
+      mark: false,
+      grz: false,
       organization_id: 0,
       driver_name: "",
       driver_surname: "",
@@ -65,14 +72,26 @@ const AddNewEmployee = ({ onClose }) => {
 
   // Функция отправки формы
   const submitFunction = () => {
-    createNewPerson(formData);
+    let dataToSend = formData;
+    if (dataToSend.transport.mark && dataToSend.transport.grz) {
+      dataToSend = {
+        ...dataToSend,
+        transport: {
+          ...dataToSend.transport,
+          driver_name: dataToSend.person_name,
+          driver_surname: dataToSend.person_surname,
+          driver_patronymic: dataToSend.person_patronymic,
+        },
+      };
+    }
+    createNewPerson(dataToSend);
   };
 
   const changeOrganizationInfo = (data) => {
-    // console.log(JSON.stringify(data, null, 2));
     setFormData({
       ...formData,
       organization_id: data,
+      transport_id: genUuid(),
       transport: { ...formData.transport, organization_id: data },
     });
   };
@@ -150,7 +169,11 @@ const AddNewEmployee = ({ onClose }) => {
                 data={organizations}
                 onSelect={changeOrganizationInfo}
               />
-              <TextInputWithLabel label={"Должность"} />
+              <TextInputWithLabel
+                label={"Должность"}
+                name={"person_position"}
+                onInput={handleInputChange}
+              />
             </InputsRow>
           </InputsBlock>
           <InputsBlock style={{ flex: 139 }}>

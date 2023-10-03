@@ -33,8 +33,8 @@ const DropListWithLabel = ({ label, data, selected, onSelect }) => {
 
   const handleChange = (event) => {
     const selectedOption = event.target.options[event.target.selectedIndex];
-    setSelectedId(parseInt(selectedOption.value));
-    onSelect(parseInt(selectedOption.value));
+    setSelectedId(selectedOption.value);
+    onSelect(selectedOption.value);
   };
 
   useEffect(() => {
@@ -51,7 +51,7 @@ const DropListWithLabel = ({ label, data, selected, onSelect }) => {
       <Select onChange={handleChange} value={selectedId}>
         <option value="">Выберите организацию</option>
         {Object.entries(data).map(([id, entry]) => (
-          <option key={id} value={id}>
+          <option key={id} value={entry.id}>
             {entry.name}
           </option>
         ))}

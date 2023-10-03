@@ -15,6 +15,7 @@ import {
   EditDeleteButtons,
   ColumnHeader,
 } from "../common/common components/tableComponents";
+import { getListOfOrganizations } from "../../API_functions";
 
 const OrganizationsTable = ({ showModal }) => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
@@ -23,19 +24,13 @@ const OrganizationsTable = ({ showModal }) => {
   const itemsPerPage = 9; // Number of items to show per page
   const [tableData, setTableData] = useState("");
 
-  // Функция открытия организации для редактирования
-  const openOrgToRedact = (item_id) => {
-    console.log("item_id", item_id);
-    showModal();
-  };
-
   useEffect(() => {
     //Фетчим данные с сервера
     fetchData();
   }, []);
 
   const fetchData = () => {
-    let receivedData = FakeOrganizations;
+    let receivedData = getListOfOrganizations();
     let preparedData = receivedData.map((item) => {
       return {
         id: item.id,
@@ -170,7 +165,7 @@ const OrganizationsTable = ({ showModal }) => {
                     src={EditIcon}
                     org_id={item.id}
                     orgData={item}
-                    onClick={() => showModal('editOrganization', item)}
+                    onClick={() => showModal("editOrganization", item)}
                   />
                   <EditDeleteButtons src={DeleteIcon} />
                 </EditDeleteContainer>

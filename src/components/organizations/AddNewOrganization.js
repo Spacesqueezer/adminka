@@ -15,8 +15,7 @@ import {
 import CustomButton from "../common/common components/CustomButton";
 import TextInputWithLabel from "../common/common components/TextInputWithLabel";
 import TabsSet from "../common/common components/TabsSet";
-import EmployeesTab from "./EmployeesTab";
-import TransportTab from "./TransportTab";
+import { createNewOrganization } from "../../API_functions";
 
 const Container = styled.div`
   width: 1220px;
@@ -27,8 +26,6 @@ const Container = styled.div`
   border-radius: 12px;
   overflow: hidden;
 `;
-
-
 
 const tabs = {
   Сотрудники: <div />,
@@ -77,7 +74,7 @@ const AddNewOrganization = ({ onClose }) => {
   };
 
   const submitFunction = () => {
-    console.log(formData);
+    createNewOrganization(formData);
   };
 
   return (

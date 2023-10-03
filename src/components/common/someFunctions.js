@@ -1,5 +1,5 @@
 import FakeEmpl from "../../fake_data/fake_persons.json";
-import FakeTrans from "../../fake_data/Fake_transports.json";
+import {getListOfTransports} from "../../API_functions";
 
 // TODO: сделать фетчи
 
@@ -11,7 +11,8 @@ const getAmountOfEmployeesByOrgId = (org_id) => {
 };
 
 const getAmountOfTransportByOrgId = (org_id) => {
-  return FakeTrans.filter(
+  let transports = getListOfTransports()
+  return transports.filter(
     (trans) => trans.organization.id.toString() === org_id.toString()
   );
 };

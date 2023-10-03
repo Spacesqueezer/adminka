@@ -18,6 +18,7 @@ import {
   Expiration,
   ColumnHeader,
 } from "../common/common components/tableComponents";
+import {getListOfTransports} from "../../API_functions";
 
 const TransportTable = () => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
@@ -32,7 +33,7 @@ const TransportTable = () => {
   }, []);
 
   const fetchData = () => {
-    let receivedData = FakeTransport;
+    let receivedData = getListOfTransports();
     let preparedData = receivedData.map((item) => {
       const dateFrom = new Date(item.valid_from_date);
       const dateUntil = new Date(item.valid_until_date);
