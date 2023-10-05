@@ -26,6 +26,7 @@ import {
   getListOfOrganizations,
 } from "../../API_functions";
 import transport from "../transport/Transport";
+import DateRangePicker from "../common/common components/DateRangePicker";
 
 const Container = styled.div`
   width: 1220px;
@@ -122,6 +123,17 @@ const AddNewEmployee = ({ onClose }) => {
     setFormData(updatedFormData);
   };
 
+  const onSelectRange = (range) => {
+    setFormData({
+      ...formData,
+      transport: {
+        ...formData.transport,
+        valid_from_date: range.fromDate,
+        valid_until_date: range.untilDate,
+      },
+    });
+  };
+
   useEffect(() => {
     const organizations = getListOfOrganizations();
     const organizationsList = organizations.map((item) => ({
@@ -204,7 +216,10 @@ const AddNewEmployee = ({ onClose }) => {
                 name={"transport.grz"}
                 onInput={handleInputChange}
               />
-              <DateInputWithLabel label={"Пропуск"} />
+              <DateRangePicker
+                label={"Пропуск"}
+                onSelectRange={onSelectRange}
+              />
             </InputsRow>
           </InputsBlock>
         </Body>
