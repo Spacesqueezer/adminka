@@ -57,6 +57,9 @@ const AddNewEmployee = ({ onClose }) => {
     transport_id: 0,
     person_position: "",
     employee: true,
+    person_birthdate: "",
+    organization_floor: "",
+    organization_office: "",
     transport: {
       mark: false,
       grz: false,
@@ -65,7 +68,7 @@ const AddNewEmployee = ({ onClose }) => {
       driver_surname: "",
       driver_patronymic: "",
       valid_from_date: "",
-      valid_until_date: "2023-08-02",
+      valid_until_date: "",
       base64_photo: "",
     },
   });

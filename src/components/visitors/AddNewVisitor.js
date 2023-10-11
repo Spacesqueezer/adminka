@@ -19,6 +19,7 @@ import {
 import TextInputWithLabel from "../common/common components/TextInputWithLabel";
 import DateInputWithLabel from "../common/common components/DateInputWithLabel";
 import CustomButton from "../common/common components/CustomButton";
+import { createNewPerson, genUuid } from "../../API_functions";
 
 const Container = styled.div`
   width: 1220px;
@@ -39,31 +40,35 @@ const Body = styled.div`
 const AddNewVisitor = ({ onClose }) => {
   // Стейт для хранения данных формы
   const [formData, setFormData] = useState({
-    requestid: "",
-    person_name: "",
-    person_surname: "",
-    person_patronymic: "",
-    valid_from_date: "",
-    valid_until_date: "",
-    organization_id: 0,
-    transport_id: 0,
-    birth_date: "",
+    requestid: genUuid(),
+    person_name: false,
+    person_surname: false,
+    person_patronymic: false,
+    valid_from_date: false,
+    valid_until_date: false,
+    organization_id: false,
+    transport_id: false,
+    person_position: false,
+    employee: false,
+    person_birthdate: false,
+    organization_floor: false,
+    organization_office: false,
     transport: {
-      mark: "",
-      grz: "",
-      organization_id: 0,
-      driver_name: "",
-      driver_surname: "",
-      driver_patronymic: "",
-      valid_from_date: "",
-      valid_until_date: "2023-08-02",
-      base64_photo: "",
+      mark: false,
+      grz: false,
+      organization_id: false,
+      driver_name: false,
+      driver_surname: false,
+      driver_patronymic: false,
+      valid_from_date: false,
+      valid_until_date: false,
+      base64_photo: false,
     },
   });
 
   //Функция отправки формы
   const submitFunction = () => {
-    console.log(formData);
+    createNewPerson(formData);
   };
 
   // Обработка ввода в инпут
@@ -127,7 +132,7 @@ const AddNewVisitor = ({ onClose }) => {
             <InputsRow>
               <DateInputWithLabel
                 label={"Дата рождения"}
-                name={"birth_date"}
+                name={"person_birthdate"}
                 onInput={handleInputChange}
               />
             </InputsRow>
@@ -152,26 +157,34 @@ const AddNewVisitor = ({ onClose }) => {
             <InputsRow>
               <TextInputWithLabel
                 label={"Организация"}
-                name={"person_surname"}
+                name={"organization_id"}
+                onInput={handleInputChange}
+              />
+              <TextInputWithLabel
+                label={"Этаж"}
+                name={"organization_floor"}
                 onInput={handleInputChange}
               />
               <TextInputWithLabel
                 label={"Офис"}
-                name={"person_name"}
+                name={"organization_office"}
                 onInput={handleInputChange}
               />{" "}
-              <TextInputWithLabel
-                label={"?????????"}
-                name={"person_name"}
-                onInput={handleInputChange}
-              />
             </InputsRow>
           </InputsBlock>
           <InputsBlock style={{ flex: 145 }}>
             <BlockHeader>Пропуск посетителя</BlockHeader>
             <InputsRow style={{ maxWidth: "530px", gap: "40px" }}>
-              <DateInputWithLabel label={"Дата начала действия"} />
-              <DateInputWithLabel label={"Срок окончания действия"} />
+              <DateInputWithLabel
+                label={"Дата начала действия"}
+                name={"valid_from_date"}
+                onInput={handleInputChange}
+              />
+              <DateInputWithLabel
+                label={"Окончание срока действия"}
+                name={"valid_until_date"}
+                onInput={handleInputChange}
+              />
             </InputsRow>
           </InputsBlock>
         </Body>
