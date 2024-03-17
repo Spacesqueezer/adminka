@@ -64,6 +64,11 @@ const EditEmployee = ({ onClose, editData }) => {
       valid_until_date: editData.transport.valid_until_date,
       base64_photo: editData.transport.base64_photo,
     },
+    vectors: [
+      {
+        photo: editData.vectors[0].photo,
+      },
+    ],
   });
   const [organizations, setOrganizations] = useState({});
 
@@ -120,10 +125,22 @@ const EditEmployee = ({ onClose, editData }) => {
     });
   };
 
+  const setNewPhoto = (photo) => {
+    setFormData({
+      ...formData,
+      vectors: [
+        {
+          ...formData.vectors[0],
+          photo: photo,
+        },
+      ],
+    });
+  }
+
   return (
     <Container>
       <LeftSide>
-        <ImagePicker />
+        <ImagePicker selectedPhoto={formData.vectors[0].photo} onImageSelect={setNewPhoto} />
         <ModalLogo source={Logo} />
       </LeftSide>
       <RightSide>

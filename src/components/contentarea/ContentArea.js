@@ -9,8 +9,8 @@ import styled from "styled-components";
 import { ThemeContext } from "../../ThemeContext";
 import OrganizationsScreen from "../organizations/Organizations";
 import EventsScreen from "../events/Events";
-import Reports from "../reports/Reports";
 import ReportsScreen from "../reports/Reports";
+import SettingsScreen from "../settings/Settings";
 
 const Wrapper = styled.div`
   flex: 54;
@@ -80,6 +80,7 @@ const ContentArea = ({ selectedMenu, title, showModal, closeModal }) => {
     Транспорт: <TransportScreen showModal={showModal} />,
     "Журнал событий": <EventsScreen />,
     Отчёты: <ReportsScreen />,
+    Настройки: <SettingsScreen />,
   };
 
   return (

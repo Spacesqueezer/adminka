@@ -11,13 +11,13 @@ import {
   TableRow,
   TableData,
   Image,
-  Pagination,
-  PaginationButton,
   EditDeleteContainer,
   EditDeleteButtons,
   Expiration,
   ColumnHeader,
+  TableWrapper,
 } from "../common/common components/tableComponents";
+import Pagination from "../common/common components/Pagination";
 
 const VisitorsTable = () => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
@@ -115,83 +115,83 @@ const VisitorsTable = () => {
 
   return (
     <TableContainer>
-      <Table>
-        <TableHeader>
-          <tr>
-            <ColumnHeader
-              title={"ФИО"}
-              sortFunc={handleSort}
-              sortBy={"name"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Дата рождения"}
-              sortFunc={handleSort}
-              sortBy={"birth_date"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Куда"}
-              sortFunc={handleSort}
-              sortBy={"destination"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Срок действия"}
-              sortFunc={handleSort}
-              sortBy={"date_delta"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Транспорт"}
-              sortFunc={handleSort}
-              sortBy={"transport"}
-              sortOrder={sortOrder}
-            />
-            <TableHeaderLabel>Фото</TableHeaderLabel>
-          </tr>
-        </TableHeader>
-        <TableBody>
-          {paginatedData.map((item) => (
-            <TableRow key={item.id}>
-              <TableData style={{ width: "17%" }}>
-                {item.surname} {item.name[0]}. {item.patronymic[0]}.
-              </TableData>
-              <TableData style={{ width: "14%" }}>{item.birth_date}</TableData>
-              <TableData style={{ width: "17%" }}>{item.destination}</TableData>
-              <TableData style={{ width: "23%" }}>
-                {/*{item.date_from} -> {item.date_until} : {item.date_delta}*/}
-                <Expiration
-                  from={item.date_from}
-                  until={item.date_until}
-                  delta={item.date_delta}
-                />
-              </TableData>
-              <TableData style={{ width: "10%" }}>{item.transport}</TableData>
-              <TableData>
-                <Image src={item.photo} alt={item.name} />
-              </TableData>
-              <TableData>
-                <EditDeleteContainer>
-                  <EditDeleteButtons src={EditIcon} />
-                  <EditDeleteButtons src={DeleteIcon} />
-                </EditDeleteContainer>
-              </TableData>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-      <Pagination>
-        {Array.from({ length: totalPages }).map((_, index) => (
-          <PaginationButton
-            key={index + 1}
-            active={index + 1 === currentPage}
-            onClick={() => handlePageChange(index + 1)}
-          >
-            {index + 1}
-          </PaginationButton>
-        ))}
-      </Pagination>
+      <TableWrapper>
+        <Table>
+          <TableHeader>
+            <tr>
+              <ColumnHeader
+                title={"ФИО"}
+                sortFunc={handleSort}
+                sortBy={"name"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Дата рождения"}
+                sortFunc={handleSort}
+                sortBy={"birth_date"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Куда"}
+                sortFunc={handleSort}
+                sortBy={"destination"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Срок действия"}
+                sortFunc={handleSort}
+                sortBy={"date_delta"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Транспорт"}
+                sortFunc={handleSort}
+                sortBy={"transport"}
+                sortOrder={sortOrder}
+              />
+              <TableHeaderLabel>Фото</TableHeaderLabel>
+            </tr>
+          </TableHeader>
+          <TableBody>
+            {paginatedData.map((item) => (
+              <TableRow key={item.id}>
+                <TableData style={{ width: "17%" }}>
+                  {item.surname} {item.name[0]}. {item.patronymic[0]}.
+                </TableData>
+                <TableData style={{ width: "14%" }}>
+                  {item.birth_date}
+                </TableData>
+                <TableData style={{ width: "17%" }}>
+                  {item.destination}
+                </TableData>
+                <TableData style={{ width: "23%" }}>
+                  {/*{item.date_from} -> {item.date_until} : {item.date_delta}*/}
+                  <Expiration
+                    from={item.date_from}
+                    until={item.date_until}
+                    delta={item.date_delta}
+                  />
+                </TableData>
+                <TableData style={{ width: "10%" }}>{item.transport}</TableData>
+                <TableData>
+                  <Image src={item.photo} alt={item.name} />
+                </TableData>
+                <TableData>
+                  <EditDeleteContainer>
+                    <EditDeleteButtons src={EditIcon} />
+                    <EditDeleteButtons src={DeleteIcon} />
+                  </EditDeleteContainer>
+                </TableData>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableWrapper>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        handlePageChange={handlePageChange}
+      />
     </TableContainer>
   );
 };

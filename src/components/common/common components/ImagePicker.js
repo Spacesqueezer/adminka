@@ -41,8 +41,7 @@ const SelectPhotoEditButtonImage = styled.img`
   height: 100%;
 `;
 
-const ImagePicker = () => {
-  const [image, setImage] = useState(ImagePlaceholder);
+const ImagePicker = ({ onImageSelect, selectedPhoto }) => {
   const fileInputRef = useRef(null);
 
   const handleImageChange = (event) => {
@@ -50,7 +49,7 @@ const ImagePicker = () => {
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        setImage(reader.result);
+        onImageSelect(reader.result);
       };
       reader.readAsDataURL(file);
     }
@@ -61,19 +60,24 @@ const ImagePicker = () => {
   };
 
   return (
-    <ImgPickContainer>
-      <UserImage src={image} alt="error" />
-      <LoadImageButton onClick={handleLoadButtonClick}>
-        <SelectPhotoEditButtonImage src={EditPencil} alt="edit" />
-        <HiddenInput
-          type="file"
-          accept="image/*"
-          onChange={handleImageChange}
-          ref={fileInputRef}
-        />
-      </LoadImageButton>
-    </ImgPickContainer>
+      <ImgPickContainer>
+        {selectedPhoto ? (
+            <UserImage src={selectedPhoto} alt="selected" />
+        ) : (
+            <UserImage src={ImagePlaceholder} alt="placeholder" />
+        )}
+        <LoadImageButton onClick={handleLoadButtonClick}>
+          <SelectPhotoEditButtonImage src={EditPencil} alt="edit" />
+          <HiddenInput
+              type="file"
+              accept="image/jpeg"
+              onChange={handleImageChange}
+              ref={fileInputRef}
+          />
+        </LoadImageButton>
+      </ImgPickContainer>
   );
 };
+
 
 export default ImagePicker;

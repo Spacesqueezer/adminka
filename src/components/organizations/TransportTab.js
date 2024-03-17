@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import FakeTransport from "../../fake_data/Fake_transports.json";
 import {
   ColumnHeader,
   EditDeleteButtons,
@@ -38,7 +37,7 @@ const TransportTab = (org_id) => {
 
   const fetchData = () => {
     // получаем список всех сотрудников и посетителей
-    let receivedData = FakeTransport;
+    // let receivedData = FakeTransport;
 
     // фильтруем по организации
     let filteredData = getAmountOfTransportByOrgId(org_id.org_id);

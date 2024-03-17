@@ -7,7 +7,14 @@ import SortArrow from "../../employees/images/Sort_Arrow.png";
 export const TableContainer = styled.div`
   width: 100%;
   height: 100%;
+  //overflow: auto;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const TableWrapper = styled.div`
   overflow: auto;
+  flex: 737;
 `;
 
 export const Table = styled.table`
@@ -202,7 +209,8 @@ const StatusContainer = styled.div`
   align-items: center; /* Выравниваем по центру по горизонтали */
   padding: 7px 10px 7px 10px;
   border-radius: 8px;
-  background-color: ${(props) => props.status ? props.theme.StatusEmployee : props.theme.StatusGuest};
+  background-color: ${(props) =>
+    props.status ? props.theme.StatusEmployee : props.theme.StatusGuest};
 `;
 
 const StatusText = styled.p`
@@ -211,24 +219,27 @@ const StatusText = styled.p`
   font-weight: 400;
   line-height: 19px;
   text-align: center;
-  color: ${(props) => props.status ? props.theme.StatusEmployeeText : props.theme.StatusGuestText};
+  color: ${(props) =>
+    props.status
+      ? props.theme.StatusEmployeeText
+      : props.theme.StatusGuestText};
 `;
 
 export const StatusEmployee = ({ status }) => {
-    return (
-        <StatusContainer status={status}>
-            <StatusText status={status}>{status ? 'Сотрудник' : 'Гость'}</StatusText>
-        </StatusContainer>
-    )
-}
+  return (
+    <StatusContainer status={status}>
+      <StatusText status={status}>{status ? "Сотрудник" : "Гость"}</StatusText>
+    </StatusContainer>
+  );
+};
 
-export const StatusTransport = ({status}) => {
-    return (
-        <StatusContainer status={status}>
-            <StatusText status={status}>{status ? 'Фирмы' : 'Гостевая'}</StatusText>
-        </StatusContainer>
-    )
-}
+export const StatusTransport = ({ status }) => {
+  return (
+    <StatusContainer status={status}>
+      <StatusText status={status}>{status ? "Фирмы" : "Гостевая"}</StatusText>
+    </StatusContainer>
+  );
+};
 
 export default {
   TableContainer,
@@ -248,6 +259,7 @@ export default {
   ExpirationDeltaText,
   EditDeleteContainer,
   EditDeleteButtons,
+  TableWrapper,
   Expiration,
   ColumnHeader,
 };

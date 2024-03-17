@@ -5,7 +5,6 @@ const TabContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  //overflow: scroll;
 `;
 
 const TabHeader = styled.div`
@@ -41,11 +40,14 @@ const TabContent = styled.div`
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.05);
 `;
 
-const TabsSet = ({ tabs }) => {
+const TabsSet = ({ tabs, onTabChange }) => {
   const [activeTab, setActiveTab] = useState(Object.keys(tabs)[0]);
 
   const handleTabClick = (tabKey) => {
     setActiveTab(tabKey);
+    if (onTabChange) {
+      onTabChange(tabKey); // Вызов функции onTabChange с выбранной вкладкой
+    }
   };
 
   return (

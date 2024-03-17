@@ -20,7 +20,7 @@ import {
   ButtonsContainer,
 } from "../common/common components/modalWindowComponents";
 import DropListWithLabel from "../common/common components/DropListWithLabel";
-import FakeOrganizations from "../../fake_data/FakeOrganizations.json";
+import { getListOfOrganizations } from "../../API_functions";
 
 const Container = styled.div`
   width: 1220px;
@@ -67,10 +67,6 @@ const AddNewTransport = ({ onClose }) => {
     console.log(formData);
   };
 
-  const fetchData = () => {
-    return FakeOrganizations;
-  };
-
   // Обработка ввода в инпут
   const handleInputChange = (name, value) => {
     let updatedFormData = { ...formData };
@@ -98,7 +94,7 @@ const AddNewTransport = ({ onClose }) => {
   };
 
   useEffect(() => {
-    const organizations = fetchData();
+    const organizations = getListOfOrganizations();
     const organizationsList = organizations.map((item) => ({
       id: item.id,
       name: item.organization_name,

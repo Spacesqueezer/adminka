@@ -1,0 +1,4002 @@
+[
+  {
+    "id": "4be5fd10-f4da-4a7b-b048-78a6ceb16b18",
+    "cam_id": "82b32704-0ce9-46b3-9166-cd744d3688e9",
+    "cam_type": 85,
+    "delay": 60,
+    "name": "elderberry",
+    "description": "delicious"
+  },
+  {
+    "id": "34909007-1a88-4b19-8716-20f2320ababb",
+    "cam_id": "290b999d-0895-4724-b54c-33ed8a854495",
+    "cam_type": 8,
+    "delay": 72,
+    "name": "grape",
+    "description": "sweet"
+  },
+  {
+    "id": "0c01173a-370e-4a85-90b8-81652ad80333",
+    "cam_id": "99bb63c7-55a2-411c-ac3d-b0d75fe46002",
+    "cam_type": 23,
+    "delay": 82,
+    "name": "date",
+    "description": "delicious"
+  },
+  {
+    "id": "b5f8c83b-2a94-4d73-8b0b-f1e1c77ab913",
+    "cam_id": "7a2d289a-c9dc-4ab6-bea3-de892dec9d17",
+    "cam_type": 41,
+    "delay": 20,
+    "name": "banana",
+    "description": "red"
+  },
+  {
+    "id": "1cb4c495-6de1-4e7b-8a6b-f7324f60ecf6",
+    "cam_id": "b4d003be-e746-496e-9e0f-a97b2329f167",
+    "cam_type": 95,
+    "delay": 6,
+    "name": "cherry",
+    "description": "juicy"
+  },
+  {
+    "id": "ef5500b4-4db0-4589-8bb3-d609c74dda6b",
+    "cam_id": "a61441b6-6f94-4ab9-8c40-623e6e45ed0c",
+    "cam_type": 48,
+    "delay": 65,
+    "name": "fig",
+    "description": "fresh"
+  },
+  {
+    "id": "96fb4b59-d858-4cfd-be8a-a73a3fb7e882",
+    "cam_id": "9f7b3d74-d031-45ed-b204-94b8c04c198a",
+    "cam_type": 27,
+    "delay": 72,
+    "name": "kiwi",
+    "description": "sweet"
+  },
+  {
+    "id": "fde6289d-57a3-4f3f-a009-c77e8e0bbeda",
+    "cam_id": "a344e710-8ddb-45f0-93ed-f41e679fab80",
+    "cam_type": 11,
+    "delay": 24,
+    "name": "apple",
+    "description": "sweet"
+  },
+  {
+    "id": "9fdf8db5-3deb-46be-8c18-bb3a0b70e238",
+    "cam_id": "548c1d8e-bd3b-4675-ac1e-1635b704baff",
+    "cam_type": 7,
+    "delay": 78,
+    "name": "fig",
+    "description": "sour"
+  },
+  {
+    "id": "785f1502-a4fc-4e69-b35a-55dacbd714b8",
+    "cam_id": "c540b83e-6884-4858-a304-7a11af47cd15",
+    "cam_type": 98,
+    "delay": 9,
+    "name": "grape",
+    "description": "delicious"
+  },
+  {
+    "id": "1e1845b3-2f16-4b1d-85d8-2d8b6f019cf3",
+    "cam_id": "fe97b837-8f86-4c79-9a05-85f3fdda762a",
+    "cam_type": 13,
+    "delay": 50,
+    "name": "kiwi",
+    "description": "sweet"
+  },
+  {
+    "id": "04c038eb-d327-4472-a11f-cefb63fb1519",
+    "cam_id": "7366ca0b-d99b-4dc1-b0e4-ecdeac64d2ce",
+    "cam_type": 44,
+    "delay": 65,
+    "name": "banana",
+    "description": "red"
+  },
+  {
+    "id": "9c69981c-7145-4dc7-b452-3caa24de7d8f",
+    "cam_id": "985715ad-9cd1-4d98-ac42-11bdbc646bd4",
+    "cam_type": 9,
+    "delay": 74,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "303d88d3-43ee-459f-b673-a55b5d24bf2d",
+    "cam_id": "c22b2f15-b8eb-41ee-bc32-7901b5dddc6b",
+    "cam_type": 20,
+    "delay": 93,
+    "name": "fig",
+    "description": "sweet"
+  },
+  {
+    "id": "8c8eed7f-3141-4053-a8cf-dcaa0890d189",
+    "cam_id": "baedd1eb-b7f5-423a-ae39-35419feeb943",
+    "cam_type": 53,
+    "delay": 89,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "697ba0eb-de2c-44c9-aab8-38fe1e620bd3",
+    "cam_id": "b269fa67-bea7-442e-b5db-af51af49b471",
+    "cam_type": 71,
+    "delay": 2,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "60a3ac5a-9692-4356-bbe6-5398113624f9",
+    "cam_id": "cd378942-e10c-4211-8758-564b780334ac",
+    "cam_type": 42,
+    "delay": 88,
+    "name": "fig",
+    "description": "sweet"
+  },
+  {
+    "id": "8a6580c9-027d-4ad3-a168-b48bb4f56742",
+    "cam_id": "8d15d21c-129d-4a7c-855d-eb2364e8936a",
+    "cam_type": 53,
+    "delay": 35,
+    "name": "kiwi",
+    "description": "tangy"
+  },
+  {
+    "id": "cd6ddd02-3f40-45e7-b06e-f77b5f905afc",
+    "cam_id": "a4c3a459-03a9-433f-9c55-5e45da401ec1",
+    "cam_type": 16,
+    "delay": 60,
+    "name": "honeydew",
+    "description": "delicious"
+  },
+  {
+    "id": "f60f4f8a-943b-4efc-b88d-f8712f130435",
+    "cam_id": "8be3c3fc-de5a-4485-b95a-758b2aa5c294",
+    "cam_type": 71,
+    "delay": 4,
+    "name": "fig",
+    "description": "juicy"
+  },
+  {
+    "id": "7d9c8fdc-7b10-4dc6-ba67-77def135c4f8",
+    "cam_id": "978ae8da-82f8-4824-a09a-2948bf1878f5",
+    "cam_type": 9,
+    "delay": 57,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "dbdc6f7d-5c04-4051-a295-b05d9930890d",
+    "cam_id": "39e26369-90ac-42ac-a7df-1ea02a2d4da9",
+    "cam_type": 71,
+    "delay": 45,
+    "name": "kiwi",
+    "description": "sweet"
+  },
+  {
+    "id": "369f6cbb-a243-47dd-a21b-fa0a96206ad4",
+    "cam_id": "f6007dad-01b5-4656-b35a-f3fdecf3ce26",
+    "cam_type": 2,
+    "delay": 43,
+    "name": "apple",
+    "description": "delicious"
+  },
+  {
+    "id": "2c48f09e-d650-403e-addb-55dc2cf33c80",
+    "cam_id": "b4f193db-83bb-4ae8-84e2-d70ebcbdbb7c",
+    "cam_type": 97,
+    "delay": 17,
+    "name": "date",
+    "description": "tasty"
+  },
+  {
+    "id": "ccf4d75a-2043-4d34-9026-4ed192c78c91",
+    "cam_id": "71b75331-61a8-4d2f-a96b-f446ca7ca826",
+    "cam_type": 29,
+    "delay": 45,
+    "name": "lemon",
+    "description": "delicious"
+  },
+  {
+    "id": "479e8d87-167c-46d9-8e2b-504412a16e4a",
+    "cam_id": "878d0241-8852-4f1f-8095-9cffdb88c7bd",
+    "cam_type": 92,
+    "delay": 85,
+    "name": "grape",
+    "description": "juicy"
+  },
+  {
+    "id": "7f563595-aad1-4092-8dc0-9164bf6d10c6",
+    "cam_id": "1bcc829d-ce9f-4960-b5c3-4fdea43823ae",
+    "cam_type": 75,
+    "delay": 86,
+    "name": "banana",
+    "description": "tangy"
+  },
+  {
+    "id": "66e98f4c-57bc-4ba6-8fc2-61d0a652b5d2",
+    "cam_id": "3b99c801-ed5f-4e2e-858f-79268755f483",
+    "cam_type": 100,
+    "delay": 77,
+    "name": "honeydew",
+    "description": "tropical"
+  },
+  {
+    "id": "6565af38-3db8-44ef-abe9-ca347dca8242",
+    "cam_id": "deca5578-cf90-44b4-a002-200261e460c8",
+    "cam_type": 35,
+    "delay": 91,
+    "name": "grape",
+    "description": "tropical"
+  },
+  {
+    "id": "8445d7fc-a477-483a-848f-d29c8baa5ee3",
+    "cam_id": "ef09352c-f701-4508-8dad-0d1f8ecd819b",
+    "cam_type": 68,
+    "delay": 74,
+    "name": "grape",
+    "description": "delicious"
+  },
+  {
+    "id": "de4be962-acf8-4afe-bc35-5384475b4a21",
+    "cam_id": "ddc8f20d-7d6c-4767-abea-739240349151",
+    "cam_type": 57,
+    "delay": 39,
+    "name": "grape",
+    "description": "tropical"
+  },
+  {
+    "id": "d8ef909d-9d7a-4506-b17c-e4decf88b5c5",
+    "cam_id": "2dac71cb-f6d1-46ca-8fce-d7c6d8f27b71",
+    "cam_type": 48,
+    "delay": 56,
+    "name": "fig",
+    "description": "tropical"
+  },
+  {
+    "id": "fe2db56a-27cf-4bf5-bff4-068d1212acec",
+    "cam_id": "3bac0fbb-757b-4a77-8826-d0e8e2692903",
+    "cam_type": 21,
+    "delay": 76,
+    "name": "honeydew",
+    "description": "red"
+  },
+  {
+    "id": "d5d1a62d-6fc6-4749-b641-82e42c94bb71",
+    "cam_id": "996e046b-0b6c-4b2e-b5c1-5ed7256fdb21",
+    "cam_type": 50,
+    "delay": 64,
+    "name": "kiwi",
+    "description": "sour"
+  },
+  {
+    "id": "d3ad211a-00cb-4ef1-bc3e-418035710da6",
+    "cam_id": "9c27d41a-147a-4c32-8cda-846e72b71b30",
+    "cam_type": 15,
+    "delay": 68,
+    "name": "apple",
+    "description": "sweet"
+  },
+  {
+    "id": "96ebbd30-2dcf-47a9-86cf-cc23fe40f80c",
+    "cam_id": "d71853db-9906-4531-a933-7f81bf3e59a0",
+    "cam_type": 88,
+    "delay": 86,
+    "name": "elderberry",
+    "description": "tropical"
+  },
+  {
+    "id": "a5170c08-21b7-476d-8586-f849a0fa8fa7",
+    "cam_id": "ef199525-a6f4-4507-ba92-635aa64e35c2",
+    "cam_type": 41,
+    "delay": 26,
+    "name": "kiwi",
+    "description": "fresh"
+  },
+  {
+    "id": "f3bd54d6-bf7c-4a8a-a4eb-c82ff9531917",
+    "cam_id": "e54f4874-f9b9-4add-a428-f326de5d7f2e",
+    "cam_type": 81,
+    "delay": 46,
+    "name": "fig",
+    "description": "delicious"
+  },
+  {
+    "id": "d0960217-591b-4a8e-a72d-a28a9812e832",
+    "cam_id": "e8336a65-3247-426a-b7c7-f95eb08e599e",
+    "cam_type": 75,
+    "delay": 17,
+    "name": "apple",
+    "description": "tasty"
+  },
+  {
+    "id": "f1b43c67-aad0-4bf9-bfdf-0dd389e7ab72",
+    "cam_id": "1f602e8d-3ab7-4305-8ac4-f22b76f70a8f",
+    "cam_type": 91,
+    "delay": 79,
+    "name": "date",
+    "description": "ripe"
+  },
+  {
+    "id": "ff15708d-1949-4a34-b3e4-abcd317bb7ca",
+    "cam_id": "5df16915-a5b8-4ffc-a424-2ad110740f1d",
+    "cam_type": 60,
+    "delay": 17,
+    "name": "kiwi",
+    "description": "fresh"
+  },
+  {
+    "id": "8710b08b-84eb-4891-8626-b2bce0ae55dc",
+    "cam_id": "1796c49b-0d68-4c1c-ac76-423d489e5930",
+    "cam_type": 3,
+    "delay": 17,
+    "name": "elderberry",
+    "description": "delicious"
+  },
+  {
+    "id": "67082540-76ec-42a4-9513-ca205d73a2f4",
+    "cam_id": "d4a71269-bdf7-4991-9606-cbbf646cac28",
+    "cam_type": 44,
+    "delay": 93,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "94a4b29e-a35e-4ecb-b269-02318c675ea7",
+    "cam_id": "ca7ede10-01bc-4bbd-b118-66c2c341fd7e",
+    "cam_type": 23,
+    "delay": 12,
+    "name": "fig",
+    "description": "juicy"
+  },
+  {
+    "id": "27162f6b-f754-4322-b85f-fa70d83d1d29",
+    "cam_id": "5d568adc-dadb-4dbe-a05a-ac9d294c5f1b",
+    "cam_type": 97,
+    "delay": 25,
+    "name": "apple",
+    "description": "fresh"
+  },
+  {
+    "id": "28cdc1ef-5874-4afd-a49e-1e50e26a6768",
+    "cam_id": "35d7c2a3-6a29-4169-878b-5b67217ba907",
+    "cam_type": 44,
+    "delay": 100,
+    "name": "kiwi",
+    "description": "tangy"
+  },
+  {
+    "id": "e0d466cd-c2d6-4125-ae8e-75f8ce53c373",
+    "cam_id": "17dc2dbf-7293-42ba-935e-4d054cbef8c3",
+    "cam_type": 34,
+    "delay": 43,
+    "name": "elderberry",
+    "description": "juicy"
+  },
+  {
+    "id": "26abaeac-2cb5-477d-9517-87161183905e",
+    "cam_id": "a78745e1-b249-4a7a-958b-45851b8c4d8c",
+    "cam_type": 86,
+    "delay": 70,
+    "name": "date",
+    "description": "tasty"
+  },
+  {
+    "id": "afe152a6-ec3e-4ec9-ab89-6d1dfca73c5f",
+    "cam_id": "cf9b3f41-cfa9-4120-8066-500633bb8626",
+    "cam_type": 8,
+    "delay": 52,
+    "name": "elderberry",
+    "description": "ripe"
+  },
+  {
+    "id": "3bba65d9-1a8d-42d8-978d-982d866431e1",
+    "cam_id": "85669fae-0965-4869-8544-a449e8cfb575",
+    "cam_type": 34,
+    "delay": 86,
+    "name": "banana",
+    "description": "tasty"
+  },
+  {
+    "id": "9c627f90-5736-4efd-887a-116ad1559c40",
+    "cam_id": "e6d7aa58-dc71-44ac-90ed-7d08d3681152",
+    "cam_type": 30,
+    "delay": 72,
+    "name": "apple",
+    "description": "tropical"
+  },
+  {
+    "id": "9f966d16-cc79-498a-922c-4abcee9a0737",
+    "cam_id": "6d38dbba-f457-4d34-b6f2-702c5f78516e",
+    "cam_type": 87,
+    "delay": 47,
+    "name": "honeydew",
+    "description": "tropical"
+  },
+  {
+    "id": "494428b1-7df3-4765-9e79-d53d24dc75f3",
+    "cam_id": "3d138e17-c4af-49c9-abe1-73cca8170c1c",
+    "cam_type": 26,
+    "delay": 72,
+    "name": "kiwi",
+    "description": "juicy"
+  },
+  {
+    "id": "51d8edfb-9e2a-4947-b5db-0c5e36ee2ed6",
+    "cam_id": "c374e0a1-dccd-4392-bd28-185d70ea0649",
+    "cam_type": 42,
+    "delay": 18,
+    "name": "grape",
+    "description": "fresh"
+  },
+  {
+    "id": "9b300bb0-417d-48e6-9b22-add8b69db2a2",
+    "cam_id": "a7fb0260-c632-4f0f-87c4-b1c362449aa0",
+    "cam_type": 72,
+    "delay": 75,
+    "name": "banana",
+    "description": "fresh"
+  },
+  {
+    "id": "45c62a12-a5ba-4ef9-8c11-685851c689c2",
+    "cam_id": "8bb211a2-f63f-441f-9860-d7b211264e32",
+    "cam_type": 1,
+    "delay": 63,
+    "name": "cherry",
+    "description": "sweet"
+  },
+  {
+    "id": "54d8d22b-1b94-418c-8bfb-4e57bf857596",
+    "cam_id": "dad0479b-0df9-4c92-8c54-4bf69887438a",
+    "cam_type": 15,
+    "delay": 59,
+    "name": "apple",
+    "description": "tangy"
+  },
+  {
+    "id": "a9a32da2-96f9-428f-9eaa-133fd48f9eb4",
+    "cam_id": "fa1c6f36-ce85-4118-b796-cc5a74f74583",
+    "cam_type": 18,
+    "delay": 53,
+    "name": "fig",
+    "description": "juicy"
+  },
+  {
+    "id": "6c3d3f0e-3c16-4bf6-b523-7b6f7236a4ff",
+    "cam_id": "74a83b99-3e80-47ec-b2b0-53c9e823954d",
+    "cam_type": 50,
+    "delay": 45,
+    "name": "honeydew",
+    "description": "sour"
+  },
+  {
+    "id": "e70f7d55-894c-4614-9cfb-866b1c0307b9",
+    "cam_id": "1e183f1f-d993-4064-8ae6-8f17b84fb210",
+    "cam_type": 57,
+    "delay": 23,
+    "name": "grape",
+    "description": "tangy"
+  },
+  {
+    "id": "d2224203-d72c-4d43-bf75-6bec53413797",
+    "cam_id": "35463845-4029-4b14-9f2e-0001769b86b0",
+    "cam_type": 61,
+    "delay": 41,
+    "name": "fig",
+    "description": "tropical"
+  },
+  {
+    "id": "41ed1886-1803-42c4-962f-18dc55c102cf",
+    "cam_id": "6178f4fa-267d-4629-a582-e7a9c7cfce86",
+    "cam_type": 18,
+    "delay": 98,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "36f3bcc1-757b-435f-8f1b-8646c06d500d",
+    "cam_id": "0f879ee2-492a-4ed7-9d09-fb76d8649a24",
+    "cam_type": 46,
+    "delay": 57,
+    "name": "lemon",
+    "description": "tasty"
+  },
+  {
+    "id": "10c4f42a-dc7c-4959-a809-b44766925b2f",
+    "cam_id": "e1d96c72-9588-4cd1-a50d-3db6902b096f",
+    "cam_type": 90,
+    "delay": 91,
+    "name": "apple",
+    "description": "tropical"
+  },
+  {
+    "id": "dcd575f8-474e-43c4-aa9e-c4af368d6600",
+    "cam_id": "e31f5b63-9c8d-4a6f-9129-c648cb9ed941",
+    "cam_type": 60,
+    "delay": 64,
+    "name": "date",
+    "description": "red"
+  },
+  {
+    "id": "d95f8a3f-8195-419a-ace9-b20f2461bb57",
+    "cam_id": "1f7c1b93-eed4-40d5-887a-1cfa92d74259",
+    "cam_type": 11,
+    "delay": 82,
+    "name": "banana",
+    "description": "ripe"
+  },
+  {
+    "id": "dcb56c81-4e98-4208-9f41-470ed3be8bcd",
+    "cam_id": "a3e821fa-2576-473d-a238-ec763918f644",
+    "cam_type": 38,
+    "delay": 92,
+    "name": "lemon",
+    "description": "delicious"
+  },
+  {
+    "id": "0cdb80c2-1dce-4330-9006-0101733a63cd",
+    "cam_id": "0d2386d7-5f93-45bf-ac37-d949a405fe2b",
+    "cam_type": 16,
+    "delay": 26,
+    "name": "banana",
+    "description": "ripe"
+  },
+  {
+    "id": "7eb972d0-22cb-4cda-bd6f-21c19804a836",
+    "cam_id": "16ba57ba-8954-4dcd-9f16-db23cd48b318",
+    "cam_type": 79,
+    "delay": 25,
+    "name": "elderberry",
+    "description": "delicious"
+  },
+  {
+    "id": "30d2e9d2-0f7c-49b9-809b-e5e1310f4655",
+    "cam_id": "92d5ecd4-1c00-4ddf-a912-d9d82ecd033a",
+    "cam_type": 65,
+    "delay": 23,
+    "name": "elderberry",
+    "description": "tropical"
+  },
+  {
+    "id": "41dfeedf-acfb-4085-b011-821dff3dbc3e",
+    "cam_id": "2ed5ed66-d5ec-4d6b-abc4-3e1e848b7641",
+    "cam_type": 32,
+    "delay": 80,
+    "name": "fig",
+    "description": "juicy"
+  },
+  {
+    "id": "bb2f94a1-bd59-4578-ad91-991d2043d26b",
+    "cam_id": "a9776ec8-0d2d-4716-839e-00f44b924d72",
+    "cam_type": 81,
+    "delay": 98,
+    "name": "apple",
+    "description": "delicious"
+  },
+  {
+    "id": "210001cf-9c48-463f-b06a-4cb8d1ccf2ec",
+    "cam_id": "d88c154b-4230-4954-80fe-c41f07fec486",
+    "cam_type": 68,
+    "delay": 81,
+    "name": "date",
+    "description": "tasty"
+  },
+  {
+    "id": "6866dd31-4a01-451c-9d55-8dd4e70a8c20",
+    "cam_id": "275ca4ea-1d4c-49c0-af78-4957c4d16f3b",
+    "cam_type": 68,
+    "delay": 98,
+    "name": "lemon",
+    "description": "ripe"
+  },
+  {
+    "id": "e8a5dc64-b3f0-4741-962c-149757ab84fb",
+    "cam_id": "a4f12064-f07f-4eda-9f06-43df8df50634",
+    "cam_type": 6,
+    "delay": 45,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "e8e56883-a81c-4a6f-9cf6-e2ec1f170446",
+    "cam_id": "605c9b09-43bc-471f-81d7-f52208852587",
+    "cam_type": 32,
+    "delay": 75,
+    "name": "honeydew",
+    "description": "ripe"
+  },
+  {
+    "id": "558d7c31-edd4-4259-887d-0e608c2fd7f2",
+    "cam_id": "b027be08-1116-4973-a69d-51327946c6f5",
+    "cam_type": 11,
+    "delay": 91,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "10383048-097d-4422-9b2f-a80f483614b6",
+    "cam_id": "a9ab9805-73be-42f0-b78f-e1247204a967",
+    "cam_type": 98,
+    "delay": 13,
+    "name": "banana",
+    "description": "juicy"
+  },
+  {
+    "id": "26f4d705-a373-414a-b9d5-bafe34c9c969",
+    "cam_id": "c8b864ea-732e-475a-a89b-f496a94211ae",
+    "cam_type": 36,
+    "delay": 94,
+    "name": "kiwi",
+    "description": "ripe"
+  },
+  {
+    "id": "9d421e8b-2915-48c2-8f16-ce476b3febcd",
+    "cam_id": "84c68af1-fb6a-4232-aa4d-82cdd833064d",
+    "cam_type": 11,
+    "delay": 39,
+    "name": "banana",
+    "description": "tangy"
+  },
+  {
+    "id": "7200dcc5-703e-4c3f-bba4-0ca5fd372748",
+    "cam_id": "e32ece6e-e1a8-4271-8df5-c299eca8ddd5",
+    "cam_type": 74,
+    "delay": 96,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "ff786ee7-276c-4e85-b59b-818e24a3662b",
+    "cam_id": "2fe0c96f-32c5-4a17-91dd-52a43534bdc1",
+    "cam_type": 44,
+    "delay": 43,
+    "name": "cherry",
+    "description": "juicy"
+  },
+  {
+    "id": "74f7d5d6-8b36-4693-9774-546a85b094a4",
+    "cam_id": "b831d4bf-d86b-473b-893e-ac170ccae766",
+    "cam_type": 40,
+    "delay": 59,
+    "name": "lemon",
+    "description": "sour"
+  },
+  {
+    "id": "91f59e91-4a9d-474d-b425-a7f6d0d07b66",
+    "cam_id": "b17c14e4-3045-4a65-bd94-c2e06ea0fbcb",
+    "cam_type": 7,
+    "delay": 29,
+    "name": "apple",
+    "description": "tropical"
+  },
+  {
+    "id": "78f7481e-ef53-4ad0-bd8f-c0fa09335e72",
+    "cam_id": "f73e42ab-665b-4c0c-8206-43c347c0df73",
+    "cam_type": 97,
+    "delay": 48,
+    "name": "apple",
+    "description": "sweet"
+  },
+  {
+    "id": "dd3e1043-af1f-4609-9937-6372a7baa8fc",
+    "cam_id": "f8bc4659-7b44-4156-b56c-acb047c81058",
+    "cam_type": 80,
+    "delay": 95,
+    "name": "lemon",
+    "description": "red"
+  },
+  {
+    "id": "33ab71c8-65e9-438e-883c-9d2d6bb30a4a",
+    "cam_id": "a8f070e4-e3aa-4543-84bf-7cf2fdcfa8ae",
+    "cam_type": 44,
+    "delay": 55,
+    "name": "lemon",
+    "description": "delicious"
+  },
+  {
+    "id": "3b1a2195-750d-4683-8482-4bde191ed5b0",
+    "cam_id": "2226c6b3-04ec-48c2-80ca-1f2c383a0f16",
+    "cam_type": 43,
+    "delay": 11,
+    "name": "banana",
+    "description": "sweet"
+  },
+  {
+    "id": "376339c3-3475-4d6d-979c-ead0430a2046",
+    "cam_id": "8b177920-3e4b-4b69-9170-5362717fdaaf",
+    "cam_type": 78,
+    "delay": 19,
+    "name": "apple",
+    "description": "tasty"
+  },
+  {
+    "id": "a43270c7-5915-42a7-863d-ba985c3d9886",
+    "cam_id": "814a630f-e06c-4695-ade9-e1b3aa32cca3",
+    "cam_type": 88,
+    "delay": 10,
+    "name": "fig",
+    "description": "tropical"
+  },
+  {
+    "id": "311a0569-d499-417b-bfa6-972a16545ee9",
+    "cam_id": "b200f530-f4d0-45d7-9d47-71e60bb0e190",
+    "cam_type": 96,
+    "delay": 74,
+    "name": "honeydew",
+    "description": "red"
+  },
+  {
+    "id": "fdda911d-2e8e-4032-92da-699d8c8c987d",
+    "cam_id": "258eb8aa-23ea-4a84-b2eb-1c96acc37f9f",
+    "cam_type": 78,
+    "delay": 24,
+    "name": "grape",
+    "description": "red"
+  },
+  {
+    "id": "0447a404-b9cb-4e40-b9cc-8ca0e64642e2",
+    "cam_id": "5280a0cf-e27f-4fea-976b-67d1dbc4051c",
+    "cam_type": 53,
+    "delay": 83,
+    "name": "grape",
+    "description": "tangy"
+  },
+  {
+    "id": "f4b4419e-8245-4ba0-9551-cd4f180a809f",
+    "cam_id": "53f5b22a-c758-4408-8ca9-748b053f05d8",
+    "cam_type": 40,
+    "delay": 10,
+    "name": "elderberry",
+    "description": "delicious"
+  },
+  {
+    "id": "d50761e7-11b1-49af-9759-d4f4d3b767d6",
+    "cam_id": "ee6a365b-d77e-45bf-b595-1c482261f3c5",
+    "cam_type": 8,
+    "delay": 80,
+    "name": "elderberry",
+    "description": "fresh"
+  },
+  {
+    "id": "32535fcc-4918-4a58-b110-c51bec326436",
+    "cam_id": "725c4185-ef89-407b-95e2-665a37479a12",
+    "cam_type": 58,
+    "delay": 25,
+    "name": "date",
+    "description": "ripe"
+  },
+  {
+    "id": "a16936cb-ddde-4eda-b2a3-f175d0d48397",
+    "cam_id": "bd3cfec6-5061-4ef7-9430-14cef16ec142",
+    "cam_type": 74,
+    "delay": 38,
+    "name": "apple",
+    "description": "sour"
+  },
+  {
+    "id": "f011c32d-bfa1-4164-88b8-a01a9c9a0ea2",
+    "cam_id": "f93ab386-264a-4291-97cb-9844e68b9948",
+    "cam_type": 20,
+    "delay": 72,
+    "name": "grape",
+    "description": "fresh"
+  },
+  {
+    "id": "011a613a-1217-42cd-b943-18b464fc0a16",
+    "cam_id": "a9ae55a9-38f7-47d9-b628-c684e2886f56",
+    "cam_type": 22,
+    "delay": 91,
+    "name": "apple",
+    "description": "sweet"
+  },
+  {
+    "id": "b6b45b6c-9ee7-4592-9acb-ff17e4fb4f89",
+    "cam_id": "f59b9101-902e-4374-92f5-bb767c1451eb",
+    "cam_type": 81,
+    "delay": 49,
+    "name": "kiwi",
+    "description": "red"
+  },
+  {
+    "id": "c4a77274-063b-4c30-93dc-0035651be9bb",
+    "cam_id": "d01597a0-2457-4647-9caa-3a1194e3f731",
+    "cam_type": 66,
+    "delay": 57,
+    "name": "honeydew",
+    "description": "ripe"
+  },
+  {
+    "id": "fb4bdd94-ad64-49e8-b7e8-928e8d96bbf8",
+    "cam_id": "19617bc8-f321-485c-ae24-c067e0350e87",
+    "cam_type": 22,
+    "delay": 22,
+    "name": "apple",
+    "description": "red"
+  },
+  {
+    "id": "e3a9394f-6949-4941-9162-550de82d6427",
+    "cam_id": "a288e59c-abec-4f04-b4d2-03397a1debed",
+    "cam_type": 85,
+    "delay": 1,
+    "name": "kiwi",
+    "description": "sweet"
+  },
+  {
+    "id": "8900c98e-26b5-4522-a454-a5cc302b16aa",
+    "cam_id": "4f1511e4-385b-4580-8a5f-4b6b0b820c32",
+    "cam_type": 0,
+    "delay": 22,
+    "name": "apple",
+    "description": "tropical"
+  },
+  {
+    "id": "bf8a0b1c-fdf3-491c-88cb-c8a6304bad8f",
+    "cam_id": "853026c6-5b6c-4aa3-93c7-2f15df3f76b0",
+    "cam_type": 71,
+    "delay": 4,
+    "name": "lemon",
+    "description": "tropical"
+  },
+  {
+    "id": "747fd135-894f-403c-b6ef-69cda68eb2ec",
+    "cam_id": "d890259c-2cd1-49ec-90fb-ff7c11a0581d",
+    "cam_type": 13,
+    "delay": 75,
+    "name": "date",
+    "description": "red"
+  },
+  {
+    "id": "f4a4f046-ea5a-4096-8447-ea661cde0bc7",
+    "cam_id": "3259df4b-88ba-40f8-b6bd-453a7c4db2fc",
+    "cam_type": 31,
+    "delay": 13,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "9ad1c202-4c81-4c44-a5ba-7a55ae855f41",
+    "cam_id": "c0522649-77f8-4417-b115-20acef00fa30",
+    "cam_type": 20,
+    "delay": 29,
+    "name": "honeydew",
+    "description": "tangy"
+  },
+  {
+    "id": "2583ac6b-72e6-462a-b460-18b2448be264",
+    "cam_id": "374898b9-8ecb-4486-86e3-3a6fc893916f",
+    "cam_type": 76,
+    "delay": 57,
+    "name": "fig",
+    "description": "delicious"
+  },
+  {
+    "id": "8cd918ce-5c1e-4ee1-979a-e1e8e69dde67",
+    "cam_id": "c3a9c2da-7f43-43d7-8c4d-68cddc8ccc50",
+    "cam_type": 8,
+    "delay": 41,
+    "name": "fig",
+    "description": "sour"
+  },
+  {
+    "id": "8396e66c-4de8-451b-b75c-1743ade4760e",
+    "cam_id": "0dc38c84-3794-4794-b8ce-68d76380d4b4",
+    "cam_type": 94,
+    "delay": 88,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "66a73cdc-360e-4e90-9d10-05dd3e633998",
+    "cam_id": "61d41659-9a3d-4bb5-8ef7-0e3719f9fd33",
+    "cam_type": 89,
+    "delay": 3,
+    "name": "elderberry",
+    "description": "fresh"
+  },
+  {
+    "id": "6f7f918e-d34a-44c6-9091-0493386dbfea",
+    "cam_id": "a8090e34-6164-4139-a776-e416517ac5b1",
+    "cam_type": 25,
+    "delay": 4,
+    "name": "cherry",
+    "description": "ripe"
+  },
+  {
+    "id": "606d0aa5-ba77-48f7-a46b-e5f747f544ef",
+    "cam_id": "334d9d3c-6028-4caa-b8bb-32234d6e10d5",
+    "cam_type": 21,
+    "delay": 4,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "80054794-5aa2-4e8d-8af5-28b48660e06f",
+    "cam_id": "47afdd24-057f-4c9b-90e3-6a75eac8f731",
+    "cam_type": 18,
+    "delay": 79,
+    "name": "fig",
+    "description": "tasty"
+  },
+  {
+    "id": "472fbce8-6b54-401f-b7de-9137ba283d23",
+    "cam_id": "7244ec1b-f090-41a2-89a3-7dac2f23b6fe",
+    "cam_type": 78,
+    "delay": 68,
+    "name": "elderberry",
+    "description": "red"
+  },
+  {
+    "id": "ca63f571-cae4-4a46-82af-a32be2908454",
+    "cam_id": "679191ed-260e-49c1-9d50-7bd3c4e79b4f",
+    "cam_type": 49,
+    "delay": 35,
+    "name": "fig",
+    "description": "red"
+  },
+  {
+    "id": "45727c20-34b1-4c5d-81cb-dc153483dd89",
+    "cam_id": "93554272-0ebc-44d0-a306-cfeb8b828db4",
+    "cam_type": 17,
+    "delay": 99,
+    "name": "honeydew",
+    "description": "delicious"
+  },
+  {
+    "id": "e58c2df2-7d20-4893-ba73-21d7ea2363de",
+    "cam_id": "aba3784e-0810-47db-8b1e-f0dfd975595c",
+    "cam_type": 98,
+    "delay": 43,
+    "name": "elderberry",
+    "description": "juicy"
+  },
+  {
+    "id": "7a933dd8-8bc9-4a88-ba11-3d89b65be9e0",
+    "cam_id": "ec004cbe-3796-4dd4-902c-00fa86d9c18b",
+    "cam_type": 79,
+    "delay": 19,
+    "name": "fig",
+    "description": "tangy"
+  },
+  {
+    "id": "37313b81-1756-47ec-83c5-631f851ff4e2",
+    "cam_id": "aeb16561-1edf-49db-909d-a0c7319f9c2c",
+    "cam_type": 21,
+    "delay": 51,
+    "name": "grape",
+    "description": "sweet"
+  },
+  {
+    "id": "c921d73c-e801-42b2-84f9-9a3c0e795c9c",
+    "cam_id": "a06c19fd-bddb-4916-a3c6-fedc887f2daa",
+    "cam_type": 59,
+    "delay": 8,
+    "name": "elderberry",
+    "description": "ripe"
+  },
+  {
+    "id": "ff82f87a-b4f5-4d64-b1ee-5ea2fff06631",
+    "cam_id": "960f3caa-c071-42b2-b290-67953caf6aab",
+    "cam_type": 98,
+    "delay": 100,
+    "name": "apple",
+    "description": "red"
+  },
+  {
+    "id": "59dcfad7-ae75-4b8d-907c-f4970331a97a",
+    "cam_id": "676f3116-d621-4bba-b58b-650c827b67a4",
+    "cam_type": 79,
+    "delay": 53,
+    "name": "fig",
+    "description": "tangy"
+  },
+  {
+    "id": "25737efe-1b4d-4475-8cfe-5272f3a18465",
+    "cam_id": "99bb2dfd-2113-42e8-8190-3f5ff09885d7",
+    "cam_type": 13,
+    "delay": 10,
+    "name": "banana",
+    "description": "fresh"
+  },
+  {
+    "id": "38888efd-e661-439a-bac1-1cbe098573ae",
+    "cam_id": "28148a49-70d6-4fbc-84fb-6bf9a2196ed0",
+    "cam_type": 59,
+    "delay": 59,
+    "name": "elderberry",
+    "description": "ripe"
+  },
+  {
+    "id": "44c800da-d778-406e-9938-8d9672979fbe",
+    "cam_id": "032c6609-f887-4300-9f29-34f1b22f7844",
+    "cam_type": 4,
+    "delay": 56,
+    "name": "elderberry",
+    "description": "sweet"
+  },
+  {
+    "id": "71c9eeb7-d614-4c10-88ac-0de629025141",
+    "cam_id": "ff19174b-d4ec-41c1-b2bf-6a248f55cff5",
+    "cam_type": 90,
+    "delay": 23,
+    "name": "kiwi",
+    "description": "tangy"
+  },
+  {
+    "id": "85e3d595-56be-48d1-959e-dc211ef64e35",
+    "cam_id": "c666b840-e5ad-4e79-8894-b23e6fd12a83",
+    "cam_type": 48,
+    "delay": 11,
+    "name": "kiwi",
+    "description": "ripe"
+  },
+  {
+    "id": "e5d1d65b-6c29-40f9-bbb1-6169ca5b6da1",
+    "cam_id": "49fefdd3-c8dc-4dd6-9fdf-a71e00bfa624",
+    "cam_type": 53,
+    "delay": 96,
+    "name": "date",
+    "description": "sour"
+  },
+  {
+    "id": "9f4aeb32-dc41-4f8f-be72-11deffaf96a3",
+    "cam_id": "6f6740b9-d066-4ddf-8216-fb7ed8e21c49",
+    "cam_type": 84,
+    "delay": 60,
+    "name": "apple",
+    "description": "tangy"
+  },
+  {
+    "id": "3aba7165-01dd-4af7-b51d-41192c371c54",
+    "cam_id": "4bded6e4-a1e9-4c3b-a04d-1a0a436f4283",
+    "cam_type": 37,
+    "delay": 94,
+    "name": "fig",
+    "description": "ripe"
+  },
+  {
+    "id": "8595212b-886a-4e4f-bfb4-6f83cfd85a9b",
+    "cam_id": "a4518979-9dd9-4d34-b868-9c2059f50729",
+    "cam_type": 48,
+    "delay": 30,
+    "name": "kiwi",
+    "description": "tasty"
+  },
+  {
+    "id": "a81f43b8-ba7b-49c2-b85c-a1dfdd196155",
+    "cam_id": "5c1037a2-a3fc-44ac-aad8-823234e30644",
+    "cam_type": 95,
+    "delay": 65,
+    "name": "fig",
+    "description": "sweet"
+  },
+  {
+    "id": "7127f0ee-a0ab-400c-9aad-ed0dc64c04be",
+    "cam_id": "1f87e97a-84df-417a-a10d-f6f1942fd2d2",
+    "cam_type": 31,
+    "delay": 8,
+    "name": "kiwi",
+    "description": "tangy"
+  },
+  {
+    "id": "e0a97ab6-dcbd-4c72-96db-0b6f729401d8",
+    "cam_id": "b48b449d-37ae-43d1-82ab-04095882a8a5",
+    "cam_type": 11,
+    "delay": 72,
+    "name": "lemon",
+    "description": "sweet"
+  },
+  {
+    "id": "8683c7e9-4955-4106-917b-c77fada925d4",
+    "cam_id": "0fb43166-e32f-4757-9aef-dc6d9db7940d",
+    "cam_type": 27,
+    "delay": 75,
+    "name": "cherry",
+    "description": "tropical"
+  },
+  {
+    "id": "1ccb3edc-749d-4412-a1aa-55c36b90bbf6",
+    "cam_id": "53f45eed-d09a-4ce7-976a-9c95acf3956d",
+    "cam_type": 85,
+    "delay": 28,
+    "name": "date",
+    "description": "delicious"
+  },
+  {
+    "id": "8ed5612d-d7aa-4f01-a21c-9da3d117948e",
+    "cam_id": "6556e274-8c3b-4121-9347-9bf211ef157d",
+    "cam_type": 30,
+    "delay": 25,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "1323bb07-efd6-408b-bf71-a0a781158085",
+    "cam_id": "ceec04c3-d6fc-457a-a550-c2d65f940d4f",
+    "cam_type": 95,
+    "delay": 28,
+    "name": "kiwi",
+    "description": "fresh"
+  },
+  {
+    "id": "c1444b92-fafc-42ca-a80d-e70af2aa83d6",
+    "cam_id": "a1a92589-4d29-40b4-901b-9dd52b1e4c8f",
+    "cam_type": 51,
+    "delay": 85,
+    "name": "date",
+    "description": "sweet"
+  },
+  {
+    "id": "39dead17-7387-4902-9199-59d8b160288a",
+    "cam_id": "9b4df23f-cc1d-444a-b2cf-a21ec213192b",
+    "cam_type": 18,
+    "delay": 9,
+    "name": "banana",
+    "description": "tropical"
+  },
+  {
+    "id": "01ef4ae4-cbad-4da9-b332-f2a11110de82",
+    "cam_id": "f4a1916d-9430-4ba8-a40f-b802d29ceecb",
+    "cam_type": 26,
+    "delay": 72,
+    "name": "lemon",
+    "description": "fresh"
+  },
+  {
+    "id": "e8e2746d-987e-466a-a32c-13d6694ee7e7",
+    "cam_id": "381dd1b8-8fe9-4d4e-a9c6-750457cca5e0",
+    "cam_type": 6,
+    "delay": 57,
+    "name": "grape",
+    "description": "tropical"
+  },
+  {
+    "id": "b02ab78f-92a8-43a2-926e-8d0a1dfd72cb",
+    "cam_id": "6ca4291f-a9b5-4b63-a821-d552efb4cfe4",
+    "cam_type": 60,
+    "delay": 19,
+    "name": "lemon",
+    "description": "sweet"
+  },
+  {
+    "id": "651b562d-ba3f-4b14-997c-d59bfdaa61f3",
+    "cam_id": "9ab1a39a-9c1c-45af-8fe1-a6d26940ac07",
+    "cam_type": 25,
+    "delay": 3,
+    "name": "apple",
+    "description": "ripe"
+  },
+  {
+    "id": "fee250ad-5b66-492e-95f6-8f48dc7b0ee1",
+    "cam_id": "91793d8a-07d2-496f-8b27-103b80a0b473",
+    "cam_type": 93,
+    "delay": 30,
+    "name": "honeydew",
+    "description": "delicious"
+  },
+  {
+    "id": "b4fa2e62-43cf-4f14-b554-feeebe01327a",
+    "cam_id": "ae94009a-c958-44b1-a7a6-398a0063cf55",
+    "cam_type": 79,
+    "delay": 59,
+    "name": "date",
+    "description": "ripe"
+  },
+  {
+    "id": "310719ac-1068-4a8a-814b-fe661b8e95ab",
+    "cam_id": "8d201e5d-cbb4-4bff-b94d-e111c6605497",
+    "cam_type": 67,
+    "delay": 65,
+    "name": "honeydew",
+    "description": "fresh"
+  },
+  {
+    "id": "11ca5cbb-0e6e-4167-99e1-1ee30907f6dd",
+    "cam_id": "b2982d54-aa07-4261-8536-8f22cbeae998",
+    "cam_type": 45,
+    "delay": 71,
+    "name": "banana",
+    "description": "red"
+  },
+  {
+    "id": "fe32c634-1f13-4db5-a6ee-1999d36a8a5f",
+    "cam_id": "c12f4b9a-5c26-4efd-a7ca-b3eb36fbaab4",
+    "cam_type": 56,
+    "delay": 26,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "8a6bc2a6-f384-4884-addd-62ba9c313d14",
+    "cam_id": "a6b7e45c-7c63-4740-bd39-c0ead61e6548",
+    "cam_type": 100,
+    "delay": 9,
+    "name": "banana",
+    "description": "tasty"
+  },
+  {
+    "id": "67cbb288-529a-42b6-94db-33ed3e9223f5",
+    "cam_id": "27e00c96-352b-437f-87cb-3db32e6c94ac",
+    "cam_type": 26,
+    "delay": 43,
+    "name": "grape",
+    "description": "juicy"
+  },
+  {
+    "id": "9d63dc08-0bf8-473e-99c0-533809648d15",
+    "cam_id": "d52c7306-e6de-43ad-b05f-7dd9bd1ff692",
+    "cam_type": 52,
+    "delay": 59,
+    "name": "grape",
+    "description": "juicy"
+  },
+  {
+    "id": "9ee9c2b6-7c8b-466a-899f-ee6dd4936697",
+    "cam_id": "16f67918-ded0-453d-8a85-e8416b2c7ecb",
+    "cam_type": 96,
+    "delay": 98,
+    "name": "grape",
+    "description": "sour"
+  },
+  {
+    "id": "b5e58b55-bbf9-4e32-a746-6c57cc387a27",
+    "cam_id": "ca8bea9c-b8fc-4400-91fd-ee58005df174",
+    "cam_type": 42,
+    "delay": 8,
+    "name": "honeydew",
+    "description": "sweet"
+  },
+  {
+    "id": "aecb3070-a1fe-407a-bb87-8f868deb3c88",
+    "cam_id": "c2a5d685-cafe-47c0-a1b7-a8d8d524648c",
+    "cam_type": 56,
+    "delay": 30,
+    "name": "banana",
+    "description": "tangy"
+  },
+  {
+    "id": "42d937a1-d01f-408d-9c7a-ebeb642aeae2",
+    "cam_id": "356879a7-9580-4d65-8f54-cb9e955d2e5e",
+    "cam_type": 69,
+    "delay": 27,
+    "name": "banana",
+    "description": "sour"
+  },
+  {
+    "id": "e7322925-7d0c-477c-b78c-8b45ebaa8ba8",
+    "cam_id": "f86a6e8b-d81b-4a57-a80c-63e1a0c6db24",
+    "cam_type": 25,
+    "delay": 41,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "fe760d7f-dfaa-4b23-b13a-745b42e8ce63",
+    "cam_id": "8f381beb-1705-47c5-90f3-739c5cfee9f5",
+    "cam_type": 90,
+    "delay": 81,
+    "name": "elderberry",
+    "description": "sour"
+  },
+  {
+    "id": "962beda0-5176-44d7-91f7-f2037ea7334b",
+    "cam_id": "33e41e72-8633-43c7-b7d2-076e6b4cfe6b",
+    "cam_type": 7,
+    "delay": 73,
+    "name": "grape",
+    "description": "ripe"
+  },
+  {
+    "id": "a97db5f0-6812-4ba0-b389-b31d75aedb9f",
+    "cam_id": "0eaecdad-e385-4622-b046-c4a0a1a49478",
+    "cam_type": 37,
+    "delay": 75,
+    "name": "apple",
+    "description": "ripe"
+  },
+  {
+    "id": "477cfcac-de6a-4add-a9f5-edd3e3d5afaf",
+    "cam_id": "4dea5585-6230-48cc-bc4b-d4307d5e5144",
+    "cam_type": 35,
+    "delay": 9,
+    "name": "lemon",
+    "description": "tasty"
+  },
+  {
+    "id": "56c0c950-5778-4316-8385-59e789148c78",
+    "cam_id": "e82ac314-7a05-4b8d-8314-a211564a4fc0",
+    "cam_type": 50,
+    "delay": 44,
+    "name": "banana",
+    "description": "red"
+  },
+  {
+    "id": "a4d0fa67-222b-47dd-b8c3-03efdb6c9aa4",
+    "cam_id": "30c51bdb-62b2-4e40-886f-8fc26c4e3977",
+    "cam_type": 50,
+    "delay": 29,
+    "name": "kiwi",
+    "description": "ripe"
+  },
+  {
+    "id": "a3044fc3-f267-42a8-aede-f8ebd0f699d4",
+    "cam_id": "dc13f6d8-36cd-415f-bd80-7217b392b68a",
+    "cam_type": 10,
+    "delay": 29,
+    "name": "grape",
+    "description": "juicy"
+  },
+  {
+    "id": "eb6b6eff-d515-4cdb-9256-8d50f0a93494",
+    "cam_id": "d3413900-7800-4e5b-9d19-e43a9eb8aaf9",
+    "cam_type": 85,
+    "delay": 58,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "1cd17ddb-c5a5-4a6d-a599-6e73103fe05c",
+    "cam_id": "65a723f1-fcc6-4607-abfd-67dd3f3ccc3e",
+    "cam_type": 43,
+    "delay": 93,
+    "name": "banana",
+    "description": "sweet"
+  },
+  {
+    "id": "472a096d-1e6e-4cbb-ab50-ff89f1a48629",
+    "cam_id": "3c971797-d721-4773-a34f-42ad61083fa7",
+    "cam_type": 50,
+    "delay": 75,
+    "name": "cherry",
+    "description": "tropical"
+  },
+  {
+    "id": "ccc726cb-4b5c-4cfc-beac-e7eb419c1e98",
+    "cam_id": "aa704048-0f35-4f9c-9242-6962149240f5",
+    "cam_type": 59,
+    "delay": 68,
+    "name": "grape",
+    "description": "red"
+  },
+  {
+    "id": "545ac383-a9f3-42e3-a754-ef430783843c",
+    "cam_id": "fc34d799-612d-4908-a51d-8500bf4bbcac",
+    "cam_type": 16,
+    "delay": 88,
+    "name": "honeydew",
+    "description": "tropical"
+  },
+  {
+    "id": "cfe6c5f9-695f-4515-9a3b-d910ebdfa7e8",
+    "cam_id": "ff0494fb-cdc4-450c-9fe4-57288aa292a5",
+    "cam_type": 74,
+    "delay": 8,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "d7183655-665c-4f71-98cc-750c2ae758ff",
+    "cam_id": "54f3c9be-ece5-4fdb-84b7-c9d977c80389",
+    "cam_type": 50,
+    "delay": 73,
+    "name": "lemon",
+    "description": "fresh"
+  },
+  {
+    "id": "680c1911-23c5-4f25-a8d7-f5c7674a83de",
+    "cam_id": "d88862a2-7583-43d6-b24b-48b7f9a494f8",
+    "cam_type": 88,
+    "delay": 6,
+    "name": "lemon",
+    "description": "tangy"
+  },
+  {
+    "id": "443bf671-281d-436b-990c-cfec56c76f54",
+    "cam_id": "29cde111-6455-4267-b45a-77ee4cfff652",
+    "cam_type": 77,
+    "delay": 50,
+    "name": "honeydew",
+    "description": "tangy"
+  },
+  {
+    "id": "c9a90460-c509-461b-a40a-6f86e8ca2580",
+    "cam_id": "19d5560c-b711-4385-acf3-2ca0961ec416",
+    "cam_type": 36,
+    "delay": 62,
+    "name": "date",
+    "description": "delicious"
+  },
+  {
+    "id": "08d881e5-e3a2-4d24-82dd-7ce4de5546a6",
+    "cam_id": "b14e38ef-1ac9-49ff-8aae-43865fdc1aa8",
+    "cam_type": 19,
+    "delay": 98,
+    "name": "apple",
+    "description": "tropical"
+  },
+  {
+    "id": "eb223d6c-8884-4d35-a1e8-79a80e9f796d",
+    "cam_id": "e0f00061-1f40-4d98-b897-d7d113fefb9d",
+    "cam_type": 77,
+    "delay": 34,
+    "name": "lemon",
+    "description": "tropical"
+  },
+  {
+    "id": "9a9f0ee4-4f7d-49b2-bd6c-1c3e01b0b200",
+    "cam_id": "cbbb6499-b19a-4de2-a5e6-bd45d3cccbf4",
+    "cam_type": 19,
+    "delay": 74,
+    "name": "cherry",
+    "description": "fresh"
+  },
+  {
+    "id": "167a15e0-38c1-4634-a21f-ce0b9472999f",
+    "cam_id": "cf43098c-33d6-4c8b-8dc5-4d2aff2967ca",
+    "cam_type": 2,
+    "delay": 90,
+    "name": "date",
+    "description": "red"
+  },
+  {
+    "id": "8aebeadc-3173-4461-8c74-ec322e23989c",
+    "cam_id": "1480ab17-5aca-405c-b7d6-3619a6194217",
+    "cam_type": 35,
+    "delay": 61,
+    "name": "honeydew",
+    "description": "red"
+  },
+  {
+    "id": "272065c4-a52d-4ace-8115-f911d1edf4c7",
+    "cam_id": "ccc77c37-d447-4067-af01-f5d93704d691",
+    "cam_type": 99,
+    "delay": 64,
+    "name": "lemon",
+    "description": "sour"
+  },
+  {
+    "id": "6112cf68-f0a6-4756-a3d5-daa4764830ba",
+    "cam_id": "dbc265ee-0520-4add-bacc-0356cd976ddb",
+    "cam_type": 3,
+    "delay": 3,
+    "name": "grape",
+    "description": "delicious"
+  },
+  {
+    "id": "a739f140-fc93-41e9-8879-4b0e1c3b6e40",
+    "cam_id": "e07a89cb-89e3-4e65-8f88-27a359522f92",
+    "cam_type": 34,
+    "delay": 58,
+    "name": "elderberry",
+    "description": "sour"
+  },
+  {
+    "id": "f8407a0d-2336-4806-82c6-965fd0a316a6",
+    "cam_id": "85d84e0c-d6ad-4a56-8f52-4630ae3d52af",
+    "cam_type": 40,
+    "delay": 62,
+    "name": "grape",
+    "description": "fresh"
+  },
+  {
+    "id": "3fe9479b-7b5b-4f36-b079-fd4ec0b44ea3",
+    "cam_id": "724bd7bd-6a66-40d1-a4ae-bc99c85e04b9",
+    "cam_type": 92,
+    "delay": 95,
+    "name": "cherry",
+    "description": "tropical"
+  },
+  {
+    "id": "a209e196-e88b-4fc1-942a-38b6608325b3",
+    "cam_id": "96198c91-a581-4edc-87e0-5f9821ed59fd",
+    "cam_type": 5,
+    "delay": 95,
+    "name": "honeydew",
+    "description": "tropical"
+  },
+  {
+    "id": "36af0b68-5f5d-4433-9d59-35bae9f6a756",
+    "cam_id": "3781903d-d95d-4669-8ff0-f19f66aa0887",
+    "cam_type": 61,
+    "delay": 43,
+    "name": "grape",
+    "description": "fresh"
+  },
+  {
+    "id": "10b6b014-c4b3-491d-93d4-482f1ff6102c",
+    "cam_id": "bb4371af-4dae-473c-8a32-baae5984b46d",
+    "cam_type": 78,
+    "delay": 29,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "dec85d15-7f4d-4bb3-9a3b-1952792df1dc",
+    "cam_id": "08624d19-4e40-45aa-918f-e0308502a0d7",
+    "cam_type": 96,
+    "delay": 40,
+    "name": "apple",
+    "description": "fresh"
+  },
+  {
+    "id": "84eb1d11-4ce2-4344-a422-02c51daa929d",
+    "cam_id": "ff83ef58-0e0d-46a2-a5a4-ddbeb1e1c44b",
+    "cam_type": 70,
+    "delay": 16,
+    "name": "lemon",
+    "description": "tropical"
+  },
+  {
+    "id": "7a118fb5-19cf-42de-9819-cd67e4f73e15",
+    "cam_id": "a06bae11-f174-4c67-8376-7df5a1c5324b",
+    "cam_type": 3,
+    "delay": 80,
+    "name": "elderberry",
+    "description": "ripe"
+  },
+  {
+    "id": "dfe693d8-6a1f-4ae6-91d2-fb61fec6cd48",
+    "cam_id": "04b0d7dd-13aa-44c1-9bf9-94329876dd7b",
+    "cam_type": 40,
+    "delay": 16,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "6d7e3170-5c65-4f55-af24-9cbb6a3d26b3",
+    "cam_id": "d95fec3e-4d0f-4cf3-8e02-4f8fa987c420",
+    "cam_type": 36,
+    "delay": 49,
+    "name": "honeydew",
+    "description": "sweet"
+  },
+  {
+    "id": "af2c7765-41a4-4f54-ab30-53ad7ec277b2",
+    "cam_id": "ae7f8caa-fe0f-4e5b-8740-6734ebcc6444",
+    "cam_type": 99,
+    "delay": 50,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "f8bf207b-018c-47bc-9e79-247977a13e06",
+    "cam_id": "f7db464b-ac78-46dd-9f11-31da7eac54a3",
+    "cam_type": 63,
+    "delay": 84,
+    "name": "banana",
+    "description": "sour"
+  },
+  {
+    "id": "24bed5b2-a2c5-4fc6-8812-fbcc9c7f4d5b",
+    "cam_id": "e8e220c4-ecb8-4a8a-b6ab-8151012013a2",
+    "cam_type": 46,
+    "delay": 22,
+    "name": "date",
+    "description": "tangy"
+  },
+  {
+    "id": "6fdf8fec-30d9-4b97-bb67-d207a056b165",
+    "cam_id": "d074a9da-6f5a-4bd5-ae1f-2cc5fa000076",
+    "cam_type": 17,
+    "delay": 99,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "d545bc4e-d0a7-40cf-a164-54e4c6b7c328",
+    "cam_id": "8b3fbb3e-0aa6-40d7-9938-ef7aa97c9404",
+    "cam_type": 87,
+    "delay": 22,
+    "name": "honeydew",
+    "description": "sweet"
+  },
+  {
+    "id": "518ef63b-e5ea-416e-adce-92f654caba95",
+    "cam_id": "4b439431-4d6d-4252-8344-ad8b93672eda",
+    "cam_type": 63,
+    "delay": 40,
+    "name": "lemon",
+    "description": "red"
+  },
+  {
+    "id": "1a4c5f78-9273-442a-9104-2c7fe0a78414",
+    "cam_id": "28d754d4-3b1c-45dd-8672-e57e4ff8c6d1",
+    "cam_type": 94,
+    "delay": 67,
+    "name": "fig",
+    "description": "sour"
+  },
+  {
+    "id": "b78ca644-88f7-4bed-a71e-26d2e9c96099",
+    "cam_id": "08205347-9071-490b-bf63-a707c7b97d17",
+    "cam_type": 4,
+    "delay": 13,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "729bd920-6e61-4a1b-9227-8f520185dbcd",
+    "cam_id": "b225e050-3ad1-414d-889d-3e97a48c66d6",
+    "cam_type": 14,
+    "delay": 67,
+    "name": "lemon",
+    "description": "tangy"
+  },
+  {
+    "id": "d1fedd1c-613b-4294-9d8b-4fd9d75c5cec",
+    "cam_id": "02073729-af00-44df-9f89-4b0c59231382",
+    "cam_type": 86,
+    "delay": 80,
+    "name": "honeydew",
+    "description": "juicy"
+  },
+  {
+    "id": "bf6728a6-7880-4380-980b-7f30a4082a39",
+    "cam_id": "4fa4a324-614f-48b3-b5e6-ee95bab5ffd7",
+    "cam_type": 21,
+    "delay": 45,
+    "name": "honeydew",
+    "description": "ripe"
+  },
+  {
+    "id": "e75ecb6d-f153-4213-a248-d2ce6b7f9a95",
+    "cam_id": "f6f5915d-4761-4dce-b415-eeabde1d0d1c",
+    "cam_type": 81,
+    "delay": 33,
+    "name": "honeydew",
+    "description": "sweet"
+  },
+  {
+    "id": "78bd9c3c-c731-4fae-bac8-827d37b64c0b",
+    "cam_id": "122f0ad0-d632-4eb9-b431-64398c2fb2c7",
+    "cam_type": 63,
+    "delay": 33,
+    "name": "cherry",
+    "description": "sweet"
+  },
+  {
+    "id": "41461db9-6bb1-4759-853e-89d870b1c5bf",
+    "cam_id": "63972c29-a839-477c-ad5a-25a5495ec6db",
+    "cam_type": 1,
+    "delay": 63,
+    "name": "elderberry",
+    "description": "fresh"
+  },
+  {
+    "id": "1ff3e49b-a5be-44f9-9f6f-9b9717ae8974",
+    "cam_id": "13a50800-a990-47ba-80e3-bd0e059e39e0",
+    "cam_type": 11,
+    "delay": 15,
+    "name": "fig",
+    "description": "tasty"
+  },
+  {
+    "id": "64bdc577-1ebb-40ee-a1a0-1a2139f07850",
+    "cam_id": "0d7ca271-642f-485c-86e7-1c6a28d31abb",
+    "cam_type": 83,
+    "delay": 74,
+    "name": "cherry",
+    "description": "tropical"
+  },
+  {
+    "id": "c3c9774f-f034-4c6d-af65-1ab8e9b8be13",
+    "cam_id": "e38b3007-e76f-4675-91c4-6c3aca46eac9",
+    "cam_type": 54,
+    "delay": 83,
+    "name": "grape",
+    "description": "tangy"
+  },
+  {
+    "id": "b109212d-f3b7-4209-978d-df59cf4895d5",
+    "cam_id": "49c574c1-0dc8-45df-ad0e-ff89baf70f20",
+    "cam_type": 43,
+    "delay": 36,
+    "name": "honeydew",
+    "description": "sour"
+  },
+  {
+    "id": "50e921ec-6b71-4b58-9c35-2d21dc375d8f",
+    "cam_id": "c9332d25-2cfc-4de0-beaf-b8c4aa2348a4",
+    "cam_type": 3,
+    "delay": 76,
+    "name": "honeydew",
+    "description": "tasty"
+  },
+  {
+    "id": "5278bb60-6d9b-4503-83e8-05d5ee693ec5",
+    "cam_id": "87f22baa-3d5e-48d2-be56-e1a8cddba529",
+    "cam_type": 61,
+    "delay": 64,
+    "name": "grape",
+    "description": "red"
+  },
+  {
+    "id": "cf13cad6-2826-44b0-8d0d-ce2a3e7d2ee1",
+    "cam_id": "ccc185bf-f059-41fa-9590-ada8f4ab219c",
+    "cam_type": 55,
+    "delay": 10,
+    "name": "elderberry",
+    "description": "ripe"
+  },
+  {
+    "id": "4d315453-35c9-4ef5-9395-0517efab6db8",
+    "cam_id": "3940cfc7-fab2-4b63-a655-faef21c2b735",
+    "cam_type": 52,
+    "delay": 44,
+    "name": "fig",
+    "description": "tropical"
+  },
+  {
+    "id": "32656709-364f-4406-9d04-3aec4e7e574d",
+    "cam_id": "f1444077-32c7-4993-82b4-6154e7810ce1",
+    "cam_type": 90,
+    "delay": 70,
+    "name": "apple",
+    "description": "tangy"
+  },
+  {
+    "id": "74fc8b20-a719-4638-b95f-b20371f6d78d",
+    "cam_id": "b5252190-12fd-4748-bb10-679aa1df12c8",
+    "cam_type": 15,
+    "delay": 68,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "564baab0-6ecd-4713-8f77-eb6d67c572df",
+    "cam_id": "efb27855-c7cc-402d-8277-5fae721745a5",
+    "cam_type": 87,
+    "delay": 40,
+    "name": "grape",
+    "description": "red"
+  },
+  {
+    "id": "791152d4-e5fa-46b6-aefe-f58ad177796f",
+    "cam_id": "f01696c2-9ad6-4aa8-bf43-b491292f6a80",
+    "cam_type": 72,
+    "delay": 59,
+    "name": "apple",
+    "description": "sour"
+  },
+  {
+    "id": "513d2da7-8e50-4926-95f4-d0c9c1d37ab1",
+    "cam_id": "c524e748-fbfc-4ac3-b33d-ca866efe3121",
+    "cam_type": 87,
+    "delay": 36,
+    "name": "fig",
+    "description": "delicious"
+  },
+  {
+    "id": "6459cb45-0a63-4124-8fab-7ef2289ebba6",
+    "cam_id": "c0f9ab8a-4a2c-413c-82c3-648e8ada4f3e",
+    "cam_type": 83,
+    "delay": 91,
+    "name": "grape",
+    "description": "tasty"
+  },
+  {
+    "id": "51c7169d-ae5d-452d-8f4e-1dea25d229fa",
+    "cam_id": "89864acc-49ed-4b90-84b9-bcc996a3affa",
+    "cam_type": 0,
+    "delay": 61,
+    "name": "elderberry",
+    "description": "tropical"
+  },
+  {
+    "id": "06b3a0e2-954b-4ea3-afd6-4bf95c81c38f",
+    "cam_id": "a50eb2d3-da63-44c3-b016-f4375f34799e",
+    "cam_type": 64,
+    "delay": 72,
+    "name": "date",
+    "description": "ripe"
+  },
+  {
+    "id": "92d57d65-90fc-40dd-9b7f-b1c5a465bc57",
+    "cam_id": "b238a2df-47ad-4164-bd40-55a6ccb223af",
+    "cam_type": 64,
+    "delay": 67,
+    "name": "kiwi",
+    "description": "sweet"
+  },
+  {
+    "id": "7a67bfa7-99a9-474a-8ad3-e7be93c66748",
+    "cam_id": "3a972a28-c8b7-4739-a8f2-40946b1c0674",
+    "cam_type": 92,
+    "delay": 6,
+    "name": "date",
+    "description": "juicy"
+  },
+  {
+    "id": "71313332-433e-45e7-befa-87195b067441",
+    "cam_id": "2de0796a-a573-4a21-8fdd-ad6c44d2649b",
+    "cam_type": 51,
+    "delay": 17,
+    "name": "lemon",
+    "description": "tangy"
+  },
+  {
+    "id": "25b831fd-4c75-4b51-8660-a1348c98b222",
+    "cam_id": "8b15c3c3-6446-477c-8bab-760773c33c9d",
+    "cam_type": 5,
+    "delay": 12,
+    "name": "kiwi",
+    "description": "ripe"
+  },
+  {
+    "id": "0df8166a-d8ab-4022-875e-07470e8dd4fe",
+    "cam_id": "70197a1c-fe5a-4101-93a4-2e53e73ec24e",
+    "cam_type": 71,
+    "delay": 76,
+    "name": "honeydew",
+    "description": "tasty"
+  },
+  {
+    "id": "65151de8-19e1-4e88-98c2-9dc7dd6b47bf",
+    "cam_id": "df49385c-dd47-40c3-a264-b4df03bd2d8b",
+    "cam_type": 52,
+    "delay": 90,
+    "name": "lemon",
+    "description": "fresh"
+  },
+  {
+    "id": "2ec2eec1-7e67-432d-ad95-ed5c78be8d02",
+    "cam_id": "4c9b6af1-f436-4dfb-a05c-3d564b1c3e76",
+    "cam_type": 14,
+    "delay": 16,
+    "name": "date",
+    "description": "tangy"
+  },
+  {
+    "id": "9d29945f-23aa-4970-ace7-4ce1fc2ba502",
+    "cam_id": "3dfcfea2-7fe3-40e2-8593-eebf40173f95",
+    "cam_type": 67,
+    "delay": 84,
+    "name": "apple",
+    "description": "ripe"
+  },
+  {
+    "id": "71ed2dee-f6dc-4370-b0e7-868cde092fbd",
+    "cam_id": "14de4858-c981-45dc-942b-d49f7cd08a27",
+    "cam_type": 87,
+    "delay": 14,
+    "name": "grape",
+    "description": "ripe"
+  },
+  {
+    "id": "d5abade4-90ff-47a6-ab01-6ece3cd530d2",
+    "cam_id": "6b10bd3e-5a9c-42d9-905c-95f9db386692",
+    "cam_type": 94,
+    "delay": 31,
+    "name": "honeydew",
+    "description": "red"
+  },
+  {
+    "id": "3971070e-f7e1-4bb8-9c4d-5fe165bf02d5",
+    "cam_id": "5960fcc6-b887-43bb-a1af-d71996e1e486",
+    "cam_type": 10,
+    "delay": 85,
+    "name": "apple",
+    "description": "tangy"
+  },
+  {
+    "id": "09c337c9-3564-4cd8-b9e4-fb68e19df2ed",
+    "cam_id": "4cc19787-b7f8-4b96-8979-c53b913e3036",
+    "cam_type": 56,
+    "delay": 0,
+    "name": "elderberry",
+    "description": "juicy"
+  },
+  {
+    "id": "c711ab17-c2c0-4631-aab0-1e32b38cb759",
+    "cam_id": "87122838-e1fd-41f4-a965-4f0ba6e63163",
+    "cam_type": 5,
+    "delay": 58,
+    "name": "kiwi",
+    "description": "red"
+  },
+  {
+    "id": "bc9db44e-8f4a-4464-b6ec-01cca52c497a",
+    "cam_id": "4b5d50ad-68e3-4095-aefb-06945e5e341a",
+    "cam_type": 34,
+    "delay": 13,
+    "name": "kiwi",
+    "description": "sour"
+  },
+  {
+    "id": "66774192-0089-42c0-b1ed-e308963d6bce",
+    "cam_id": "c1eb6f92-439d-4771-bdf7-8ac31d634688",
+    "cam_type": 29,
+    "delay": 87,
+    "name": "banana",
+    "description": "tasty"
+  },
+  {
+    "id": "29bf9e67-1cc3-42d2-bf7e-f51a01d39c35",
+    "cam_id": "5e8f987b-1fd1-4e18-9f57-ee3e52540e14",
+    "cam_type": 32,
+    "delay": 15,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "0e901db7-524e-4aee-9ea1-333d3fbb5438",
+    "cam_id": "09dc1a6e-e851-4c0b-92d2-aa44b63c5e4b",
+    "cam_type": 43,
+    "delay": 76,
+    "name": "fig",
+    "description": "sweet"
+  },
+  {
+    "id": "98ec55f0-e644-4d83-b099-e6df6e250b6a",
+    "cam_id": "dd3bd7b6-a974-489a-92b2-c993cfb336ef",
+    "cam_type": 67,
+    "delay": 44,
+    "name": "date",
+    "description": "tasty"
+  },
+  {
+    "id": "abe8a311-16eb-4052-88da-7bb4e9c3495b",
+    "cam_id": "13cab069-7bcd-48ef-aa38-840510f3c3a8",
+    "cam_type": 74,
+    "delay": 51,
+    "name": "kiwi",
+    "description": "sour"
+  },
+  {
+    "id": "be77d6c0-1f05-4a56-9dde-8a7251fe28ac",
+    "cam_id": "b85e1bee-f03b-4b0d-bccb-db76c1431c3c",
+    "cam_type": 5,
+    "delay": 7,
+    "name": "grape",
+    "description": "ripe"
+  },
+  {
+    "id": "a2f8409d-c6c2-464e-8a99-a058031086a0",
+    "cam_id": "6580fd7a-a895-4edd-a2de-b09db46c0d6a",
+    "cam_type": 16,
+    "delay": 65,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "ab23e56b-a256-4f45-86ba-33e0265193e0",
+    "cam_id": "9115aa66-e524-423f-bc4a-dfd471208dca",
+    "cam_type": 35,
+    "delay": 4,
+    "name": "apple",
+    "description": "sweet"
+  },
+  {
+    "id": "b8b82108-7edd-4d69-97b4-d122333cd2f0",
+    "cam_id": "f20deee1-ebd7-4fd4-b735-a29059564347",
+    "cam_type": 37,
+    "delay": 25,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "ea22cbe1-f218-4b25-bcb5-51f633148ec1",
+    "cam_id": "8094f903-afae-4522-ab52-04695f88802c",
+    "cam_type": 16,
+    "delay": 81,
+    "name": "kiwi",
+    "description": "juicy"
+  },
+  {
+    "id": "eb022b1a-ac75-43f0-83c0-ed4d6793a081",
+    "cam_id": "2951db8f-e59d-4fb6-bf52-ca0f03c2d2c7",
+    "cam_type": 26,
+    "delay": 70,
+    "name": "honeydew",
+    "description": "tangy"
+  },
+  {
+    "id": "4fffaba4-ceb3-48ee-a6ae-0fe564fbdf46",
+    "cam_id": "e22055c6-67d7-41be-abb0-1cab4688f4d4",
+    "cam_type": 59,
+    "delay": 86,
+    "name": "kiwi",
+    "description": "sour"
+  },
+  {
+    "id": "a0753118-0f66-4be1-8b3d-7141a442228d",
+    "cam_id": "aea68f66-8a19-45b6-8c7a-4e4a0fbf8973",
+    "cam_type": 64,
+    "delay": 87,
+    "name": "banana",
+    "description": "red"
+  },
+  {
+    "id": "89ff0a36-2de3-4671-8672-18b4ececd049",
+    "cam_id": "0d5ff879-6d5e-4914-89b8-8e4c4ee47559",
+    "cam_type": 61,
+    "delay": 86,
+    "name": "apple",
+    "description": "delicious"
+  },
+  {
+    "id": "305071f5-ae59-4fa1-a2b1-00ef3fd65793",
+    "cam_id": "7512a701-8870-4cf1-b10f-f49892aeee1e",
+    "cam_type": 2,
+    "delay": 14,
+    "name": "banana",
+    "description": "juicy"
+  },
+  {
+    "id": "8392f2ae-f762-46f9-919e-c1a8855a498e",
+    "cam_id": "800bf0b7-3582-4bcc-a8bd-efa5bb6f12df",
+    "cam_type": 43,
+    "delay": 27,
+    "name": "honeydew",
+    "description": "red"
+  },
+  {
+    "id": "6c17c5e7-90b0-44f6-9e35-db743958845a",
+    "cam_id": "9d5c5595-5853-4f74-829d-7920ccddea65",
+    "cam_type": 48,
+    "delay": 0,
+    "name": "lemon",
+    "description": "sour"
+  },
+  {
+    "id": "10e0792e-3d27-4740-a865-16b53bebcf4b",
+    "cam_id": "de9131d5-1fe2-43a2-a6e7-1a3641100ace",
+    "cam_type": 45,
+    "delay": 93,
+    "name": "elderberry",
+    "description": "red"
+  },
+  {
+    "id": "ecbb505e-d7d0-4107-98df-06d16820d0c3",
+    "cam_id": "d3ed07b7-7538-41a5-a0a8-64bff4bf976f",
+    "cam_type": 72,
+    "delay": 100,
+    "name": "elderberry",
+    "description": "tangy"
+  },
+  {
+    "id": "0808254f-7578-452c-8e5d-384b2dafe85f",
+    "cam_id": "17398b72-15a6-4a40-83ca-9097a6623acb",
+    "cam_type": 68,
+    "delay": 82,
+    "name": "apple",
+    "description": "delicious"
+  },
+  {
+    "id": "6b59800e-f3ef-4a5d-87d7-f877fec7497f",
+    "cam_id": "705629e0-212e-4e37-bf8b-567b02ef72ec",
+    "cam_type": 41,
+    "delay": 63,
+    "name": "kiwi",
+    "description": "juicy"
+  },
+  {
+    "id": "8ca22b70-fcd3-4ac6-b518-92c345d8d32d",
+    "cam_id": "5717f89a-7863-4bbd-825d-726720ca6dc1",
+    "cam_type": 75,
+    "delay": 65,
+    "name": "elderberry",
+    "description": "juicy"
+  },
+  {
+    "id": "5ffcf010-fea6-4d60-8114-7d6cccde10b0",
+    "cam_id": "b96a4657-8b8b-4e20-8a5b-71fb91578dbe",
+    "cam_type": 26,
+    "delay": 21,
+    "name": "elderberry",
+    "description": "ripe"
+  },
+  {
+    "id": "c8a07609-18ce-494f-b3c0-fc0dacb282ae",
+    "cam_id": "bd86b10e-93d5-48e0-ac6f-41678b2a4956",
+    "cam_type": 39,
+    "delay": 58,
+    "name": "kiwi",
+    "description": "juicy"
+  },
+  {
+    "id": "765d8532-064b-4852-8702-020ca39503bd",
+    "cam_id": "13a07487-c55a-4735-afdd-f3482cbdf89c",
+    "cam_type": 61,
+    "delay": 22,
+    "name": "kiwi",
+    "description": "red"
+  },
+  {
+    "id": "7babbfce-bcce-4ebb-a731-7ef3a597702b",
+    "cam_id": "896daca9-753d-4585-bcc0-705f8122dbb8",
+    "cam_type": 76,
+    "delay": 43,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "58a20b1a-2067-4b58-b0f8-7311e57fc0d6",
+    "cam_id": "de309553-e2e7-43a2-91bc-3934ef4c5e6d",
+    "cam_type": 64,
+    "delay": 99,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "b248930f-a3ce-4705-aeba-5c8e60efb20f",
+    "cam_id": "af8bbac8-0fa4-4a63-a7f2-8d7bda71d9cf",
+    "cam_type": 82,
+    "delay": 57,
+    "name": "apple",
+    "description": "tropical"
+  },
+  {
+    "id": "c5216838-6216-4711-89d6-db1a199c0874",
+    "cam_id": "4e15b9d6-7bf7-4df8-a02e-5173c7924da0",
+    "cam_type": 98,
+    "delay": 63,
+    "name": "elderberry",
+    "description": "tasty"
+  },
+  {
+    "id": "a0a8a6bf-9561-4091-ae15-95e9a7134065",
+    "cam_id": "1d17a752-06ed-4673-ace8-b81698652dd3",
+    "cam_type": 33,
+    "delay": 28,
+    "name": "apple",
+    "description": "sour"
+  },
+  {
+    "id": "27c2a181-97dd-45a5-843b-95a32bf3196b",
+    "cam_id": "412118da-45c5-4498-96d1-9cda308529ad",
+    "cam_type": 56,
+    "delay": 55,
+    "name": "fig",
+    "description": "sweet"
+  },
+  {
+    "id": "b09776e8-f791-407b-8ba9-a7ae5c1c1bf8",
+    "cam_id": "fc8e3746-83dd-41db-8999-bb79eace6d83",
+    "cam_type": 34,
+    "delay": 8,
+    "name": "date",
+    "description": "tangy"
+  },
+  {
+    "id": "db979f1f-8063-4adb-858a-f2e6cc0f0897",
+    "cam_id": "d9b78f76-d57a-492a-bc72-692c51725376",
+    "cam_type": 70,
+    "delay": 15,
+    "name": "date",
+    "description": "ripe"
+  },
+  {
+    "id": "e9535323-1f8f-450d-bd30-6f5445e9f457",
+    "cam_id": "fe14ae4d-b08a-44b4-9cee-11ef03bdf8d3",
+    "cam_type": 10,
+    "delay": 39,
+    "name": "elderberry",
+    "description": "juicy"
+  },
+  {
+    "id": "c96ab6b6-046d-4253-92d7-51f5693bf17d",
+    "cam_id": "fef539ce-bdc7-429b-a403-57b66f0da78e",
+    "cam_type": 97,
+    "delay": 47,
+    "name": "date",
+    "description": "sweet"
+  },
+  {
+    "id": "cda066bf-76c3-458e-9948-3531b700cc6d",
+    "cam_id": "1ab0145b-7f33-4f5c-89ff-c3179ee23044",
+    "cam_type": 73,
+    "delay": 13,
+    "name": "lemon",
+    "description": "tasty"
+  },
+  {
+    "id": "ca97e6ab-7038-430f-a7b6-cb0f904b26f6",
+    "cam_id": "553b0b2a-a9d9-44d0-a93a-9809c91eaa45",
+    "cam_type": 51,
+    "delay": 5,
+    "name": "cherry",
+    "description": "tropical"
+  },
+  {
+    "id": "76eeee1b-9280-4d2d-b8a4-7c70b1fd0d6c",
+    "cam_id": "d1f32320-1ef2-40d8-9ede-ffee82cea132",
+    "cam_type": 27,
+    "delay": 65,
+    "name": "lemon",
+    "description": "sweet"
+  },
+  {
+    "id": "ca36b39a-40e2-4947-af97-8b8a54761bc1",
+    "cam_id": "a560a7b0-ff86-4d34-b6f4-08292b01efe7",
+    "cam_type": 40,
+    "delay": 68,
+    "name": "apple",
+    "description": "juicy"
+  },
+  {
+    "id": "c1632cfa-fd8b-4016-ab97-f28b9fd2613c",
+    "cam_id": "b906ba9f-5380-4fee-aca3-26f2d5616b75",
+    "cam_type": 24,
+    "delay": 39,
+    "name": "lemon",
+    "description": "tropical"
+  },
+  {
+    "id": "78ad7a6a-44f5-4b8a-9f0e-385ec705be40",
+    "cam_id": "ff5912a9-685c-4a12-8429-92f3dafc8de5",
+    "cam_type": 87,
+    "delay": 44,
+    "name": "lemon",
+    "description": "ripe"
+  },
+  {
+    "id": "680f796e-c675-480f-af82-799bf81c807f",
+    "cam_id": "184712bc-6fb9-48d3-a158-4d5fd643ab41",
+    "cam_type": 27,
+    "delay": 54,
+    "name": "lemon",
+    "description": "delicious"
+  },
+  {
+    "id": "48b2ffc2-f922-464c-b6f0-159408af96d3",
+    "cam_id": "a6f4f5f9-9868-4b3a-9d5d-1d442e8d036d",
+    "cam_type": 19,
+    "delay": 57,
+    "name": "honeydew",
+    "description": "tasty"
+  },
+  {
+    "id": "7988e024-b248-41ec-b13c-7323a24e55c4",
+    "cam_id": "d6710458-f395-43ba-a0d3-af29379a02b6",
+    "cam_type": 81,
+    "delay": 16,
+    "name": "banana",
+    "description": "sweet"
+  },
+  {
+    "id": "c5ac4b22-ef16-4f07-8f01-f060c9f1d0e7",
+    "cam_id": "03ad41f7-84fa-4b5c-ba96-2451073bc7ed",
+    "cam_type": 40,
+    "delay": 9,
+    "name": "banana",
+    "description": "tropical"
+  },
+  {
+    "id": "ab26a138-558f-4de6-8bed-4b02a60e4ea8",
+    "cam_id": "15421552-342f-43ec-a90b-e66cc0ce13dd",
+    "cam_type": 56,
+    "delay": 2,
+    "name": "lemon",
+    "description": "red"
+  },
+  {
+    "id": "8a72f55a-4ab9-4320-a8e5-52c843b3feb0",
+    "cam_id": "3a5395e6-009c-4abd-a5e9-6e2cd288f792",
+    "cam_type": 11,
+    "delay": 53,
+    "name": "apple",
+    "description": "ripe"
+  },
+  {
+    "id": "34697cce-04cd-499d-8fa5-4c0d32f210c7",
+    "cam_id": "cd25b352-ac8b-4d2b-af9b-c916e78f1b89",
+    "cam_type": 36,
+    "delay": 58,
+    "name": "kiwi",
+    "description": "juicy"
+  },
+  {
+    "id": "0a1fb483-e570-4200-910d-f3c6779dbab7",
+    "cam_id": "ceee347a-d6fb-405e-be27-bf73eec952b7",
+    "cam_type": 55,
+    "delay": 61,
+    "name": "apple",
+    "description": "sour"
+  },
+  {
+    "id": "1230227c-f976-4865-ba4f-d6a6756b098e",
+    "cam_id": "11552634-2ab2-4233-bd48-56925d45da9b",
+    "cam_type": 63,
+    "delay": 98,
+    "name": "honeydew",
+    "description": "sour"
+  },
+  {
+    "id": "0b5679dd-740f-48ed-b6c2-78381883a32f",
+    "cam_id": "34a763f4-a6c9-4d4b-b7d1-cdc3fa4702e7",
+    "cam_type": 56,
+    "delay": 61,
+    "name": "grape",
+    "description": "tasty"
+  },
+  {
+    "id": "2c24c21c-a872-440d-9e63-78331392d112",
+    "cam_id": "31862919-6774-4028-bc46-e823b7de252a",
+    "cam_type": 47,
+    "delay": 62,
+    "name": "kiwi",
+    "description": "delicious"
+  },
+  {
+    "id": "459d9b31-72a6-4d45-9089-185141eb31a1",
+    "cam_id": "fb18a46f-af0c-4c3f-b53e-8fa4b2828d3d",
+    "cam_type": 30,
+    "delay": 7,
+    "name": "fig",
+    "description": "sour"
+  },
+  {
+    "id": "7d98f76a-5e00-41b0-a0e3-c2b5271b87d9",
+    "cam_id": "ed6ad10a-daf6-4291-af8a-8b40c7a10db1",
+    "cam_type": 32,
+    "delay": 57,
+    "name": "elderberry",
+    "description": "fresh"
+  },
+  {
+    "id": "979acf2f-4d43-4dd5-8553-79c850985410",
+    "cam_id": "50a3b421-1178-47e3-975f-436af0271d2b",
+    "cam_type": 96,
+    "delay": 86,
+    "name": "cherry",
+    "description": "ripe"
+  },
+  {
+    "id": "f25d06c9-0f87-4fb6-88eb-30fbe2a66d5b",
+    "cam_id": "8c9e80d7-af7a-48bd-a7d4-e1896702148d",
+    "cam_type": 41,
+    "delay": 18,
+    "name": "honeydew",
+    "description": "tangy"
+  },
+  {
+    "id": "bef0e710-ca5c-48f2-883c-45e3d0598a2f",
+    "cam_id": "b2bb8d67-334a-4ed0-bb0f-ab6cd8dd1f35",
+    "cam_type": 34,
+    "delay": 69,
+    "name": "kiwi",
+    "description": "tangy"
+  },
+  {
+    "id": "b530d03b-d4b2-4ea1-8fd7-ecafc776b586",
+    "cam_id": "e13d1c53-9879-4ae4-ba85-2bea2b7d8d63",
+    "cam_type": 34,
+    "delay": 84,
+    "name": "grape",
+    "description": "juicy"
+  },
+  {
+    "id": "248a5bba-3ae8-46c0-b73c-ad2597de8283",
+    "cam_id": "9b7f54ac-1b8a-4675-a4f0-64087b7e5dfb",
+    "cam_type": 9,
+    "delay": 0,
+    "name": "kiwi",
+    "description": "tangy"
+  },
+  {
+    "id": "420e2f1a-e37a-4c6d-8798-4a658f2c608e",
+    "cam_id": "f9f33314-d1a4-455d-b847-a3e933e8bc57",
+    "cam_type": 1,
+    "delay": 31,
+    "name": "lemon",
+    "description": "tropical"
+  },
+  {
+    "id": "881f34a8-2f25-4d7b-a5ab-aadaee672b00",
+    "cam_id": "c9798cb3-185d-4e6b-80a5-b49b01a7552d",
+    "cam_type": 85,
+    "delay": 87,
+    "name": "kiwi",
+    "description": "sour"
+  },
+  {
+    "id": "55f624f6-ad92-431f-b86d-2ec05cee4f28",
+    "cam_id": "7d123a56-267d-45d6-abe3-7aadeb54231b",
+    "cam_type": 65,
+    "delay": 24,
+    "name": "apple",
+    "description": "sweet"
+  },
+  {
+    "id": "232fe843-be9f-4e03-9228-b365e1b9fed0",
+    "cam_id": "b06b0c41-79bc-4495-8118-e030b5cd00d3",
+    "cam_type": 23,
+    "delay": 96,
+    "name": "grape",
+    "description": "ripe"
+  },
+  {
+    "id": "f7551f0d-d374-4501-9dd4-a204d1ce1514",
+    "cam_id": "3f823e4f-3daf-4653-a97f-da22dfa4bfbf",
+    "cam_type": 95,
+    "delay": 20,
+    "name": "apple",
+    "description": "tasty"
+  },
+  {
+    "id": "1f6e45ba-33d6-47c9-852d-8b68c3db5480",
+    "cam_id": "2dbe235d-dc0f-49ee-9ec1-e8e10e7f1f4e",
+    "cam_type": 77,
+    "delay": 0,
+    "name": "honeydew",
+    "description": "ripe"
+  },
+  {
+    "id": "452fd916-ed79-4f2d-8204-c719755cb11b",
+    "cam_id": "401e640b-4c2b-443b-bcf9-c5a5e0d5479d",
+    "cam_type": 20,
+    "delay": 76,
+    "name": "banana",
+    "description": "tasty"
+  },
+  {
+    "id": "3736f9bc-02e4-43dc-9946-68b9e84bd265",
+    "cam_id": "6747fa2d-8122-4dd6-bd4a-14922f4ad6a3",
+    "cam_type": 56,
+    "delay": 11,
+    "name": "elderberry",
+    "description": "fresh"
+  },
+  {
+    "id": "9b7df840-d04f-49e1-8bad-081089655438",
+    "cam_id": "6b693a5c-ab33-4d6a-9750-fef6549e567f",
+    "cam_type": 36,
+    "delay": 36,
+    "name": "lemon",
+    "description": "ripe"
+  },
+  {
+    "id": "d1d57fd4-9d24-49ce-874d-0638a0e965fc",
+    "cam_id": "a27f2142-a32d-4d3b-99dd-5ec50dc0a94b",
+    "cam_type": 51,
+    "delay": 51,
+    "name": "elderberry",
+    "description": "tasty"
+  },
+  {
+    "id": "5d9acf8f-48a9-497b-8919-53cc74b918cd",
+    "cam_id": "3e847ade-815c-4d45-9427-da041b594933",
+    "cam_type": 90,
+    "delay": 11,
+    "name": "kiwi",
+    "description": "juicy"
+  },
+  {
+    "id": "a779adf3-2da9-414e-911d-1bcf6c7aadab",
+    "cam_id": "5aa1d661-22b2-42cf-b132-34f8ba11af11",
+    "cam_type": 19,
+    "delay": 0,
+    "name": "honeydew",
+    "description": "red"
+  },
+  {
+    "id": "12ce74b6-2e64-49c2-a69a-ffd61a3bbfd0",
+    "cam_id": "634fdef3-e824-47e6-82e4-52c3f3c756ac",
+    "cam_type": 33,
+    "delay": 89,
+    "name": "fig",
+    "description": "sour"
+  },
+  {
+    "id": "03a6403d-60cb-4575-8138-922afcd42056",
+    "cam_id": "35c0da3a-8e2e-4a5f-9083-ce6d804204d7",
+    "cam_type": 40,
+    "delay": 72,
+    "name": "fig",
+    "description": "sour"
+  },
+  {
+    "id": "e7c501b0-ec47-481e-94ef-49ba42ca097c",
+    "cam_id": "b90b1438-fb8c-45c0-9965-4d8bbfecc9e1",
+    "cam_type": 46,
+    "delay": 29,
+    "name": "banana",
+    "description": "tasty"
+  },
+  {
+    "id": "12a8ebf7-ef0a-4052-9c47-8009c75d8b48",
+    "cam_id": "95223230-ad7b-46a4-887b-3f5391da56c0",
+    "cam_type": 1,
+    "delay": 20,
+    "name": "lemon",
+    "description": "red"
+  },
+  {
+    "id": "8e6b5957-da51-404d-b779-cf7a3ad6b2ef",
+    "cam_id": "bd4e060c-2dc3-41a1-8f5b-8dd3d1c94b0f",
+    "cam_type": 92,
+    "delay": 93,
+    "name": "date",
+    "description": "fresh"
+  },
+  {
+    "id": "613f36da-f12c-4abd-9e16-7e222dacb69a",
+    "cam_id": "3cffe0be-cb9c-4164-a6db-bee68e4b98b3",
+    "cam_type": 20,
+    "delay": 0,
+    "name": "elderberry",
+    "description": "red"
+  },
+  {
+    "id": "83830884-1b01-401e-afc4-bb70a05d3440",
+    "cam_id": "5dc2b427-98f3-4571-a169-c42c12c6c06f",
+    "cam_type": 18,
+    "delay": 65,
+    "name": "cherry",
+    "description": "tangy"
+  },
+  {
+    "id": "e6cd4403-3f19-432c-9215-c357ca570f48",
+    "cam_id": "b3de0bf0-8ce8-4543-ae13-6ac536a198b6",
+    "cam_type": 37,
+    "delay": 48,
+    "name": "grape",
+    "description": "ripe"
+  },
+  {
+    "id": "a48e68bd-bd5a-4f1b-83aa-7beac6631780",
+    "cam_id": "830c8d82-63c1-40a2-966b-feb6237e3e4e",
+    "cam_type": 11,
+    "delay": 46,
+    "name": "kiwi",
+    "description": "delicious"
+  },
+  {
+    "id": "18642d34-cd8b-43ec-9eb7-4dcc55a08735",
+    "cam_id": "a2e428b8-284a-47b7-b00f-a6387d33232b",
+    "cam_type": 5,
+    "delay": 97,
+    "name": "date",
+    "description": "fresh"
+  },
+  {
+    "id": "47678ca8-a9c3-4c27-939e-882f7fcd9e3e",
+    "cam_id": "5311cc2e-467d-430f-9e9a-c0fa44e842e8",
+    "cam_type": 10,
+    "delay": 54,
+    "name": "apple",
+    "description": "fresh"
+  },
+  {
+    "id": "0fbf686c-d8c0-4d10-a4a7-8a81d1108131",
+    "cam_id": "13e480d1-08d5-4d8d-92b3-4ff440356521",
+    "cam_type": 66,
+    "delay": 88,
+    "name": "apple",
+    "description": "tropical"
+  },
+  {
+    "id": "3e4644f2-a567-4e87-8615-7955fa6b416f",
+    "cam_id": "7667d033-4f05-41cc-a163-47aa73071d2b",
+    "cam_type": 22,
+    "delay": 57,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "e11648a7-8278-4b5b-9fd2-6e1fe57f7819",
+    "cam_id": "e1a44c82-55df-4597-adf8-29d5a9cf4de9",
+    "cam_type": 5,
+    "delay": 55,
+    "name": "grape",
+    "description": "juicy"
+  },
+  {
+    "id": "23f3384a-f731-40f2-a52e-ac7ab14d4ba2",
+    "cam_id": "b375a1c1-1273-413e-80b7-6851ca10f6b6",
+    "cam_type": 16,
+    "delay": 94,
+    "name": "elderberry",
+    "description": "tasty"
+  },
+  {
+    "id": "5c6f9246-b0ea-418c-a3ef-a19dea6381d6",
+    "cam_id": "b2586914-af37-4705-b8d8-3df647a8a35a",
+    "cam_type": 0,
+    "delay": 46,
+    "name": "cherry",
+    "description": "fresh"
+  },
+  {
+    "id": "1ce8c7de-181d-43b9-ad3d-4e1dc991e452",
+    "cam_id": "51fbaeea-624a-4091-a021-24533eaebf2d",
+    "cam_type": 78,
+    "delay": 69,
+    "name": "fig",
+    "description": "juicy"
+  },
+  {
+    "id": "3486cdf0-e390-450a-a058-b3738db4f1e3",
+    "cam_id": "53f44256-f2be-4bca-9eaf-b0dd0d943e5e",
+    "cam_type": 38,
+    "delay": 84,
+    "name": "kiwi",
+    "description": "tasty"
+  },
+  {
+    "id": "7697ba52-79d4-4395-bdee-3f20c2e1b716",
+    "cam_id": "4ec2c50f-a963-4023-ad11-4ab5230ebaf2",
+    "cam_type": 40,
+    "delay": 79,
+    "name": "grape",
+    "description": "sweet"
+  },
+  {
+    "id": "1142bacf-97ff-4da5-b731-285d12a4f657",
+    "cam_id": "5bee218d-1014-4744-a588-197d969a7375",
+    "cam_type": 96,
+    "delay": 41,
+    "name": "honeydew",
+    "description": "tropical"
+  },
+  {
+    "id": "aa25e633-985f-492b-984c-ab838b17ebe1",
+    "cam_id": "afa49c4b-ae1d-4318-8a7a-872bfc90321e",
+    "cam_type": 72,
+    "delay": 66,
+    "name": "fig",
+    "description": "tropical"
+  },
+  {
+    "id": "24d55c77-7bbc-464c-be85-6f8923c0edfc",
+    "cam_id": "f8ed9d1a-7ad7-4074-97ae-da74aeb0b82b",
+    "cam_type": 61,
+    "delay": 20,
+    "name": "honeydew",
+    "description": "fresh"
+  },
+  {
+    "id": "e4a62740-fd5c-4d8d-bad7-4a93c06a556f",
+    "cam_id": "63d03031-f427-4cae-8639-ae265e8872ad",
+    "cam_type": 76,
+    "delay": 27,
+    "name": "cherry",
+    "description": "fresh"
+  },
+  {
+    "id": "c21d4bde-7156-400b-9efe-09ce976436aa",
+    "cam_id": "3541cf7a-9b2e-42fa-ad1a-f6f87e6e10ae",
+    "cam_type": 35,
+    "delay": 27,
+    "name": "lemon",
+    "description": "tropical"
+  },
+  {
+    "id": "f85acf4e-41e4-4bcc-bf85-b7864479ae07",
+    "cam_id": "7381f33e-f064-45fc-b022-f77206cd12dd",
+    "cam_type": 86,
+    "delay": 56,
+    "name": "grape",
+    "description": "red"
+  },
+  {
+    "id": "bf32f327-3342-47f4-bc83-5765470bcbc7",
+    "cam_id": "87fba934-da46-4904-8885-f2c98fc89947",
+    "cam_type": 60,
+    "delay": 62,
+    "name": "kiwi",
+    "description": "delicious"
+  },
+  {
+    "id": "a5e8def4-c36f-4066-a4ef-beb5b5a0ec0c",
+    "cam_id": "62808900-0fba-474c-82cd-a29ec3c25e31",
+    "cam_type": 95,
+    "delay": 42,
+    "name": "date",
+    "description": "tropical"
+  },
+  {
+    "id": "82b1da1e-2050-454d-8b9a-57551003091e",
+    "cam_id": "f3aa6a57-da9a-4cb1-a003-20038a1a6eee",
+    "cam_type": 42,
+    "delay": 4,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "2de545de-0d3f-4f39-9fbc-dfa5772be94f",
+    "cam_id": "5e205428-09b9-4b11-a363-2295c1d5ae42",
+    "cam_type": 39,
+    "delay": 52,
+    "name": "lemon",
+    "description": "sweet"
+  },
+  {
+    "id": "15a1c28e-b8c2-41be-938b-210649879058",
+    "cam_id": "8bec4a72-c329-4bb6-bdde-fe3cf05fc930",
+    "cam_type": 31,
+    "delay": 9,
+    "name": "date",
+    "description": "tangy"
+  },
+  {
+    "id": "c0eff5a5-7531-4e85-ad6c-871b62ebc2d4",
+    "cam_id": "7709add3-ae29-4415-8ac9-f9a69e8c53b7",
+    "cam_type": 34,
+    "delay": 33,
+    "name": "cherry",
+    "description": "sweet"
+  },
+  {
+    "id": "d2172cae-8076-438c-9c0e-e41c6a229bf8",
+    "cam_id": "51cae2a6-6394-4ab5-a8de-44a8d02565a1",
+    "cam_type": 53,
+    "delay": 43,
+    "name": "date",
+    "description": "sour"
+  },
+  {
+    "id": "ba77deaf-4e2d-4241-b6f6-02c88966e355",
+    "cam_id": "c5ec2a62-48c1-42c1-bd82-9c5da4db9a9e",
+    "cam_type": 59,
+    "delay": 27,
+    "name": "apple",
+    "description": "red"
+  },
+  {
+    "id": "60b51fc6-4a89-4dc8-9b30-8ce2eeccdfec",
+    "cam_id": "fb5ac17a-7993-4faa-8472-3265ab1891dd",
+    "cam_type": 81,
+    "delay": 63,
+    "name": "banana",
+    "description": "juicy"
+  },
+  {
+    "id": "811dc002-9468-4dca-9b8c-7d70bf930961",
+    "cam_id": "29a37570-5680-47fd-aa6c-2c96678c79bd",
+    "cam_type": 78,
+    "delay": 51,
+    "name": "apple",
+    "description": "red"
+  },
+  {
+    "id": "f0d66557-7d28-40e5-a4c2-ab49bf59f710",
+    "cam_id": "6c34a9ab-645e-4aa2-b125-2cd1b7dded8e",
+    "cam_type": 52,
+    "delay": 12,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "d22c33b5-a84b-49e9-8430-5b8337de00cd",
+    "cam_id": "ab543b26-d76f-4a37-a650-6792e2a1312c",
+    "cam_type": 87,
+    "delay": 64,
+    "name": "elderberry",
+    "description": "juicy"
+  },
+  {
+    "id": "b69b5188-9317-420f-97d1-86d738141592",
+    "cam_id": "5e8b0a4b-af75-48ae-90e0-88e815d6b295",
+    "cam_type": 21,
+    "delay": 8,
+    "name": "elderberry",
+    "description": "ripe"
+  },
+  {
+    "id": "2384c431-6af0-49bf-97a1-9025be990b89",
+    "cam_id": "a6be4331-d2a7-4074-82a8-be68e1f2aacb",
+    "cam_type": 19,
+    "delay": 24,
+    "name": "date",
+    "description": "tropical"
+  },
+  {
+    "id": "19a1f4d1-bb3b-4645-815b-0d171ac4ccc1",
+    "cam_id": "00d02dc3-3f97-466c-9fd3-bec03567eca3",
+    "cam_type": 47,
+    "delay": 58,
+    "name": "kiwi",
+    "description": "fresh"
+  },
+  {
+    "id": "73dc2715-7fa5-42c0-bb9f-b6f5d38af051",
+    "cam_id": "fd17bc97-8b6c-4025-b253-270c195f76c2",
+    "cam_type": 81,
+    "delay": 34,
+    "name": "grape",
+    "description": "sour"
+  },
+  {
+    "id": "bea935c2-d557-41d9-81c9-ec318d48c423",
+    "cam_id": "1ac0feb0-ebb0-4da6-b7b9-c43e1d141cd3",
+    "cam_type": 53,
+    "delay": 2,
+    "name": "date",
+    "description": "fresh"
+  },
+  {
+    "id": "691404c5-0c17-4166-9db2-248cd9c7ba79",
+    "cam_id": "15db259a-23fe-45e7-bd93-121535bc2f34",
+    "cam_type": 56,
+    "delay": 24,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "787dd084-3320-4475-84da-3dd0d90d6155",
+    "cam_id": "67ebfaf0-57bd-4cbf-91f4-3c1a7a4f4e90",
+    "cam_type": 86,
+    "delay": 72,
+    "name": "fig",
+    "description": "tangy"
+  },
+  {
+    "id": "b928ed61-2722-4331-b97f-f144a3ee0af3",
+    "cam_id": "6a8a2eb4-f19f-4b97-a93e-a2b093b4735c",
+    "cam_type": 83,
+    "delay": 74,
+    "name": "date",
+    "description": "tasty"
+  },
+  {
+    "id": "6a31266e-eab0-4aa6-b7c1-af2c64e72101",
+    "cam_id": "2e0a2be9-e211-4b4a-a52e-147168a7bc4e",
+    "cam_type": 30,
+    "delay": 89,
+    "name": "cherry",
+    "description": "ripe"
+  },
+  {
+    "id": "2940164f-a141-4928-9ae0-a85e3b1ff44f",
+    "cam_id": "b690ce5d-601f-4bba-8d68-2679f41e957e",
+    "cam_type": 69,
+    "delay": 10,
+    "name": "date",
+    "description": "sour"
+  },
+  {
+    "id": "7944869d-aa7a-4265-b2f8-2f5d5279746a",
+    "cam_id": "586e327d-8ada-4ff7-b8c2-53dd3fd497de",
+    "cam_type": 55,
+    "delay": 3,
+    "name": "kiwi",
+    "description": "juicy"
+  },
+  {
+    "id": "752393c9-3699-43f6-a26f-8e908dade52b",
+    "cam_id": "d815f079-3b0e-4cea-b826-4b384ca3c503",
+    "cam_type": 43,
+    "delay": 47,
+    "name": "date",
+    "description": "fresh"
+  },
+  {
+    "id": "ca9b247a-1fe4-4759-be41-4e953196dfd0",
+    "cam_id": "9ecfb415-d495-4218-a58a-5eb208b5bbfa",
+    "cam_type": 94,
+    "delay": 98,
+    "name": "honeydew",
+    "description": "sour"
+  },
+  {
+    "id": "a07d371e-b0cd-422c-9654-0d2a02a23694",
+    "cam_id": "cddbf674-5a34-4db6-9dbc-ea16024a0f9b",
+    "cam_type": 92,
+    "delay": 53,
+    "name": "apple",
+    "description": "delicious"
+  },
+  {
+    "id": "1fcc658b-f5e9-438b-ae20-46bbb550e56f",
+    "cam_id": "5845680c-ac63-403c-a005-392ea11d1bcb",
+    "cam_type": 12,
+    "delay": 91,
+    "name": "cherry",
+    "description": "tangy"
+  },
+  {
+    "id": "87c7be55-5802-4a33-b79a-3437f332915d",
+    "cam_id": "cade2400-1151-43e7-9054-95f8bfd91428",
+    "cam_type": 100,
+    "delay": 17,
+    "name": "apple",
+    "description": "delicious"
+  },
+  {
+    "id": "2f063a11-8849-4ccb-82d6-d0c407c7dab0",
+    "cam_id": "d8c8e92b-b321-4dad-b4dc-800ec278e51a",
+    "cam_type": 58,
+    "delay": 55,
+    "name": "grape",
+    "description": "fresh"
+  },
+  {
+    "id": "acd33d24-a495-48e7-843c-aed8c7266f09",
+    "cam_id": "f7bea3ac-70ee-4124-9fb4-466e4dd3fc86",
+    "cam_type": 33,
+    "delay": 36,
+    "name": "apple",
+    "description": "tasty"
+  },
+  {
+    "id": "972ee80a-de3a-4bee-86b4-70386bc39402",
+    "cam_id": "af4615b2-91c8-45c0-8433-ff99018eedc6",
+    "cam_type": 65,
+    "delay": 69,
+    "name": "lemon",
+    "description": "delicious"
+  },
+  {
+    "id": "39c30c87-2d66-45d2-8016-3546164c1bae",
+    "cam_id": "49f0d43f-dc41-4443-a404-5faac0f57c40",
+    "cam_type": 26,
+    "delay": 27,
+    "name": "fig",
+    "description": "tropical"
+  },
+  {
+    "id": "512bcdc4-5418-4abb-b4ae-d076236ce585",
+    "cam_id": "05369ffd-ea29-4b62-a6ad-fb75bbaa8792",
+    "cam_type": 9,
+    "delay": 71,
+    "name": "apple",
+    "description": "fresh"
+  },
+  {
+    "id": "1d836b16-940a-4715-b87e-f8bf94c4c56f",
+    "cam_id": "6d8d6077-6c72-4f8e-9a9d-8a52ec52a1a9",
+    "cam_type": 46,
+    "delay": 70,
+    "name": "banana",
+    "description": "ripe"
+  },
+  {
+    "id": "040ed5de-ca6f-4484-95e9-4a22927ee54f",
+    "cam_id": "2c68ea05-18a2-4da2-8472-ec204976485c",
+    "cam_type": 92,
+    "delay": 18,
+    "name": "elderberry",
+    "description": "red"
+  },
+  {
+    "id": "ef444b83-acd6-4137-bd0c-98c35294fe15",
+    "cam_id": "7acd204d-6215-4bcf-9b90-290e044d25de",
+    "cam_type": 29,
+    "delay": 32,
+    "name": "lemon",
+    "description": "delicious"
+  },
+  {
+    "id": "f4054c08-5eac-4037-86ca-f95fccd5a7a0",
+    "cam_id": "c5b81901-9283-4925-bb95-1a80e0a6c900",
+    "cam_type": 77,
+    "delay": 5,
+    "name": "elderberry",
+    "description": "tropical"
+  },
+  {
+    "id": "e9fd9a4b-96fa-4428-9bea-df593bc602be",
+    "cam_id": "2364a707-5ddf-4774-8f02-632ab3c9b5d6",
+    "cam_type": 65,
+    "delay": 24,
+    "name": "fig",
+    "description": "delicious"
+  },
+  {
+    "id": "b2465f01-14bd-4bf8-91e3-d22fa9e1e7ad",
+    "cam_id": "b7b8d989-3d85-4ca9-afe1-4bdaab937e0e",
+    "cam_type": 4,
+    "delay": 48,
+    "name": "fig",
+    "description": "red"
+  },
+  {
+    "id": "9e0c14ef-98a1-4544-b0f6-11f6d837b12c",
+    "cam_id": "aa5b0a51-b10f-464d-a8f0-94771de8070a",
+    "cam_type": 84,
+    "delay": 57,
+    "name": "kiwi",
+    "description": "delicious"
+  },
+  {
+    "id": "ecbbfcab-8453-4678-af71-bcc77cf74d35",
+    "cam_id": "4b2597e5-be81-4efc-8e45-e2daf3ff2717",
+    "cam_type": 31,
+    "delay": 99,
+    "name": "lemon",
+    "description": "sweet"
+  },
+  {
+    "id": "e3b64f54-6095-40ec-9f51-2f4af635c0f5",
+    "cam_id": "6527d0ab-989b-4ef2-bec4-23b75170ebed",
+    "cam_type": 42,
+    "delay": 34,
+    "name": "fig",
+    "description": "tropical"
+  },
+  {
+    "id": "13ae520b-37b0-49af-90da-43164559e2c9",
+    "cam_id": "6bd09be8-aac5-47b3-84b3-21a6c56c9957",
+    "cam_type": 24,
+    "delay": 34,
+    "name": "lemon",
+    "description": "juicy"
+  },
+  {
+    "id": "b51cb898-3ee3-4775-bc80-0caa1f2645ba",
+    "cam_id": "66c819bc-6823-49b1-b1b1-483a7ccf7a63",
+    "cam_type": 19,
+    "delay": 81,
+    "name": "kiwi",
+    "description": "red"
+  },
+  {
+    "id": "7c0c20b9-1110-4a96-93fb-e2f70bd1e3a4",
+    "cam_id": "ce7217f1-4a82-4b4a-bd13-bc49253c37f6",
+    "cam_type": 82,
+    "delay": 1,
+    "name": "lemon",
+    "description": "tangy"
+  },
+  {
+    "id": "2314a6ee-cc62-4916-aeec-5efa575c4ce1",
+    "cam_id": "8f2ecfa0-0533-4ec5-85da-2a7d3190e31e",
+    "cam_type": 32,
+    "delay": 34,
+    "name": "banana",
+    "description": "red"
+  },
+  {
+    "id": "efc515a6-97a3-482c-9a7e-8de100c5e65f",
+    "cam_id": "ad615acc-c51d-4926-9ac8-044641756af5",
+    "cam_type": 93,
+    "delay": 47,
+    "name": "elderberry",
+    "description": "sweet"
+  },
+  {
+    "id": "7a4b61ba-0914-445e-bb67-8504675c3613",
+    "cam_id": "040697d0-ce3d-4bba-b646-a2699b3e5b41",
+    "cam_type": 55,
+    "delay": 8,
+    "name": "banana",
+    "description": "tasty"
+  },
+  {
+    "id": "4e65168d-f504-412e-915e-dbbae755c64f",
+    "cam_id": "c7a99675-987d-467e-8823-d959c3a8169d",
+    "cam_type": 93,
+    "delay": 10,
+    "name": "cherry",
+    "description": "sweet"
+  },
+  {
+    "id": "010b7dce-7efd-402f-a2cd-062888427d64",
+    "cam_id": "ae16beec-18f8-4ae8-8544-9af25bb5e50e",
+    "cam_type": 37,
+    "delay": 23,
+    "name": "date",
+    "description": "delicious"
+  },
+  {
+    "id": "62f84cf4-ae42-4a7e-a7ac-673648f1d65f",
+    "cam_id": "59fb3731-c65a-41c6-b185-a4e369f32020",
+    "cam_type": 53,
+    "delay": 5,
+    "name": "fig",
+    "description": "tangy"
+  },
+  {
+    "id": "15f7f168-f172-4f28-8f49-89e71fd668e3",
+    "cam_id": "eef2e152-db04-4612-b923-33ae6ddd5ecd",
+    "cam_type": 52,
+    "delay": 66,
+    "name": "fig",
+    "description": "delicious"
+  },
+  {
+    "id": "0c4d7cf7-c5fa-4b8c-922e-8ca194ccb8f1",
+    "cam_id": "b4274a14-6fea-48bc-bbcd-920ff638df41",
+    "cam_type": 68,
+    "delay": 5,
+    "name": "date",
+    "description": "sweet"
+  },
+  {
+    "id": "9ae480a7-c2a2-41c4-a7ba-4882fe0a5945",
+    "cam_id": "92f82356-de5e-4975-b2b5-6812b1ad1c0f",
+    "cam_type": 91,
+    "delay": 28,
+    "name": "grape",
+    "description": "fresh"
+  },
+  {
+    "id": "2b96a804-3111-4fc5-9b41-d2658bfc4acb",
+    "cam_id": "d321e565-aca4-4465-8684-90a50b590b04",
+    "cam_type": 71,
+    "delay": 47,
+    "name": "cherry",
+    "description": "delicious"
+  },
+  {
+    "id": "17166074-221e-403f-b66b-7c864cbd0717",
+    "cam_id": "650ce69a-82e3-4340-ba28-91fb1e50e332",
+    "cam_type": 97,
+    "delay": 14,
+    "name": "apple",
+    "description": "tropical"
+  },
+  {
+    "id": "33fff16f-23ce-4904-a043-8cf2abe8e076",
+    "cam_id": "b99bcc0e-7f4c-4833-9c56-b6ce2c78e0e5",
+    "cam_type": 5,
+    "delay": 12,
+    "name": "elderberry",
+    "description": "tasty"
+  },
+  {
+    "id": "9c365df2-2410-43f4-ac3b-d25eb84a84be",
+    "cam_id": "d7d1d6b0-5551-4d7a-92b3-175b5d231abf",
+    "cam_type": 18,
+    "delay": 37,
+    "name": "date",
+    "description": "ripe"
+  },
+  {
+    "id": "e4fba12b-70c9-4638-8be6-81c4c72cc43a",
+    "cam_id": "4866c9f8-43cd-45e4-8e2c-f0bc3dc0285c",
+    "cam_type": 52,
+    "delay": 5,
+    "name": "apple",
+    "description": "fresh"
+  },
+  {
+    "id": "29aac15c-af1c-4103-ae65-2975388c93f5",
+    "cam_id": "09ce3c95-9b7f-4178-a1f5-3f70959dc605",
+    "cam_type": 40,
+    "delay": 98,
+    "name": "apple",
+    "description": "sour"
+  },
+  {
+    "id": "bfaa796d-bf3d-40bd-aea7-068277b7e812",
+    "cam_id": "b0ed8c20-7b29-4306-8653-f85fa6ccbac4",
+    "cam_type": 52,
+    "delay": 84,
+    "name": "elderberry",
+    "description": "tropical"
+  },
+  {
+    "id": "aa5948f8-6065-46b2-a128-56c51103dfcc",
+    "cam_id": "b3c889ca-ea77-4626-8b52-6af1636ea4f7",
+    "cam_type": 19,
+    "delay": 57,
+    "name": "honeydew",
+    "description": "delicious"
+  },
+  {
+    "id": "f875ed6a-3499-47db-9b9b-803afe9c9ee4",
+    "cam_id": "df9ec992-99eb-4644-af30-667f85bac0a1",
+    "cam_type": 51,
+    "delay": 1,
+    "name": "banana",
+    "description": "fresh"
+  },
+  {
+    "id": "572aef6e-e853-4872-a9fd-88457c7e47b4",
+    "cam_id": "db4f7a43-1bed-49ad-97c0-6fa64fd81a02",
+    "cam_type": 5,
+    "delay": 57,
+    "name": "apple",
+    "description": "sweet"
+  },
+  {
+    "id": "9aca69b6-13a7-4a2e-abaf-8a3a1e41095b",
+    "cam_id": "8f2c84ed-44e9-4b51-818e-8342e0e88842",
+    "cam_type": 71,
+    "delay": 96,
+    "name": "honeydew",
+    "description": "sour"
+  },
+  {
+    "id": "1fa6438b-82fd-4ed5-87e8-55bc146d75a8",
+    "cam_id": "87e119a7-a22f-4ee0-bc28-1a7d56c0ab85",
+    "cam_type": 69,
+    "delay": 57,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "05066cf3-cd84-4f83-a534-6547c900d5f0",
+    "cam_id": "6f4ff027-10c6-4d4b-bbed-455ee9c7e150",
+    "cam_type": 25,
+    "delay": 34,
+    "name": "honeydew",
+    "description": "delicious"
+  },
+  {
+    "id": "589a650f-aed5-4416-9064-1b233963a270",
+    "cam_id": "fd4d469c-0b2d-4af4-847d-3be5f85aa84b",
+    "cam_type": 88,
+    "delay": 93,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "68820b13-c269-4642-90d8-d254546508a0",
+    "cam_id": "72078f6f-f60c-4e54-8ddb-5d4e476701c4",
+    "cam_type": 56,
+    "delay": 30,
+    "name": "banana",
+    "description": "sour"
+  },
+  {
+    "id": "ff43931f-101c-4621-89e2-70d5ffe68c8c",
+    "cam_id": "e2ba511e-dcfb-47c3-a8c2-ec18248a2068",
+    "cam_type": 4,
+    "delay": 55,
+    "name": "kiwi",
+    "description": "fresh"
+  },
+  {
+    "id": "6ec8f2bd-8fcf-4acc-9cf4-b1c27515fe42",
+    "cam_id": "de0e107c-aeec-421b-bf83-ffd481537e04",
+    "cam_type": 70,
+    "delay": 60,
+    "name": "cherry",
+    "description": "juicy"
+  },
+  {
+    "id": "8fa83b55-ea25-49bb-8cf8-a2ed7150fdbd",
+    "cam_id": "0b16f6d0-03f2-473c-86ac-837c28f69a7c",
+    "cam_type": 30,
+    "delay": 55,
+    "name": "kiwi",
+    "description": "juicy"
+  },
+  {
+    "id": "79994a79-baf5-49f0-bd8e-8d488554adc7",
+    "cam_id": "cb1c6b20-b4df-4ad8-a3a8-3f5666688c1e",
+    "cam_type": 42,
+    "delay": 51,
+    "name": "fig",
+    "description": "sour"
+  },
+  {
+    "id": "ff4939ee-d3da-49e6-8509-7e0d40ccf4b9",
+    "cam_id": "d24c38ff-b300-4868-a1ba-d1428ae493ea",
+    "cam_type": 28,
+    "delay": 97,
+    "name": "cherry",
+    "description": "tasty"
+  },
+  {
+    "id": "edeb9ac2-6910-4986-9d13-4d50de3df26c",
+    "cam_id": "9c548fb7-dec8-4bd1-9a11-b8227d4ff8f9",
+    "cam_type": 16,
+    "delay": 18,
+    "name": "kiwi",
+    "description": "juicy"
+  },
+  {
+    "id": "b971daa0-71de-4842-ba07-128ea64b0ed5",
+    "cam_id": "1e868ade-a6eb-4070-b064-fa2e8098ce9e",
+    "cam_type": 95,
+    "delay": 37,
+    "name": "fig",
+    "description": "tangy"
+  },
+  {
+    "id": "3e4e98c8-69cc-4638-96df-7d7ec4fe6ce6",
+    "cam_id": "f44f3cd4-b6b3-4d42-8c71-d7c9fbb5a451",
+    "cam_type": 10,
+    "delay": 91,
+    "name": "elderberry",
+    "description": "tangy"
+  },
+  {
+    "id": "e235d43d-68b2-4455-8169-93c472ed7f78",
+    "cam_id": "77eab272-1f13-4e8b-9055-dc6f16940479",
+    "cam_type": 79,
+    "delay": 1,
+    "name": "kiwi",
+    "description": "ripe"
+  },
+  {
+    "id": "2f64ac06-7a73-4b3e-9145-2ee9ab45abae",
+    "cam_id": "4d9db80a-40ac-4311-9aee-c3f6a8397494",
+    "cam_type": 41,
+    "delay": 98,
+    "name": "honeydew",
+    "description": "delicious"
+  },
+  {
+    "id": "ed7b3f21-d164-4fe2-8407-1ba9a65133de",
+    "cam_id": "cb71301b-8011-4878-9560-23c875859f65",
+    "cam_type": 32,
+    "delay": 56,
+    "name": "elderberry",
+    "description": "juicy"
+  },
+  {
+    "id": "8525a5fa-a4ac-49f6-bfb9-5c1bfd1b048d",
+    "cam_id": "263f7f43-58e3-4b20-a850-8cab4fb47869",
+    "cam_type": 60,
+    "delay": 24,
+    "name": "grape",
+    "description": "tangy"
+  },
+  {
+    "id": "7bc719df-f69b-454e-b4fa-cb3daf3cc508",
+    "cam_id": "638d6782-c26e-4b65-8c06-ea719948adae",
+    "cam_type": 28,
+    "delay": 11,
+    "name": "cherry",
+    "description": "juicy"
+  },
+  {
+    "id": "a43bfc13-180e-47cc-b661-04368825c4af",
+    "cam_id": "3ff078f0-6bf7-4575-974a-669254bc4c3f",
+    "cam_type": 48,
+    "delay": 94,
+    "name": "kiwi",
+    "description": "tangy"
+  },
+  {
+    "id": "695d4ac1-21aa-42c1-b531-36f345759c27",
+    "cam_id": "b900aa9e-6dfc-440f-8b0e-63bbb4450308",
+    "cam_type": 51,
+    "delay": 74,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "89b67ce4-311a-4ae5-93c1-1d2e62c613a0",
+    "cam_id": "ea489901-0b61-468b-9f38-034161f2735f",
+    "cam_type": 18,
+    "delay": 18,
+    "name": "kiwi",
+    "description": "red"
+  },
+  {
+    "id": "0ba7640d-169f-450a-84e5-e7971979e8dd",
+    "cam_id": "624e3061-0a6d-4d93-a542-c8a38fda5cea",
+    "cam_type": 21,
+    "delay": 27,
+    "name": "elderberry",
+    "description": "tasty"
+  },
+  {
+    "id": "f6b63b70-2ee0-4119-ad44-65a96c2dfb36",
+    "cam_id": "e9c2ce55-f6d7-4718-a610-55c1762f2801",
+    "cam_type": 20,
+    "delay": 37,
+    "name": "grape",
+    "description": "sweet"
+  },
+  {
+    "id": "adcae768-1c6d-4525-9947-a20dca105214",
+    "cam_id": "47b679a1-5581-46bf-8360-d4a20b11ddce",
+    "cam_type": 56,
+    "delay": 68,
+    "name": "elderberry",
+    "description": "fresh"
+  },
+  {
+    "id": "c3b3dd61-3d03-452e-a877-aebe3642063c",
+    "cam_id": "ea51075a-131d-4729-9175-6f14aea00b62",
+    "cam_type": 64,
+    "delay": 13,
+    "name": "date",
+    "description": "tangy"
+  },
+  {
+    "id": "8cafd6c0-ab9b-45f3-a09a-cea8af250997",
+    "cam_id": "d4a7146a-41c0-46f1-85f6-786abc93af29",
+    "cam_type": 58,
+    "delay": 91,
+    "name": "elderberry",
+    "description": "red"
+  },
+  {
+    "id": "3e84f3d2-d8b0-4085-ad92-99e4b3127bae",
+    "cam_id": "620a1ded-dd78-4bb6-a5cf-e86682c55b72",
+    "cam_type": 85,
+    "delay": 98,
+    "name": "lemon",
+    "description": "delicious"
+  },
+  {
+    "id": "7a237e11-2007-439a-b0ca-ba80cd10ef20",
+    "cam_id": "776f680b-6c0d-40c9-86a0-d46db1777a0c",
+    "cam_type": 72,
+    "delay": 1,
+    "name": "grape",
+    "description": "delicious"
+  },
+  {
+    "id": "01556f87-a017-4d95-8f85-9d9ba7825f1d",
+    "cam_id": "ce6b692f-c8b9-4b45-bd85-6b449d0cdd80",
+    "cam_type": 65,
+    "delay": 14,
+    "name": "apple",
+    "description": "fresh"
+  },
+  {
+    "id": "23a980f5-776e-4b8c-8f97-902fc7323349",
+    "cam_id": "c9a723f4-8a31-4417-8fc7-3711e13d528a",
+    "cam_type": 23,
+    "delay": 83,
+    "name": "lemon",
+    "description": "sour"
+  },
+  {
+    "id": "d75ea619-4e7e-4e5b-88e2-fb6b82f8bba9",
+    "cam_id": "096048b9-b8a1-4599-8b78-ac63810378c3",
+    "cam_type": 84,
+    "delay": 62,
+    "name": "lemon",
+    "description": "sweet"
+  },
+  {
+    "id": "0f7224b7-a538-4aeb-a4e1-49059b51c685",
+    "cam_id": "82b77147-46b5-4a7e-a413-79f8b640bc13",
+    "cam_type": 10,
+    "delay": 34,
+    "name": "lemon",
+    "description": "ripe"
+  },
+  {
+    "id": "24d4260b-e77f-4bef-a655-f0238e6ea9f8",
+    "cam_id": "ebddb421-d06a-4d67-817e-a9413023de39",
+    "cam_type": 38,
+    "delay": 71,
+    "name": "grape",
+    "description": "tropical"
+  },
+  {
+    "id": "74726320-9aeb-47f8-826f-8ed31b3fa739",
+    "cam_id": "02ea4668-3f47-4805-9e91-786a9efc10f5",
+    "cam_type": 5,
+    "delay": 25,
+    "name": "honeydew",
+    "description": "juicy"
+  },
+  {
+    "id": "54c89b35-1a1f-42ab-a77e-b96618c43057",
+    "cam_id": "3ef2ed5e-1f97-418a-b5ac-b0187a8be2f5",
+    "cam_type": 8,
+    "delay": 59,
+    "name": "date",
+    "description": "juicy"
+  },
+  {
+    "id": "38c2ff58-4b0e-4acc-a9a5-03259bddebcf",
+    "cam_id": "ec3eff17-fdd6-4c46-9a7d-e6b6926846b6",
+    "cam_type": 85,
+    "delay": 35,
+    "name": "apple",
+    "description": "juicy"
+  },
+  {
+    "id": "dc8f8ec3-0f59-4abc-830c-57822477e48a",
+    "cam_id": "a632a9a1-83ac-4e1d-8555-5f42be8c15ab",
+    "cam_type": 18,
+    "delay": 71,
+    "name": "kiwi",
+    "description": "ripe"
+  },
+  {
+    "id": "71998a61-c8eb-43e8-aac4-362080013b82",
+    "cam_id": "cc8fbbb0-9bfd-4cf6-955a-29d6cb055a91",
+    "cam_type": 86,
+    "delay": 3,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "0fbfe60b-06a4-4e86-bc1e-6ac4249db74e",
+    "cam_id": "e758375a-ef49-4fb3-a28c-8b5b8de8d938",
+    "cam_type": 3,
+    "delay": 99,
+    "name": "honeydew",
+    "description": "red"
+  },
+  {
+    "id": "584ef7c2-35a5-41ed-a14c-1f2d6433b8b5",
+    "cam_id": "68bd5c51-977f-4908-bf2b-f504d72e07ec",
+    "cam_type": 28,
+    "delay": 78,
+    "name": "fig",
+    "description": "red"
+  },
+  {
+    "id": "2512d142-c998-468b-9e21-26ef8869c50b",
+    "cam_id": "9038e72d-f339-4798-aa3c-e15f22a5b733",
+    "cam_type": 50,
+    "delay": 64,
+    "name": "banana",
+    "description": "red"
+  },
+  {
+    "id": "1d362fb8-8eb1-4ed2-8b8a-c11644d8ec7f",
+    "cam_id": "1076a898-b582-4e64-b737-c36df59f6eac",
+    "cam_type": 52,
+    "delay": 15,
+    "name": "grape",
+    "description": "tasty"
+  },
+  {
+    "id": "f4d087ed-60ec-4b48-ae9b-91e5fd6eeff9",
+    "cam_id": "0a2d6e01-3bf3-48c7-b938-d94e2d46a62c",
+    "cam_type": 65,
+    "delay": 80,
+    "name": "banana",
+    "description": "tangy"
+  },
+  {
+    "id": "6c535443-b7b0-4c3a-b01e-89ebdde8d1b8",
+    "cam_id": "7e854c13-6c4a-4ec9-91ea-8b13d2e4bc44",
+    "cam_type": 71,
+    "delay": 91,
+    "name": "banana",
+    "description": "sweet"
+  },
+  {
+    "id": "a6f94459-6429-499a-a099-b0d538fa16e0",
+    "cam_id": "a85e8d99-10c6-4a52-9284-cd212627091a",
+    "cam_type": 66,
+    "delay": 30,
+    "name": "lemon",
+    "description": "ripe"
+  },
+  {
+    "id": "e5219b03-fa1b-4e9f-a76c-28a71ba91414",
+    "cam_id": "0ec47089-6ab6-4d6f-9a26-ad3bd1e3584f",
+    "cam_type": 74,
+    "delay": 6,
+    "name": "honeydew",
+    "description": "sour"
+  },
+  {
+    "id": "c0a0ef80-e8f0-4677-9c03-6dc88f40e8e3",
+    "cam_id": "f92bd13a-dd99-4a5a-9c5e-b16c2bdfda2b",
+    "cam_type": 71,
+    "delay": 21,
+    "name": "cherry",
+    "description": "red"
+  },
+  {
+    "id": "0340094c-b4c7-4bd3-b4c4-782dc38ff0a0",
+    "cam_id": "8261d023-40f9-45aa-bc7f-45c130c4bfdb",
+    "cam_type": 99,
+    "delay": 37,
+    "name": "elderberry",
+    "description": "tangy"
+  },
+  {
+    "id": "5c7bf00a-c631-4d00-bd04-17c7be3abe90",
+    "cam_id": "aebedc9f-b523-4096-80b2-e4c4ca3af841",
+    "cam_type": 23,
+    "delay": 15,
+    "name": "lemon",
+    "description": "tropical"
+  },
+  {
+    "id": "6e0971c7-3f43-4044-813d-0ef1b74bdc41",
+    "cam_id": "db44dd57-be18-4a74-9f46-d5267b241eca",
+    "cam_type": 44,
+    "delay": 3,
+    "name": "honeydew",
+    "description": "juicy"
+  },
+  {
+    "id": "d9711854-fa69-4f3f-ac74-8b830eff5c06",
+    "cam_id": "c8086f1b-a7e2-4a70-8d03-00be57785765",
+    "cam_type": 85,
+    "delay": 19,
+    "name": "grape",
+    "description": "tropical"
+  },
+  {
+    "id": "73d5a0d4-d344-4040-8a75-4a2fedd0af17",
+    "cam_id": "16034936-6450-41bb-a771-18d5818f15e5",
+    "cam_type": 62,
+    "delay": 71,
+    "name": "banana",
+    "description": "juicy"
+  },
+  {
+    "id": "553a4d93-1b00-4782-a967-bc8b6201f4d6",
+    "cam_id": "9c836c31-6a43-45e5-a182-8aa70e32cf34",
+    "cam_type": 51,
+    "delay": 61,
+    "name": "fig",
+    "description": "fresh"
+  },
+  {
+    "id": "58c205e1-daf9-4fe8-93fa-af9b046dc0bc",
+    "cam_id": "539c728e-0187-4588-8859-186657f68881",
+    "cam_type": 63,
+    "delay": 16,
+    "name": "date",
+    "description": "fresh"
+  },
+  {
+    "id": "24bd90f5-ed23-4c5b-95b1-c2c182236e98",
+    "cam_id": "cb3e1f29-7c1a-479d-bf65-ec4c2e2bfdbf",
+    "cam_type": 46,
+    "delay": 90,
+    "name": "apple",
+    "description": "red"
+  },
+  {
+    "id": "251958d9-850d-4ba8-a36b-9595fe35d7e7",
+    "cam_id": "2abc4177-d8a4-49a7-91da-936c4c2c3450",
+    "cam_type": 85,
+    "delay": 46,
+    "name": "apple",
+    "description": "fresh"
+  },
+  {
+    "id": "9c0c9e6f-f137-453a-a1ba-3845e0437cae",
+    "cam_id": "8b36cf80-54ec-419e-a3fe-dd58191b1ef7",
+    "cam_type": 65,
+    "delay": 87,
+    "name": "kiwi",
+    "description": "ripe"
+  },
+  {
+    "id": "d20c6a45-4704-46b1-bdcd-9802cd371466",
+    "cam_id": "1d649196-ea39-4b07-8f9a-24d481fbe6cf",
+    "cam_type": 96,
+    "delay": 80,
+    "name": "cherry",
+    "description": "red"
+  },
+  {
+    "id": "b831ea7d-c8a2-4ff8-a45f-1f277de1e03c",
+    "cam_id": "84c42e00-24ae-47f3-b74d-017aa696cd6b",
+    "cam_type": 7,
+    "delay": 91,
+    "name": "banana",
+    "description": "ripe"
+  },
+  {
+    "id": "22132902-54b6-4920-b49e-210274e46559",
+    "cam_id": "bd4d4619-41e8-40f6-b045-cf8410c4a340",
+    "cam_type": 39,
+    "delay": 34,
+    "name": "banana",
+    "description": "tasty"
+  },
+  {
+    "id": "1e4b47ef-8c2b-45a7-bfcb-bac92146821b",
+    "cam_id": "7c93c2e3-08bb-40b6-af76-df238de868b2",
+    "cam_type": 30,
+    "delay": 7,
+    "name": "elderberry",
+    "description": "sweet"
+  },
+  {
+    "id": "42893f25-b662-48c7-8a78-3a4f01391a30",
+    "cam_id": "634204c6-84d1-4d20-af36-7d32332c266a",
+    "cam_type": 27,
+    "delay": 88,
+    "name": "cherry",
+    "description": "tangy"
+  },
+  {
+    "id": "5cec0444-4ff1-4e97-9991-b7fc964d6511",
+    "cam_id": "6484090f-2044-4dce-86e0-cc5a4e023dcd",
+    "cam_type": 8,
+    "delay": 95,
+    "name": "banana",
+    "description": "tasty"
+  },
+  {
+    "id": "7fd7ccf6-b9d7-4fe1-a0b5-b3fe39a342e5",
+    "cam_id": "198cb7b0-1963-46b3-95f4-40a7c0ef0842",
+    "cam_type": 65,
+    "delay": 74,
+    "name": "lemon",
+    "description": "ripe"
+  },
+  {
+    "id": "86565894-7dfb-45aa-a089-06ed39ac97e8",
+    "cam_id": "30f31fe5-5be7-4c62-b259-29dfeb079982",
+    "cam_type": 95,
+    "delay": 29,
+    "name": "date",
+    "description": "fresh"
+  },
+  {
+    "id": "a1d30e7d-def5-4ce9-b43d-b8ec73b571f7",
+    "cam_id": "29782533-1495-4d1b-8bca-e466e6abcbac",
+    "cam_type": 5,
+    "delay": 71,
+    "name": "fig",
+    "description": "tangy"
+  },
+  {
+    "id": "c089face-c881-4687-9caa-4c9027ad476b",
+    "cam_id": "57e2a4bf-de2b-4550-b432-b44e2e09da9f",
+    "cam_type": 92,
+    "delay": 14,
+    "name": "lemon",
+    "description": "tasty"
+  },
+  {
+    "id": "2bb370a0-b757-425f-8cc0-065a6258db8d",
+    "cam_id": "ee457562-e765-4d12-88bb-257c9e0c387e",
+    "cam_type": 2,
+    "delay": 27,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "571cd157-009b-4099-85d0-d10eb79e0b84",
+    "cam_id": "9136d862-7288-44a4-a4fe-5a894bd1dda1",
+    "cam_type": 29,
+    "delay": 20,
+    "name": "fig",
+    "description": "tangy"
+  },
+  {
+    "id": "03ab044a-02c7-48cf-ab91-7a2188fdae9b",
+    "cam_id": "4a2229db-d99f-4776-85fb-e12064cbc146",
+    "cam_type": 61,
+    "delay": 20,
+    "name": "honeydew",
+    "description": "fresh"
+  },
+  {
+    "id": "99fee62d-a24e-407f-bbf6-1d5720312154",
+    "cam_id": "4677d9df-eb3c-4c81-841e-d01dd18aac35",
+    "cam_type": 93,
+    "delay": 62,
+    "name": "banana",
+    "description": "red"
+  },
+  {
+    "id": "123b8c9b-81ca-44e5-8fa6-ac9c9bde30ef",
+    "cam_id": "5e3a950a-ea18-4285-9a80-f4c6a3188e8f",
+    "cam_type": 74,
+    "delay": 43,
+    "name": "banana",
+    "description": "ripe"
+  },
+  {
+    "id": "2310ed7e-9c01-46ce-8dd9-484dd5f1db87",
+    "cam_id": "22dbf5fb-1813-40c7-9ecd-8826a97454d7",
+    "cam_type": 61,
+    "delay": 44,
+    "name": "elderberry",
+    "description": "delicious"
+  },
+  {
+    "id": "0c7b364c-8451-45ff-a296-a6e8e835e791",
+    "cam_id": "7b3930ab-9555-41a7-b28d-8b816f7eb4e9",
+    "cam_type": 11,
+    "delay": 35,
+    "name": "cherry",
+    "description": "tropical"
+  },
+  {
+    "id": "2f2ca612-9a29-49cf-bd13-f9cc0f3b05bd",
+    "cam_id": "950d1dd9-60cd-49e5-bead-3fb3dd0220a7",
+    "cam_type": 92,
+    "delay": 99,
+    "name": "lemon",
+    "description": "ripe"
+  },
+  {
+    "id": "686011e8-9db5-42f4-b915-53c816ba69f6",
+    "cam_id": "2105ccbe-3179-451d-9612-9042160e0f41",
+    "cam_type": 15,
+    "delay": 58,
+    "name": "date",
+    "description": "tasty"
+  },
+  {
+    "id": "42183731-400a-46a6-879d-0ddf24459342",
+    "cam_id": "74364b63-9808-420e-896d-13c466fbddea",
+    "cam_type": 25,
+    "delay": 78,
+    "name": "banana",
+    "description": "tangy"
+  },
+  {
+    "id": "87b28abe-6314-4f75-9931-d497f3ca31fc",
+    "cam_id": "7ac77011-1bbb-43ce-91eb-5ae1b55bc917",
+    "cam_type": 48,
+    "delay": 30,
+    "name": "apple",
+    "description": "fresh"
+  },
+  {
+    "id": "faf71502-2fd1-4a9c-99de-dcf01eedb6ec",
+    "cam_id": "6a41f1e4-02b8-46b6-87af-cc61e46aaa6b",
+    "cam_type": 91,
+    "delay": 41,
+    "name": "grape",
+    "description": "tasty"
+  },
+  {
+    "id": "30be2a98-a5c6-4686-8e8e-4c577d8c2833",
+    "cam_id": "8e67ad38-75bd-4345-9dbf-dbfdfc6ae82c",
+    "cam_type": 11,
+    "delay": 49,
+    "name": "date",
+    "description": "sweet"
+  },
+  {
+    "id": "e216600b-6c00-4d5f-9cea-f33154862d7a",
+    "cam_id": "1aee1d68-10d9-4c2c-99ca-d4a3d11d59c0",
+    "cam_type": 70,
+    "delay": 21,
+    "name": "kiwi",
+    "description": "tangy"
+  },
+  {
+    "id": "2eb58b68-5e5d-42db-92b5-4801fccd4165",
+    "cam_id": "2c2c3dbf-5e20-4ba2-a504-bf6828755a0c",
+    "cam_type": 77,
+    "delay": 42,
+    "name": "kiwi",
+    "description": "sour"
+  },
+  {
+    "id": "2e7b6d20-2ed9-4fa7-9dcf-3f99ded1e7a5",
+    "cam_id": "a2850417-4963-480e-9f25-ba6670cbd8de",
+    "cam_type": 20,
+    "delay": 74,
+    "name": "fig",
+    "description": "tasty"
+  },
+  {
+    "id": "d4eaec4a-916a-4d75-acbe-d6dd9a7cf617",
+    "cam_id": "30199d87-b45d-405b-b3db-3ae0975ddbd6",
+    "cam_type": 24,
+    "delay": 81,
+    "name": "banana",
+    "description": "delicious"
+  },
+  {
+    "id": "a4a0e7c2-8259-430c-b501-de76c5460939",
+    "cam_id": "c1dfd0da-e4d4-4484-a346-150fb74e6aec",
+    "cam_type": 55,
+    "delay": 62,
+    "name": "honeydew",
+    "description": "sweet"
+  },
+  {
+    "id": "b49fdd5c-a3b7-44ba-941a-b96045ed8638",
+    "cam_id": "64e1ae25-8688-430e-8de6-03758a428811",
+    "cam_type": 58,
+    "delay": 54,
+    "name": "date",
+    "description": "juicy"
+  },
+  {
+    "id": "23e21c6a-bb91-4035-ba1b-d1fa3aa576b0",
+    "cam_id": "4008f440-1a46-4f77-828f-979298a3da8f",
+    "cam_type": 76,
+    "delay": 46,
+    "name": "honeydew",
+    "description": "sweet"
+  },
+  {
+    "id": "f20bb159-a73b-40d3-a27f-49174c21e04c",
+    "cam_id": "45044a98-af3d-4156-9f60-c0a5fbea8256",
+    "cam_type": 42,
+    "delay": 11,
+    "name": "lemon",
+    "description": "sweet"
+  },
+  {
+    "id": "16a78cce-2258-4e72-8325-f47fc966c14e",
+    "cam_id": "05f582c9-3dfd-419c-bfbd-1f5c2d4424f0",
+    "cam_type": 50,
+    "delay": 83,
+    "name": "apple",
+    "description": "sour"
+  },
+  {
+    "id": "0e48cf9b-b957-4653-997e-2cedf5966f9e",
+    "cam_id": "203c38a6-ea74-4e2d-a3b4-af94c9767e86",
+    "cam_type": 6,
+    "delay": 62,
+    "name": "fig",
+    "description": "sweet"
+  },
+  {
+    "id": "e933830f-2671-4b16-bd8b-2b146d55525d",
+    "cam_id": "f29d7fae-664e-4ad0-96ce-f4e9b1058c71",
+    "cam_type": 97,
+    "delay": 98,
+    "name": "apple",
+    "description": "sweet"
+  },
+  {
+    "id": "76eefb61-8f0e-4148-8454-03b49f52fb42",
+    "cam_id": "eb56f9d8-e5ee-4843-a6ab-3ec8423b4ad7",
+    "cam_type": 80,
+    "delay": 88,
+    "name": "cherry",
+    "description": "sour"
+  },
+  {
+    "id": "213cd982-aeca-4735-aef8-fb913b00ce73",
+    "cam_id": "b08c8622-3713-4eb1-80df-ef7a199e4f1d",
+    "cam_type": 13,
+    "delay": 83,
+    "name": "cherry",
+    "description": "fresh"
+  },
+  {
+    "id": "4128a83a-ac21-4d40-9cbf-b2a58396bf38",
+    "cam_id": "f5c78186-2d93-4910-acfa-d3de1d7509f1",
+    "cam_type": 14,
+    "delay": 53,
+    "name": "banana",
+    "description": "sour"
+  },
+  {
+    "id": "b74f60f6-ce4f-4e9e-b9cb-28f4269aeaf8",
+    "cam_id": "4f6e21d7-4579-402b-9946-56a9bb7547e1",
+    "cam_type": 68,
+    "delay": 68,
+    "name": "cherry",
+    "description": "tangy"
+  },
+  {
+    "id": "96a392ec-9cf3-4b40-befe-c542e0555fbf",
+    "cam_id": "cc967791-cb12-4944-acc8-5d9c571c1d37",
+    "cam_type": 26,
+    "delay": 47,
+    "name": "elderberry",
+    "description": "tasty"
+  },
+  {
+    "id": "fee46e82-f7c5-4398-b30e-23e3f6425de8",
+    "cam_id": "dbb7930e-e457-4c07-867f-ad9fdd1b5460",
+    "cam_type": 7,
+    "delay": 8,
+    "name": "lemon",
+    "description": "sweet"
+  },
+  {
+    "id": "4ed0a75a-20d9-4006-9c25-fb3d5a7c4e76",
+    "cam_id": "4cced41e-4c3d-4d66-8943-8737fa6694b3",
+    "cam_type": 61,
+    "delay": 15,
+    "name": "banana",
+    "description": "sour"
+  },
+  {
+    "id": "45323147-fed3-4144-ad6e-363bca6eca9b",
+    "cam_id": "29eaca5b-e9f9-4626-b5bf-8912168ce9cb",
+    "cam_type": 70,
+    "delay": 96,
+    "name": "elderberry",
+    "description": "tropical"
+  },
+  {
+    "id": "3c078a99-7c12-4d82-8094-6ce52ce50a63",
+    "cam_id": "f0b95c10-63d8-4e4e-98c9-d195ab1dc811",
+    "cam_type": 67,
+    "delay": 1,
+    "name": "honeydew",
+    "description": "tangy"
+  },
+  {
+    "id": "2020a2e4-a9dd-4eb1-a0a6-20db3ed7f2bd",
+    "cam_id": "3c4e13f9-ae64-4e5e-90c2-9c6ce08e2726",
+    "cam_type": 78,
+    "delay": 62,
+    "name": "date",
+    "description": "ripe"
+  },
+  {
+    "id": "7d035d44-4769-4371-bace-ebeb827eaadd",
+    "cam_id": "b6f2e3b1-5758-4ec9-98e9-c7188e7402ac",
+    "cam_type": 8,
+    "delay": 97,
+    "name": "grape",
+    "description": "delicious"
+  }
+]

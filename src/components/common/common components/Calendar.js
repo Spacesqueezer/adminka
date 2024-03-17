@@ -98,15 +98,15 @@ const Calendar = ({onSelectDate}) => {
 
     const handleDateClick = (day) => {
         const formattedDate = new Date(selectedYear, selectedMonth, day+1);
-        console.log(formattedDate);
-        setSelectedDate(formattedDate.toISOString().split("T")[0]);
-        onSelectDate(formattedDate.toISOString().split("T")[0])
+        const date = formattedDate.toISOString().split("T")[0]
+        setSelectedDate(date);
+        onSelectDate(date)
     };
 
-    useEffect(() => {
-        // В этой функции можно добавить логику для обработки выбора даты
-        console.log("Выбрана дата:", selectedDate);
-    }, [selectedDate]);
+    // useEffect(() => {
+    //     // В этой функции можно добавить логику для обработки выбора даты
+    //     console.log("Выбрана дата:", selectedDate);
+    // }, [selectedDate]);
 
     const calendarMatrix = generateCalendarMatrix();
 

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import SearchInput from "../header_menu/SearchInput";
 import ButtonWithIcon from "../header_menu/ButtonWithIcon";
 import FilterImg from "../../project_images/filter.png";

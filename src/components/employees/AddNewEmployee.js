@@ -47,7 +47,7 @@ const Body = styled.div`
 const AddNewEmployee = ({ onClose }) => {
   // Стейт для хранения данных формы
   const [formData, setFormData] = useState({
-    requestid: genUuid(),
+    requestid: 0 /*genUuid()*/,
     person_name: "",
     person_surname: "",
     person_patronymic: "",
@@ -72,6 +72,7 @@ const AddNewEmployee = ({ onClose }) => {
       base64_photo: "",
     },
   });
+  const [photo, setPhoto] = useState(null);
   const [organizations, setOrganizations] = useState({});
 
   // Функция отправки формы
@@ -88,7 +89,7 @@ const AddNewEmployee = ({ onClose }) => {
         },
       };
     }
-    createNewPerson(dataToSend);
+    createNewPerson(dataToSend, photo);
   };
 
   const changeOrganizationInfo = (data) => {
@@ -98,6 +99,10 @@ const AddNewEmployee = ({ onClose }) => {
       transport_id: genUuid(),
       transport: { ...formData.transport, organization_id: data },
     });
+  };
+
+  const setUserPhoto = (photo) => {
+    setPhoto(photo);
   };
 
   // Обработка ввода в инпут
@@ -149,7 +154,7 @@ const AddNewEmployee = ({ onClose }) => {
   return (
     <Container>
       <LeftSide>
-        <ImagePicker />
+        <ImagePicker selectedPhoto={photo} onImageSelect={setUserPhoto} />
         <ModalLogo source={Logo} />
       </LeftSide>
       <RightSide>

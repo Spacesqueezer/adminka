@@ -15,10 +15,13 @@ const Input = styled.input`
   box-sizing: border-box;
 `;
 
-const SearchInput = () => {
+const SearchInput = ({ onTextChange }) => {
   return (
     <Wrapper>
-      <Input placeholder={"Поиск"} />
+      <Input
+        placeholder={"Поиск"}
+        onChange={(e) => onTextChange(e.target.value)}
+      />
     </Wrapper>
   );
 };

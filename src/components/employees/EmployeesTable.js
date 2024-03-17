@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import FakePersons from "../../fake_data/2/Fake_persons.json";
-import DeleteIcon from "./images/Delite.png";
+import DeleteIcon from "./images/Delete.png";
 import EditIcon from "./images/Edit_blue.png";
 import {
   TableContainer,
@@ -10,20 +9,23 @@ import {
   TableHeaderLabel,
   TableRow,
   TableData,
+  TableWrapper,
   Image,
-  Pagination,
-  PaginationButton,
   EditDeleteContainer,
   EditDeleteButtons,
   Expiration,
   ColumnHeader,
 } from "../common/common components/tableComponents";
+import Pagination from "./../common/common components/Pagination";
+import { getListOfPersons } from "../../API_functions";
+import styled from "styled-components";
 
-const EmployeesTable = ({ showModal }) => {
+const EmployeesTable = ({ showModal, searchBy }) => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
   const [sortOrder, setSortOrder] = useState(""); // Sort order: "asc" or "desc"
   const [currentPage, setCurrentPage] = useState(1); // Current page number
   const itemsPerPage = 9; // Number of items to show per page
+  const [allData, setAllData] = useState("");
   const [tableData, setTableData] = useState("");
 
   useEffect(() => {
@@ -31,8 +33,27 @@ const EmployeesTable = ({ showModal }) => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    //Функция поиска
+    if (searchBy === "") {
+      fetchData();
+    } else {
+      const filteredData = allData.filter((item) => {
+        // Производите поиск по всем полям и возвращайте элементы, которые соответствуют критерию поиска.
+        return (
+          item.name.includes(searchBy) ||
+          item.surname.includes(searchBy) ||
+          item.patronymic.includes(searchBy) ||
+          item.org.includes(searchBy) ||
+          item.transport.includes(searchBy)
+        );
+      });
+      setTableData(filteredData);
+    }
+  }, [searchBy]);
+
   const fetchData = () => {
-    let receivedData = FakePersons;
+    let receivedData = getListOfPersons();
     let preparedData = receivedData.map((item) => {
       const dateFrom = new Date(item.valid_from_date);
       const dateUntil = new Date(item.valid_until_date);
@@ -51,10 +72,11 @@ const EmployeesTable = ({ showModal }) => {
         org: item.organization.organization_name,
         photo: item.vectors[0].photo,
         transport: item.transport.mark + " / " + item.transport.grz,
-        allInfo: item
+        allInfo: item,
       };
     });
     setTableData(preparedData);
+    setAllData(preparedData);
   };
 
   const editEmployee = (data) => {
@@ -118,78 +140,74 @@ const EmployeesTable = ({ showModal }) => {
 
   return (
     <TableContainer>
-      <Table>
-        <TableHeader>
-          <tr>
-            <ColumnHeader
-              title={"ФИО"}
-              sortFunc={handleSort}
-              sortBy={"name"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Организация"}
-              sortFunc={handleSort}
-              sortBy={"org"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Срок действия"}
-              sortFunc={handleSort}
-              sortBy={"date_delta"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Транспорт"}
-              sortFunc={handleSort}
-              sortBy={"transport"}
-              sortOrder={sortOrder}
-            />
-            <TableHeaderLabel>Фото</TableHeaderLabel>
-          </tr>
-        </TableHeader>
-        <TableBody>
-          {paginatedData.map((item) => (
-            <TableRow key={item.id}>
-              <TableData style={{ width: "23%" }}>
-                {item.surname} {item.name[0]}. {item.patronymic[0]}.
-              </TableData>
-              <TableData style={{ width: "25%" }}>{item.org}</TableData>
-              <TableData style={{ width: "29%" }}>
-                <Expiration
-                  from={item.date_from}
-                  until={item.date_until}
-                  delta={item.date_delta}
-                />
-              </TableData>
-              <TableData style={{ width: "23%" }}>{item.transport}</TableData>
-              <TableData>
-                <Image src={item.photo} alt={item.name} />
-              </TableData>
-              <TableData>
-                <EditDeleteContainer>
-                  <EditDeleteButtons
-                    src={EditIcon}
-                    onClick={() => editEmployee(item.allInfo)}
+      <TableWrapper>
+        <Table>
+          <TableHeader>
+            <tr>
+              <ColumnHeader
+                title={"ФИО"}
+                sortFunc={handleSort}
+                sortBy={"name"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Организация"}
+                sortFunc={handleSort}
+                sortBy={"org"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Срок действия"}
+                sortFunc={handleSort}
+                sortBy={"date_delta"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Транспорт"}
+                sortFunc={handleSort}
+                sortBy={"transport"}
+                sortOrder={sortOrder}
+              />
+              <TableHeaderLabel>Фото</TableHeaderLabel>
+            </tr>
+          </TableHeader>
+          <TableBody>
+            {paginatedData.map((item) => (
+              <TableRow key={item.id}>
+                <TableData style={{ width: "23%" }}>
+                  {item.surname} {item.name[0]}. {item.patronymic[0]}.
+                </TableData>
+                <TableData style={{ width: "25%" }}>{item.org}</TableData>
+                <TableData style={{ width: "29%" }}>
+                  <Expiration
+                    from={item.date_from}
+                    until={item.date_until}
+                    delta={item.date_delta}
                   />
-                  <EditDeleteButtons src={DeleteIcon} />
-                </EditDeleteContainer>
-              </TableData>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-      <Pagination>
-        {Array.from({ length: totalPages }).map((_, index) => (
-          <PaginationButton
-            key={index + 1}
-            active={index + 1 === currentPage}
-            onClick={() => handlePageChange(index + 1)}
-          >
-            {index + 1}
-          </PaginationButton>
-        ))}
-      </Pagination>
+                </TableData>
+                <TableData style={{ width: "23%" }}>{item.transport}</TableData>
+                <TableData>
+                  <Image src={item.photo} alt={item.name} />
+                </TableData>
+                <TableData>
+                  <EditDeleteContainer>
+                    <EditDeleteButtons
+                      src={EditIcon}
+                      onClick={() => editEmployee(item.allInfo)}
+                    />
+                    <EditDeleteButtons src={DeleteIcon} />
+                  </EditDeleteContainer>
+                </TableData>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableWrapper>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        handlePageChange={handlePageChange}
+      />
     </TableContainer>
   );
 };

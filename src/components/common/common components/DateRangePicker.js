@@ -100,8 +100,14 @@ const DateRangeSelector = ({ label, onSelectRange }) => {
       <Label>{label}</Label>
       <InputField
         onClick={handleInputClick}
-        value={`${fromDate.toString().replace(/-/g, ".")} - ${untilDate
-          .toString()
+        value={`${fromDate
+          .split("-")
+          .reverse()
+          .join("-")
+          .replace(/-/g, ".")} - ${untilDate
+          .split("-")
+          .reverse()
+          .join("-")
           .replace(/-/g, ".")}`}
       />
     </Container>

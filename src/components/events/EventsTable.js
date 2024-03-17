@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import FakeEvents from "../../fake_data/2/Fake_events.json";
-import FakePersons from "../../fake_data/2/Fake_persons.json";
-import DeleteIcon from "../employees/images/Delite.png";
+// import FakeEvents from "../../fake_data/2/Fake_events.json";
+// import FakePersons from "../../fake_data/2/Fake_persons.json";
+import DeleteIcon from "../employees/images/Delete.png";
 import EditIcon from "../employees/images/Edit_blue.png";
 import {
   TableContainer,
@@ -12,12 +12,13 @@ import {
   TableRow,
   TableData,
   Image,
-  Pagination,
-  PaginationButton,
   EditDeleteContainer,
   EditDeleteButtons,
   ColumnHeader,
+  TableWrapper,
 } from "../common/common components/tableComponents";
+import { getListOfEvents, getListOfPersons } from "../../API_functions";
+import Pagination from "../common/common components/Pagination";
 
 const EventsTable = () => {
   const [sortBy, setSortBy] = useState(""); // Column name to sort by
@@ -33,6 +34,7 @@ const EventsTable = () => {
 
   // Получение ФИО субъекта события по ID
   const getSubject = (objID) => {
+    let FakePersons = getListOfPersons();
     const obj = FakePersons.find((item) => item.id === objID);
     const name =
       obj.person_surname +
@@ -45,12 +47,12 @@ const EventsTable = () => {
   };
 
   const fetchData = () => {
-    let receivedData = FakeEvents;
+    let receivedData = getListOfEvents();
     let preparedData = receivedData.map((item) => {
       return {
         id: item.id,
         date: item.dateTime,
-        time: item.timeTime,
+        time: item.dateTime,
         subject: getSubject(item.visitor_id),
         photo: item.photo,
         device_id: item.cam_id,
@@ -116,68 +118,64 @@ const EventsTable = () => {
 
   return (
     <TableContainer>
-      <Table>
-        <TableHeader>
-          <tr>
-            <ColumnHeader
-              title={"Номер события"}
-              sortFunc={handleSort}
-              sortBy={"id"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Дата"}
-              sortFunc={handleSort}
-              sortBy={"date"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Время"}
-              sortFunc={handleSort}
-              sortBy={"time"}
-              sortOrder={sortOrder}
-            />
-            <ColumnHeader
-              title={"Субъект события"}
-              sortFunc={handleSort}
-              sortBy={"subject"}
-              sortOrder={sortOrder}
-            />
-            <TableHeaderLabel>Фото</TableHeaderLabel>
-          </tr>
-        </TableHeader>
-        <TableBody>
-          {paginatedData.map((item) => (
-            <TableRow key={item.id}>
-              {/*TODO: выровнять проценты как на макете*/}
-              <TableData style={{ width: "19%" }}>{item.id}</TableData>
-              <TableData style={{ width: "18%" }}>{item.date}</TableData>
-              <TableData style={{ width: "25%" }}>{item.time}</TableData>
-              <TableData style={{ width: "25%" }}>{item.subject} </TableData>
-              <TableData>
-                <Image src={item.photo} alt={item.subject} />
-              </TableData>
-              <TableData>
-                <EditDeleteContainer>
-                  <EditDeleteButtons src={EditIcon} />
-                  <EditDeleteButtons src={DeleteIcon} />
-                </EditDeleteContainer>
-              </TableData>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-      <Pagination>
-        {Array.from({ length: totalPages }).map((_, index) => (
-          <PaginationButton
-            key={index + 1}
-            active={index + 1 === currentPage}
-            onClick={() => handlePageChange(index + 1)}
-          >
-            {index + 1}
-          </PaginationButton>
-        ))}
-      </Pagination>
+      <TableWrapper>
+        <Table>
+          <TableHeader>
+            <tr>
+              <ColumnHeader
+                title={"Номер события"}
+                sortFunc={handleSort}
+                sortBy={"id"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Дата"}
+                sortFunc={handleSort}
+                sortBy={"date"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Время"}
+                sortFunc={handleSort}
+                sortBy={"time"}
+                sortOrder={sortOrder}
+              />
+              <ColumnHeader
+                title={"Субъект события"}
+                sortFunc={handleSort}
+                sortBy={"subject"}
+                sortOrder={sortOrder}
+              />
+              <TableHeaderLabel>Фото</TableHeaderLabel>
+            </tr>
+          </TableHeader>
+          <TableBody>
+            {paginatedData.map((item) => (
+              <TableRow key={item.id}>
+                {/*TODO: выровнять проценты как на макете*/}
+                <TableData style={{ width: "19%" }}>{item.id}</TableData>
+                <TableData style={{ width: "18%" }}>{item.date}</TableData>
+                <TableData style={{ width: "25%" }}>{item.time}</TableData>
+                <TableData style={{ width: "25%" }}>{item.subject} </TableData>
+                <TableData>
+                  <Image src={item.photo} alt={item.subject} />
+                </TableData>
+                <TableData>
+                  <EditDeleteContainer>
+                    <EditDeleteButtons src={EditIcon} />
+                    <EditDeleteButtons src={DeleteIcon} />
+                  </EditDeleteContainer>
+                </TableData>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableWrapper>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        handlePageChange={handlePageChange}
+      />
     </TableContainer>
   );
 };

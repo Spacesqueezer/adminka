@@ -11,8 +11,10 @@ import {
   SearchAndFilters,
   Separator,
 } from "../common/common components/screenComponents";
+import { useState } from "react";
 
 const EmployeesScreen = ({ showModal, closeModal }) => {
+  const [searchBy, setSearchBy] = useState("");
   const FilterFunction = () => {
     alert("filter");
   };
@@ -27,7 +29,7 @@ const EmployeesScreen = ({ showModal, closeModal }) => {
       <HeaderMenuContainer>
         <Elements>
           <SearchAndFilters>
-            <SearchInput />
+            <SearchInput onTextChange={(data) => setSearchBy(data)} />
             <ButtonWithIcon
               label={"Разделы"}
               backColor={(props) => props.theme.White}
@@ -47,7 +49,7 @@ const EmployeesScreen = ({ showModal, closeModal }) => {
         <Separator />
       </HeaderMenuContainer>
       <TableContainer>
-        <EmployeesTable showModal={showModal} />
+        <EmployeesTable showModal={showModal} searchBy={searchBy} />
       </TableContainer>
     </Wrapper>
   );
